@@ -1,0 +1,352 @@
+//mainWrap
+.mainWrap {
+    @include BGStyle_1;
+
+    //top
+    .top {
+        width: 100%;
+        height: auto;
+        // display: flex;
+        // align-items: center;
+        padding: 12px 16px;
+
+        .rowBox {
+            width: 100%;
+            height: auto;
+            padding: 4px 12px 0;
+            margin-bottom: 16px;
+
+            .innerBox {
+                width: 100%;
+                height: 9.5vw;
+                @include rowStyle;
+            }
+        }
+
+        .inputBox {
+            width: 100%;
+            height: 10vw;
+            @include inputStyle_1;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            padding: 0 8px;
+
+            p {
+                flex-shrink: 0;
+                margin-right: 8px;
+            }
+
+            input {
+                background: none;
+                border: none;
+                color: $inputStyle_1_Color;
+                flex-shrink: 0;
+                pointer-events: none;
+
+                &:last-child {
+                    margin-left: 10px;
+                }
+            }
+
+            i {
+                width: 10vw;
+                height: 10vw;
+                background: $inputStyle_1_BG;
+                position: absolute;
+                top: 0;
+                right: 0;
+                pointer-events: none;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 4vw;
+                    height: 4vw;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                }
+            }
+        }
+
+        // .changeStyle {
+        //     @include changeStyle;
+        //     flex-shrink: 0;
+        //     margin-left: 8px;
+        // }
+    }
+
+    //listBox
+    .listBox {
+        width: 100%;
+        height: auto;
+        display: none;
+
+        &.display {
+            display: block;
+        }
+
+        //mid
+        .mid {
+            width: 100%;
+            height: auto;
+            background: $subBG_1;
+            border-top: solid 1px $mainBorder_1;
+
+            .totalBox {
+                width: 100%;
+                height: 22vw;
+                border-bottom: solid 1px $mainBorder_1;
+                display: flex;
+                align-items: center;
+                padding: 0 16px;
+
+                .total_ic {
+                    width: 12vw;
+                    height: 12vw;
+                    flex-shrink: 0;
+                    margin-right: 16px;
+                }
+
+                p {
+                    width: 100%;
+                    color: $mainColor_1;
+                    font-size: 4vw;
+                    font-weight: bold;
+                    display: flex;
+                    align-items: center;
+
+                    &.money {
+                        width: auto;
+                        font-size: 5vw;
+                        flex-shrink: 0;
+                        margin-right: 8px;
+                    }
+
+                    i {
+                        width: 5vw;
+                        height: 5vw;
+                        position: relative;
+                        margin: 0 0 -2px 5px;
+
+                        span {
+                            @include tips;
+                            top: -30px;
+                            left: 50%;
+                            transform: translateX(-50%);
+
+                            &::before {
+                                border-width: 6px 4px 0 4px;
+                                border-color: $tips_BG transparent;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                bottom: -6px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .elseBox {
+                width: 100%;
+                height: auto;
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+
+                &>div {
+                    width: auto;
+                    height: 22vw;
+                    border-bottom: solid 1px $mainBorder_1;
+                    display: flex;
+                    align-items: center;
+                    padding: 0 16px;
+
+                    &:nth-of-type(odd) {
+                        border-right: solid 1px $mainBorder_1;
+                    }
+
+                    i:not(.question_ic) {
+                        width: 12vw;
+                        height: 12vw;
+                        flex-shrink: 0;
+                        margin-right: 16px;
+                    }
+
+                    .question_ic {
+                        width: 5vw;
+                        height: 5vw;
+                        flex-shrink: 0;
+                        position: relative;
+                        margin-left: 8px;
+
+                        span {
+                            @include tips;
+                            top: -40px;
+                            right: 0;
+
+                            &::before {
+                                border-width: 6px 4px 0 4px;
+                                border-color: $tips_BG transparent;
+                                right: 5px;
+                                bottom: -6px;
+                            }
+                        }
+                    }
+
+                    p {
+                        color: $mainColor_1;
+                        font-size: 4vw;
+                        font-weight: bold;
+                        line-height: 5.5vw;
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+
+        //bottom
+        .bottom {
+            width: 100%;
+            height: auto;
+            background: $subBG_2;
+            padding: 16px;
+
+            ul {
+                width: 100%;
+                height: auto;
+
+                li {
+                    width: 100%;
+                    height: auto;
+                    border-bottom: solid 2px $mainWrap_bottom_Color_2;
+                    display: flex;
+                    padding-bottom: 12px;
+                    margin-bottom: 16px;
+
+                    &:first-child {
+                        border-color: $mainWrap_bottom_Color_1;
+
+                        .smallTitle {
+                            color: $mainWrap_bottom_Color_1;
+                        }
+                    }
+                    &:last-child {
+                        margin: 0;
+                    }
+
+                    div {
+                        width: 50%;
+                        height: auto;
+
+                        p {
+                            color: $mainWrap_bottom_Color_3;
+                            font-size: 4.5vw;
+                            font-weight: bold;
+                            
+                            &.smallTitle {
+                                color: $mainWrap_bottom_Color_2;
+                                font-size: 4vw;
+                                margin-bottom: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .tableTitle {
+            width: 100%;
+            height: 10vw;
+            background: $table_thBG_1;
+            color: $table_TitleColor_1;
+            font-size: 3.7vw;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            padding: 0 16px;
+        }
+
+        .tableBox {
+            width: 100%;
+            height: auto;
+            overflow-x: auto;
+            padding-bottom: 7vw;
+
+            table {
+                width: auto;
+                height: auto;
+    
+                tr {
+    
+                    th {
+                        height: 10vw;
+                        background: $table_thBG_2;
+                        vertical-align: middle;
+                        padding: 0 8px;
+    
+                        &:first-child {
+                            padding-left: 16px;
+                        }
+                        &:last-child {
+                            padding-right: 16px;
+                        }
+    
+                        p {
+                            color: $table_TitleColor_1;
+                            font-size: 3.7vw;
+                            font-weight: bold;
+                            line-height: 4vw;
+                            white-space: nowrap;
+                        }
+                    }
+
+                    td {
+                        height: 10vw;
+                        background: $table_tdBG_1;
+                        vertical-align: middle;
+                        border-bottom: solid 1px $table_Border_2;
+
+                        &:first-child {
+                            padding-left: 8px;
+                        }
+                        &:last-child {
+                            padding-right: 8px;
+                        }
+
+                        &.positive {
+                            background: $table_positiveBG;
+
+                            p  {
+                                color: $table_positiveColor;
+                            }
+                        }
+                        &.negative {
+                            background: $table_negativeBG;
+
+                            p {
+                                color: $table_negativeColor;
+                            }
+                        }
+                        &.disable {
+
+                            p {
+                                color: $table_disableColor;
+                            }
+                        }
+
+                        p {
+                            color: $table_Color_1;
+                            font-size: 3.7vw;
+                            font-weight: bold;
+                            line-height: 4vw;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

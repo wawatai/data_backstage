@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="./js/javascript.js"></script>
+</head>
+<body>
+    <!--header-->
+    <header>
+        <i class="listBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </i>
+        <p class="title">ホーム</p>
+        <i class="re_ic"></i>
+    </header>
+    <!--mainWrap-->
+    <main>
+        <div class="mainWrap">
+            <!--top-->
+            <div class="top">
+                <div class="rowBox">
+                    <div class="innerBox left">
+                        <p>
+                            <i class="left"></i>
+                            総合概要
+                        </p>
+                        <p>
+                            <i class="right"></i>
+                            勝ち負け
+                        </p>
+                        <div class="cnt"></div>
+                    </div>
+                </div>
+                <div class="inputBox">
+                    <p>全て</p>
+                    <input type="datetime-local" value="2022-09-13T00:00">
+                    ~
+                    <input type="datetime-local" value="2022-09-13T23:59">
+                    <i class="search_ic"></i>
+                </div>
+                <!-- <div class="changeStyle">
+                    <button class="left active"></button>
+                    <button class="right"></button>
+                </div> -->
+            </div>
+            <!--listBox-->
+            <div class="listBox display">
+                <!--mid-->
+                <div class="mid">
+                    <div class="totalBox">
+                        <i class="total_ic"></i>
+                        <p>
+                            入出金合計
+                            <i class="question_ic">
+                                <span>トータル入金金額 - 総出金</span>
+                            </i>
+                        </p>
+                        <p class="money">¥0</p>
+                    </div>
+                    <div class="elseBox">
+                        <div class="deposit">
+                            <i class="deposit_ic"></i>
+                            <div>
+                                <p>初めてチャージ</p>
+                                <p>0人</p>
+                            </div>
+                        </div>
+                        <div class="withdrawal">
+                            <i class="withdrawal_ic"></i>
+                            <div>
+                                <p>初めて出金</p>
+                                <p>0人</p>
+                            </div>
+                        </div>
+                        <div class="register">
+                            <i class="person_ic"></i>
+                            <div>
+                                <p>登録人数</p>
+                                <p>0人</p>
+                            </div>
+                        </div>
+                        <div class="group">
+                            <i class="people_ic"></i>
+                            <div>
+                                <p>
+                                    ログインの総人数
+                                    <i class="question_ic">
+                                        <span>同じメンバーは同じ日に1回だけカウントされます</span>
+                                    </i>
+                                </p>
+                                <p>0人</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--bottom-->
+                <div class="bottom">
+                    <ul>
+                        <li>
+                            <div>
+                                <p class="smallTitle">トータル入金金額</p>
+                                <p class="num">¥ 12,658.6</p>
+                            </div>
+                            <div>
+                                <p class="smallTitle">人数</p>
+                                <p class="num">0</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p class="smallTitle">総出金</p>
+                                <p class="num">¥ 12,658.6</p>
+                            </div>
+                            <div>
+                                <p class="smallTitle">人数</p>
+                                <p class="num">0</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p class="smallTitle">プロモーション合計</p>
+                                <p class="num">¥ 12,658.6</p>
+                            </div>
+                            <div>
+                                <p class="smallTitle">人数</p>
+                                <p class="num">0</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p class="smallTitle">ポイントを配るの合計</p>
+                                <p class="num">0</p>
+                            </div>
+                            <div>
+                                <p class="smallTitle">人数</p>
+                                <p class="num">0</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="listBox">
+                <p class="tableTitle">ポスティングしたレポートの総クォータ</p>
+                <div class="tableBox">
+                    <table>
+                        <tr>
+                            <th>
+                                <p>
+                                    ゲームプラット
+                                    <br>
+                                    フォーム
+                                </p>
+                            </th>
+                            <th>
+                                <p>
+                                    ベット
+                                    <br>
+                                    人数
+                                </p>
+                            </th>
+                            <th>
+                                <p>
+                                    ベットス
+                                    <br>
+                                    リップ数
+                                </p>
+                            </th>
+                            <th>
+                                <p>
+                                    ベットの
+                                    <br>
+                                    クォータ
+                                </p>
+                            </th>
+                            <th>
+                                <p>
+                                    有効な
+                                    <br>
+                                    賭け額
+                                </p>
+                            </th>
+                            <th>
+                                <p>
+                                    メンバー
+                                    <br>
+                                    小計
+                                </p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    IFUN
+                                    <br>
+                                    GAMES
+                                </p>
+                            </td>
+                            <td class="positive">
+                                <p>1</p>
+                            </td>
+                            <td class="positive">
+                                <p>24</p>
+                            </td>
+                            <td class="positive">
+                                <p>252</p>
+                            </td>
+                            <td class="positive">
+                                <p>252</p>
+                            </td>
+                            <td class="positive">
+                                <p>14.7</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    36588
+                                    <br>
+                                    SPORTS
+                                </p>
+                            </td>
+                            <td class="positive">
+                                <p>1</p>
+                            </td>
+                            <td class="positive">
+                                <p>1</p>
+                            </td>
+                            <td class="negative">
+                                <p>-100</p>
+                            </td>
+                            <td class="positive">
+                                <p>100</p>
+                            </td>
+                            <td class="positive">
+                                <p>100</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>BOOONGO</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>PLAYSON</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>DG CASINO</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>SIMPLEPLAY</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    ALL BET
+                                    <br>
+                                    CASINO
+                                </p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    SG88
+                                    <br>
+                                    LOTTERY
+                                </p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    RTG
+                                    <br>
+                                    SLOTS
+                                </p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    GS
+                                    <br>
+                                    LOTTERY
+                                </p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    SA
+                                    <br>
+                                    CASINO
+                                </p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    WM
+                                    <br>
+                                    CASINO
+                                </p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    B WIN
+                                    <br>
+                                    SLOTS
+                                </p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    OG PLUS
+                                    <br>
+                                    CASINO
+                                </p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    OG PLUS
+                                    <br>
+                                    CASINO
+                                </p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    OG PLUS
+                                    <br>
+                                    CASINO
+                                </p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    OG PLUS
+                                    <br>
+                                    CASINO
+                                </p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    OG PLUS
+                                    <br>
+                                    CASINO
+                                </p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--footer-->
+    <footer>
+        <div class="tableBox">
+            <table>
+                <tr>
+                    <th>
+                        <p>
+                            ゲームプラット
+                            <br>
+                            フォーム
+                        </p>
+                    </th>
+                    <th>
+                        <p>
+                            ベット
+                            <br>
+                            人数
+                        </p>
+                    </th>
+                    <th>
+                        <p>
+                            ベットス
+                            <br>
+                            リップ数
+                        </p>
+                    </th>
+                    <th>
+                        <p>
+                            ベットの
+                            <br>
+                            クォータ
+                        </p>
+                    </th>
+                    <th>
+                        <p>
+                            有効な
+                            <br>
+                            賭け額
+                        </p>
+                    </th>
+                    <th>
+                        <p>
+                            メンバー
+                            <br>
+                            小計
+                        </p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <p>合計</p>
+                    </td>
+                    <td class="positive">
+                        <p>2</p>
+                    </td>
+                    <td class="positive">
+                        <p>25</p>
+                    </td>
+                    <td class="positive">
+                        <p>352</p>
+                    </td>
+                    <td class="positive">
+                        <p>352</p>
+                    </td>
+                    <td class="positive">
+                        <p>114.7</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <p>© 2022, Fortuna.com すべての権利を保有しています。</p>
+    </footer>
+    <!--filter-->
+    <div class="filter display">
+        <div class="downList search">
+            <label class="selectBox">
+                <select>
+                    <option value="">全て</option>
+                    <option value="">全て</option>
+                    <option value="">全て</option>
+                </select>
+                <i class="arrow_ic"></i>
+            </label>
+            <label class="inputBox">
+                <i class="clock_ic"></i>
+                <input type="datetime-local" value="2022-09-13T00:00">
+                ~
+                <input type="datetime-local" value="2022-09-13T23:59">
+            </label>
+            <div class="btnBox">
+                <button class="active">今日</button>
+                <button>昨日</button>
+                <button>今週</button>
+                <button>先週</button>
+                <button>今月</button>
+                <button>先月</button>
+            </div>
+            <button class="checkBtn close">検索</button>
+        </div>
+        <div class="downList lang">
+            <div class="langBox active">
+                <p>日本語</p>
+                <i class="arrow_ic"></i>
+            </div>
+            <div class="langBox">
+                <p>繁體中文</p>
+                <i class="arrow_ic"></i>
+            </div>
+            <div class="langBox">
+                <p>简体中文</p>
+                <i class="arrow_ic"></i>
+            </div>
+        </div>
+        <div class="leftList">
+            <div class="topBox">
+                <p>アフィリエイト</p>
+                <label class="selectBox">
+                    <select>
+                        <option value="">NJ1</option>
+                        <option value="">NJ1</option>
+                        <option value="">NJ1</option>
+                    </select>
+                    <i class="arrow_ic"></i>
+                </label>
+                <i class="arrow_db_ic close"></i>
+            </div>
+            <div class="content">
+                <div class="nameBox">
+                    <div class="top">
+                        <i class="user_ic"></i>
+                        <div class="textBox">
+                            <p class="title">j005 【 測試代理 】</p>
+                            <p class="sub">前回のログイン:Tue Sep 13 16:54 2022</p>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <p>役割: 測試代理權限</p>
+                        <p>
+                            利用可能なポイント: 0
+                            <i class="re_ic"></i>
+                        </p>
+                        <p>決算金: 0</p>
+                    </div>
+                </div>
+                <div class="listBox">
+                    <ul>
+                        <li class="active">
+                            <p>
+                                <i class="home_ic"></i>
+                                ホーム
+                            </p>
+                            <i class="arrow_ic"></i>
+                        </li>
+                        <div class="smallList display">
+                            <div class="active" onclick="window.location.href='./index.html'">
+                                <p>ホーム</p>
+                            </div>
+                            <div onclick="window.location.href='./html/activeReport.html'">
+                                <p>メンバーアクティブな状況</p>
+                            </div>
+                        </div>
+                        <li>
+                            <p>
+                                <i class="member_ic"></i>
+                                個人管理
+                            </p>
+                            <i class="arrow_ic"></i>
+                        </li>
+                        <div class="smallList">
+                            <div onclick="window.location.href='./html/member.html'">
+                                <p>個人情報</p>
+                            </div>
+                            <div onclick="window.location.href='./html/loginRecord.html'">
+                                <p>ログイン記録</p>
+                            </div>
+                        </div>
+                        <li>
+                            <p>
+                                <i class="report_ic"></i>
+                                報告書
+                            </p>
+                            <i class="arrow_ic"></i>
+                        </li>
+                        <div class="smallList">
+                            <div onclick="window.location.href='./html/profit.html'">
+                                <p>コミッション決算予測</p>
+                            </div>
+                            <!-- <div onclick="window.location.href='./html/gameReport.html'">
+                                <p>ゲームレポート</p>
+                            </div> -->
+                            <div onclick="window.location.href='./html/agent.html'">
+                                <p>コミッション決算書</p>
+                            </div>
+                        </div>
+                        <li class="remind">
+                            <p>
+                                <i class="remind_ic"></i>
+                                お知らせ
+                            </p>
+                        </li>
+                        <li class="lang">
+                            <p>
+                                <i class="lang_ic"></i>
+                                言語
+                            </p>
+                            <p class="lang">
+                                日本語
+                                <i class="arrow_ic"></i>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <i class="logout_ic"></i>
+                                ログアウト
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="jumpWindow firstWindow display">
+            <div class="title">
+                <p>お知らせ</p>
+                <i class="close_ic close"></i>
+            </div>
+            <div class="content">
+                <div class="tableBox">
+                    <table>
+                        <tr>
+                            <th>
+                                <p>タイトル</p>
+                            </th>
+                            <th>
+                                <p>
+                                    設立時間
+                                    <i class="arrow_db_ic"></i>
+                                </p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>TEST1</p>
+                            </td>
+                            <td>
+                                <p>2021-04-18</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>AAAAaaa11...</p>
+                            </td>
+                            <td>
+                                <p>2022-08-02</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>TEST123</p>
+                            </td>
+                            <td>
+                                <p>2022-08-16</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="pageBox">
+                    <div class="arrowBtn left">
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="numBox active">
+                        <p>1</p>
+                    </div>
+                    <div class="arrowBtn right">
+                        <i class="arrow_ic"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="../js/javascript.js"></script>
+</head>
+<body>
+    <!--header-->
+    <header>
+        <i class="listBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </i>
+        <p class="title">メンバーアクティブな状況</p>
+        <i class="re_ic"></i>
+    </header>
+    <!--mainWrap-->
+    <main>
+        <div class="activeWrap">
+            <div class="top">
+                <label class="selectBox">
+                    <select>
+                        <option value="">全て</option>
+                        <option value="">全て</option>
+                        <option value="">全て</option>
+                    </select>
+                    <i class="arrow_ic"></i>
+                </label>
+                <label class="inputBox">
+                    <i class="clock_ic"></i>
+                    <input type="datetime-local" value="2022-09-13T00:00">
+                    ~
+                    <input type="datetime-local" value="2022-09-13T23:59">
+                </label>
+                <div class="btnBox">
+                    <button class="active">今日</button>
+                    <button>昨日</button>
+                    <button>今週</button>
+                    <button>先週</button>
+                    <button>今月</button>
+                    <button>先月</button>
+                </div>
+                <button class="checkBtn close">検索</button>
+            </div>
+            <div class="bottom">
+                <p class="tableTitle">エージェント</p>
+                <div class="tableBox">
+                    <table>
+                        <tr>
+                            <th>
+                                <p>エージェント</p>
+                            </th>
+                            <th>
+                                <p>
+                                    初めて
+                                    <br>
+                                    チャージ
+                                </p>
+                            </th>
+                            <th>
+                                <p>
+                                    初めて
+                                    <br>
+                                    チャージ合計
+                                </p>
+                            </th>
+                            <th>
+                                <p>
+                                    再び
+                                    <br>
+                                    チャージ
+                                </p>
+                            </th>
+                            <th>
+                                <p>
+                                    再び
+                                    <br>
+                                    チャージ総人数
+                                </p>
+                            </th>
+                            <th>
+                                <p>
+                                    再び
+                                    <br>
+                                    チャージ合計
+                                </p>
+                            </th>
+                            <th>
+                                <p>
+                                    トータル
+                                    <br>
+                                    チャージ
+                                </p>
+                            </th>
+                            <th>
+                                <p>
+                                    トータル
+                                    <br>
+                                    チャージ合計
+                                </p>
+                            </th>
+                            <th>
+                                <p>初めて出金</p>
+                            </th>
+                            <th>
+                                <p>
+                                    合計
+                                    <br>
+                                    初めて出金
+                                </p>
+                            </th>
+                            <th>
+                                <p>再び出金</p>
+                            </th>
+                            <th>
+                                <p>
+                                    再び出金の
+                                    <br>
+                                    合計額
+                                </p>
+                            </th>
+                            <th>
+                                <p>出金総額</p>
+                            </th>
+                            <th>
+                                <p>合計出金総額</p>
+                            </th>
+                            <th>
+                                <p>
+                                    ログインの
+                                    <br>
+                                    総人数
+                                </p>
+                            </th>
+                            <th>
+                                <p>
+                                    ベットの
+                                    <br>
+                                    総人数
+                                </p>
+                            </th>
+                            <th>
+                                <p>登録人数</p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    j005
+                                    <br>
+                                    【測試代理】
+                                </p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td class="positive depositAgainBtn">
+                                <p>2</p>
+                            </td>
+                            <td class="positive depositPeopleTotalBtn">
+                                <p>2</p>
+                            </td>
+                            <td>
+                                <p>12,658.6</p>
+                            </td>
+                            <td class="positive depositTotalBtn">
+                                <p>2</p>
+                            </td>
+                            <td>
+                                <p>12,658.6</p>
+                            </td>
+                            <td class="positive withdrawalBtn">
+                                <p>1</p>
+                            </td>
+                            <td>
+                                <p>16,963</p>
+                            </td>
+                            <td class="positive withdrawalAgainBtn">
+                                <p>2</p>
+                            </td>
+                            <td>
+                                <p>648,282</p>
+                            </td>
+                            <td class="positive withdrawalTotalBtn">
+                                <p>3</p>
+                            </td>
+                            <td>
+                                <p>665,245</p>
+                            </td>
+                            <td class="positive loginBtn">
+                                <p>159</p>
+                            </td>
+                            <td>
+                                <p>2</p>
+                            </td>
+                            <td class="positive signupBtn">
+                                <p>1</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>YYxx111</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>a001</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--footer-->
+    <footer>
+        <div class="tableBox display">
+            <table>
+                <tr>
+                    <th>
+                        <p>エージェント</p>
+                    </th>
+                    <th>
+                        <p>
+                            初めて
+                            <br>
+                            チャージ
+                        </p>
+                    </th>
+                    <th>
+                        <p>
+                            初めて
+                            <br>
+                            チャージ合計
+                        </p>
+                    </th>
+                    <th>
+                        <p>
+                            再び
+                            <br>
+                            チャージ
+                        </p>
+                    </th>
+                    <th>
+                        <p>
+                            再び
+                            <br>
+                            チャージ総人数
+                        </p>
+                    </th>
+                    <th>
+                        <p>
+                            再び
+                            <br>
+                            チャージ合計
+                        </p>
+                    </th>
+                    <th>
+                        <p>
+                            トータル
+                            <br>
+                            チャージ
+                        </p>
+                    </th>
+                    <th>
+                        <p>
+                            トータル
+                            <br>
+                            チャージ合計
+                        </p>
+                    </th>
+                    <th>
+                        <p>初めて出金</p>
+                    </th>
+                    <th>
+                        <p>
+                            合計
+                            <br>
+                            初めて出金
+                        </p>
+                    </th>
+                    <th>
+                        <p>再び出金</p>
+                    </th>
+                    <th>
+                        <p>
+                            再び出金の
+                            <br>
+                            合計額
+                        </p>
+                    </th>
+                    <th>
+                        <p>出金総額</p>
+                    </th>
+                    <th>
+                        <p>合計出金総額</p>
+                    </th>
+                    <th>
+                        <p>
+                            ログインの
+                            <br>
+                            総人数
+                        </p>
+                    </th>
+                    <th>
+                        <p>
+                            ベットの
+                            <br>
+                            総人数
+                        </p>
+                    </th>
+                    <th>
+                        <p>登録人数</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <p>合計</p>
+                    </td>
+                    <td>
+                        <p>0数</p>
+                    </td>
+                    <td>
+                        <p>0円</p>
+                    </td>
+                    <td>
+                        <p>2数</p>
+                    </td>
+                    <td>
+                        <p>2人</p>
+                    </td>
+                    <td>
+                        <p>12,658.6円</p>
+                    </td>
+                    <td>
+                        <p>2數</p>
+                    </td>
+                    <td>
+                        <p>12,658.6円</p>
+                    </td>
+                    <td>
+                        <p>1数</p>
+                    </td>
+                    <td>
+                        <p>16,963円</p>
+                    </td>
+                    <td>
+                        <p>2数</p>
+                    </td>
+                    <td>
+                        <p>648,282円</p>
+                    </td>
+                    <td>
+                        <p>3数</p>
+                    </td>
+                    <td>
+                        <p>665,245円</p>
+                    </td>
+                    <td>
+                        <p>159人</p>
+                    </td>
+                    <td>
+                        <p>2人</p>
+                    </td>
+                    <td>
+                        <p>1人</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <p>© 2022, AU8.com すべての権利を保有しています。</p>
+    </footer>
+    <!--filter-->
+    <div class="filter">
+        <div class="leftList">
+            <div class="topBox">
+                <p>アフィリエイト</p>
+                <label class="selectBox">
+                    <select>
+                        <option value="">NJ1</option>
+                        <option value="">NJ1</option>
+                        <option value="">NJ1</option>
+                    </select>
+                    <i class="arrow_ic"></i>
+                </label>
+                <i class="arrow_db_ic close"></i>
+            </div>
+            <div class="content">
+                <div class="nameBox">
+                    <div class="top">
+                        <i class="user_ic"></i>
+                        <div class="textBox">
+                            <p class="title">j005 【 測試代理 】</p>
+                            <p class="sub">前回のログイン:Tue Sep 13 16:54 2022</p>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <p>役割: 測試代理權限</p>
+                        <p>
+                            利用可能なポイント: 0
+                            <i class="re_ic"></i>
+                        </p>
+                        <p>決算金: 0</p>
+                    </div>
+                </div>
+                <div class="listBox">
+                    <ul>
+                        <li class="active">
+                            <p>
+                                <i class="home_ic"></i>
+                                ホーム
+                            </p>
+                            <i class="arrow_ic"></i>
+                        </li>
+                        <div class="smallList display">
+                            <div onclick="window.location.href='../index.html'">
+                                <p>ホーム</p>
+                            </div>
+                            <div class="active" onclick="window.location.href='./activeReport.html'">
+                                <p>メンバーアクティブな状況</p>
+                            </div>
+                        </div>
+                        <li>
+                            <p>
+                                <i class="member_ic"></i>
+                                個人管理
+                            </p>
+                            <i class="arrow_ic"></i>
+                        </li>
+                        <div class="smallList">
+                            <div onclick="window.location.href='./member.html'">
+                                <p>個人情報</p>
+                            </div>
+                            <div onclick="window.location.href='./loginRecord.html'">
+                                <p>ログイン記録</p>
+                            </div>
+                        </div>
+                        <li>
+                            <p>
+                                <i class="report_ic"></i>
+                                報告書
+                            </p>
+                            <i class="arrow_ic"></i>
+                        </li>
+                        <div class="smallList">
+                            <div onclick="window.location.href='./profit.html'">
+                                <p>コミッション決算予測</p>
+                            </div>
+                            <!-- <div onclick="window.location.href='./gameReport.html'">
+                                <p>ゲームレポート</p>
+                            </div> -->
+                            <div onclick="window.location.href='./agent.html'">
+                                <p>コミッション決算書</p>
+                            </div>
+                        </div>
+                        <li class="remind">
+                            <p>
+                                <i class="remind_ic"></i>
+                                お知らせ
+                            </p>
+                        </li>
+                        <li class="lang">
+                            <p>
+                                <i class="lang_ic"></i>
+                                言語
+                            </p>
+                            <p class="lang">
+                                日本語
+                                <i class="arrow_ic"></i>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <i class="logout_ic"></i>
+                                ログアウト
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="jumpWindow active_signup">
+            <div class="title">
+                <p>登録</p>
+                <i class="close_ic close"></i>
+            </div>
+            <div class="content">
+                <div class="tableBox">
+                    <table>
+                        <tr>
+                            <th>
+                                <p>&ensp;</p>
+                            </th>
+                            <th>
+                                <p>
+                                    アカウント / 
+                                    <br>
+                                    メンバー名
+                                </p>
+                            </th>
+                            <th>
+                                <p>登録時間</p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>1</p>
+                            </td>
+                            <td>
+                                <p>test101【*******】</p>
+                            </td>
+                            <td>
+                                <p>2022-08-31 10:57:38</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="pageBox">
+                    <div class="arrowBtn left">
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="numBox active">
+                        <p>1</p>
+                    </div>
+                    <div class="arrowBtn right">
+                        <i class="arrow_ic"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jumpWindow active_login">
+            <div class="title">
+                <p>ログイン</p>
+                <i class="close_ic close"></i>
+            </div>
+            <div class="content">
+                <div class="tableBox">
+                    <table>
+                        <tr>
+                            <th>
+                                <p>&ensp;</p>
+                            </th>
+                            <th>
+                                <p>
+                                    アカウント / 
+                                    <br>
+                                    メンバー名
+                                </p>
+                            </th>
+                            <th>
+                                <p>ログイン時間</p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>1</p>
+                            </td>
+                            <td>
+                                <p>test101【*******】</p>
+                            </td>
+                            <td>
+                                <p>2022-08-01</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>2</p>
+                            </td>
+                            <td>
+                                <p>sn8899【****】</p>
+                            </td>
+                            <td>
+                                <p>2022-08-01</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>3</p>
+                            </td>
+                            <td>
+                                <p>sn1889【****】</p>
+                            </td>
+                            <td>
+                                <p>2022-08-01</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>4</p>
+                            </td>
+                            <td>
+                                <p>test102【*******】</p>
+                            </td>
+                            <td>
+                                <p>2022-08-01</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>5</p>
+                            </td>
+                            <td>
+                                <p>testT2【********】</p>
+                            </td>
+                            <td>
+                                <p>2022-08-01</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>6</p>
+                            </td>
+                            <td>
+                                <p>AA112【****】</p>
+                            </td>
+                            <td>
+                                <p>2022-08-01</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>7</p>
+                            </td>
+                            <td>
+                                <p>tt523【******】</p>
+                            </td>
+                            <td>
+                                <p>2022-08-02</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>8</p>
+                            </td>
+                            <td>
+                                <p>ss570【******】</p>
+                            </td>
+                            <td>
+                                <p>2022-08-02</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>9</p>
+                            </td>
+                            <td>
+                                <p>a78ss12【******】</p>
+                            </td>
+                            <td>
+                                <p>2022-08-02</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>10</p>
+                            </td>
+                            <td>
+                                <p>rff258【****】</p>
+                            </td>
+                            <td>
+                                <p>2022-08-02</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="pageBox">
+                    <div class="arrowBtn left">
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="numBox active">
+                        <p>1</p>
+                    </div>
+                    <div class="numBox">
+                        <p>2</p>
+                    </div>
+                    <div class="arrowBtn right active">
+                        <i class="arrow_ic"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jumpWindow active_depositPeopleTotal">
+            <div class="title">
+                <p>再びチャージ総人数</p>
+                <i class="close_ic close"></i>
+            </div>
+            <div class="content">
+                <div class="tableBox">
+                    <table>
+                        <tr>
+                            <th>
+                                <p>&ensp;</p>
+                            </th>
+                            <th>
+                                <p>
+                                    アカウント / 
+                                    <br>
+                                    メンバー名
+                                </p>
+                            </th>
+                            <th>
+                                <p>金額</p>
+                            </th>
+                            <th>
+                                <p>数</p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>1</p>
+                            </td>
+                            <td>
+                                <p>test101【*******】</p>
+                            </td>
+                            <td>
+                                <p>10,000</p>
+                            </td>
+                            <td>
+                                <p>1</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>2</p>
+                            </td>
+                            <td>
+                                <p>sn8899【****】</p>
+                            </td>
+                            <td>
+                                <p>2,685.5</p>
+                            </td>
+                            <td>
+                                <p>1</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="pageBox">
+                    <div class="arrowBtn left">
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="numBox active">
+                        <p>1</p>
+                    </div>
+                    <div class="arrowBtn right active">
+                        <i class="arrow_ic"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jumpWindow active_withdrawalTotal">
+            <div class="title">
+                <p>出金総額</p>
+                <i class="close_ic close"></i>
+            </div>
+            <div class="content">
+                <div class="tableBox">
+                    <table>
+                        <tr>
+                            <th>
+                                <p>&ensp;</p>
+                            </th>
+                            <th>
+                                <p>
+                                    アカウント / 
+                                    <br>
+                                    メンバー名
+                                </p>
+                            </th>
+                            <th>
+                                <p>取引タイプ</p>
+                            </th>
+                            <th>
+                                <p>金額</p>
+                            </th>
+                            <th>
+                                <p>手数料</p>
+                            </th>
+                            <th>
+                                <p>完了時間</p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>1</p>
+                            </td>
+                            <td>
+                                <p>test101【*******】</p>
+                            </td>
+                            <td>
+                                <p>出金</p>
+                            </td>
+                            <td>
+                                <p>16,963</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>2022-08-05 18:45:10</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>2</p>
+                            </td>
+                            <td>
+                                <p>test101【*******】</p>
+                            </td>
+                            <td>
+                                <p>出金</p>
+                            </td>
+                            <td>
+                                <p>7,453</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>2022-08-08 03:40:04</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>3</p>
+                            </td>
+                            <td>
+                                <p>test101【*******】</p>
+                            </td>
+                            <td>
+                                <p>出金</p>
+                            </td>
+                            <td>
+                                <p>640,829</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>2022-08-28 03:54:37</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="pageBox">
+                    <div class="arrowBtn left">
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="numBox active">
+                        <p>1</p>
+                    </div>
+                    <div class="arrowBtn right active">
+                        <i class="arrow_ic"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jumpWindow active_withdrawalAgain">
+            <div class="title">
+                <p>再び出金</p>
+                <i class="close_ic close"></i>
+            </div>
+            <div class="content">
+                <div class="tableBox">
+                    <table>
+                        <tr>
+                            <th>
+                                <p>&ensp;</p>
+                            </th>
+                            <th>
+                                <p>
+                                    アカウント / 
+                                    <br>
+                                    メンバー名
+                                </p>
+                            </th>
+                            <th>
+                                <p>取引タイプ</p>
+                            </th>
+                            <th>
+                                <p>金額</p>
+                            </th>
+                            <th>
+                                <p>手数料</p>
+                            </th>
+                            <th>
+                                <p>完了時間</p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>1</p>
+                            </td>
+                            <td>
+                                <p>test101【*******】</p>
+                            </td>
+                            <td>
+                                <p>出金</p>
+                            </td>
+                            <td>
+                                <p>7,453</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>2022-08-08 03:40:04</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>2</p>
+                            </td>
+                            <td>
+                                <p>sn8899【****】</p>
+                            </td>
+                            <td>
+                                <p>出金</p>
+                            </td>
+                            <td>
+                                <p>640,829</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>2022-08-28 03:54:37</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="pageBox">
+                    <div class="arrowBtn left">
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="numBox active">
+                        <p>1</p>
+                    </div>
+                    <div class="arrowBtn right active">
+                        <i class="arrow_ic"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jumpWindow active_withdrawal">
+            <div class="title">
+                <p>出金</p>
+                <i class="close_ic close"></i>
+            </div>
+            <div class="content">
+                <div class="tableBox">
+                    <table>
+                        <tr>
+                            <th>
+                                <p>&ensp;</p>
+                            </th>
+                            <th>
+                                <p>
+                                    アカウント / 
+                                    <br>
+                                    メンバー名
+                                </p>
+                            </th>
+                            <th>
+                                <p>取引タイプ</p>
+                            </th>
+                            <th>
+                                <p>金額</p>
+                            </th>
+                            <th>
+                                <p>手数料</p>
+                            </th>
+                            <th>
+                                <p>完了時間</p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>1</p>
+                            </td>
+                            <td>
+                                <p>test101【*******】</p>
+                            </td>
+                            <td>
+                                <p>出金</p>
+                            </td>
+                            <td>
+                                <p>16,963</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>2022-08-05 18:45:10</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="pageBox">
+                    <div class="arrowBtn left">
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="numBox active">
+                        <p>1</p>
+                    </div>
+                    <div class="arrowBtn right active">
+                        <i class="arrow_ic"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jumpWindow active_depositTotal">
+            <div class="title">
+                <p>トータル チャージ</p>
+                <i class="close_ic close"></i>
+            </div>
+            <div class="content">
+                <div class="tableBox">
+                    <table>
+                        <tr>
+                            <th>
+                                <p>&ensp;</p>
+                            </th>
+                            <th>
+                                <p>
+                                    アカウント / 
+                                    <br>
+                                    メンバー名
+                                </p>
+                            </th>
+                            <th>
+                                <p>取引タイプ</p>
+                            </th>
+                            <th>
+                                <p>金額</p>
+                            </th>
+                            <th>
+                                <p>完了時間</p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>1</p>
+                            </td>
+                            <td>
+                                <p>test101【*******】</p>
+                            </td>
+                            <td>
+                                <p>銀行入金</p>
+                            </td>
+                            <td>
+                                <p>10,000</p>
+                            </td>
+                            <td>
+                                <p>2022-08-09 21:05:31</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>2</p>
+                            </td>
+                            <td>
+                                <p>sn8899【****】</p>
+                            </td>
+                            <td>
+                                <p>第三者決済入金</p>
+                            </td>
+                            <td>
+                                <p>2,658.6</p>
+                            </td>
+                            <td>
+                                <p>2022-08-21 17:33:40</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="pageBox">
+                    <div class="arrowBtn left">
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="numBox active">
+                        <p>1</p>
+                    </div>
+                    <div class="arrowBtn right active">
+                        <i class="arrow_ic"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jumpWindow active_depositAgain">
+            <div class="title">
+                <p>再び チャージ</p>
+                <i class="close_ic close"></i>
+            </div>
+            <div class="content">
+                <div class="tableBox">
+                    <table>
+                        <tr>
+                            <th>
+                                <p>&ensp;</p>
+                            </th>
+                            <th>
+                                <p>
+                                    アカウント / 
+                                    <br>
+                                    メンバー名
+                                </p>
+                            </th>
+                            <th>
+                                <p>取引タイプ</p>
+                            </th>
+                            <th>
+                                <p>金額</p>
+                            </th>
+                            <th>
+                                <p>完了時間</p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>1</p>
+                            </td>
+                            <td>
+                                <p>test101【*******】</p>
+                            </td>
+                            <td>
+                                <p>銀行入金</p>
+                            </td>
+                            <td>
+                                <p>10,000</p>
+                            </td>
+                            <td>
+                                <p>2022-08-09 21:05:31</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>2</p>
+                            </td>
+                            <td>
+                                <p>sn8899【****】</p>
+                            </td>
+                            <td>
+                                <p>第三者決済入金</p>
+                            </td>
+                            <td>
+                                <p>2,658.6</p>
+                            </td>
+                            <td>
+                                <p>2022-08-21 17:33:40</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="pageBox">
+                    <div class="arrowBtn left">
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="numBox active">
+                        <p>1</p>
+                    </div>
+                    <div class="arrowBtn right active">
+                        <i class="arrow_ic"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jumpWindow firstWindow">
+            <div class="title">
+                <p>お知らせ</p>
+                <i class="close_ic close"></i>
+            </div>
+            <div class="content">
+                <div class="tableBox">
+                    <table>
+                        <tr>
+                            <th>
+                                <p>タイトル</p>
+                            </th>
+                            <th>
+                                <p>
+                                    設立時間
+                                    <i class="arrow_db_ic"></i>
+                                </p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>TEST1</p>
+                            </td>
+                            <td>
+                                <p>2021-04-18</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>AAAAaaa11...</p>
+                            </td>
+                            <td>
+                                <p>2022-08-02</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>TEST123</p>
+                            </td>
+                            <td>
+                                <p>2022-08-16</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="pageBox">
+                    <div class="arrowBtn left">
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="numBox active">
+                        <p>1</p>
+                    </div>
+                    <div class="arrowBtn right">
+                        <i class="arrow_ic"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="downList lang">
+            <div class="langBox active">
+                <p>日本語</p>
+                <i class="arrow_ic"></i>
+            </div>
+            <div class="langBox">
+                <p>繁體中文</p>
+                <i class="arrow_ic"></i>
+            </div>
+            <div class="langBox">
+                <p>简体中文</p>
+                <i class="arrow_ic"></i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

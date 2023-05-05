@@ -1,0 +1,2965 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="../js/javascript.js"></script>
+</head>
+<body>
+    <!--header-->
+    <header>
+        <i class="listBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </i>
+        <p class="title">メンバーゲームレポート</p>
+        <i class="re_ic"></i>
+    </header>
+    <!--mainWrap-->
+    <main>
+        <div class="gameReportWrap">
+            <div class="top">
+                <label class="selectBox">
+                    <select>
+                        <option value="">全て</option>
+                        <option value="">全て</option>
+                        <option value="">全て</option>
+                    </select>
+                    <i class="arrow_ic"></i>
+                </label>
+                <div class="box">
+                    <label class="selectBox">
+                        <select>
+                            <option value="">選択してください</option>
+                        </select>
+                        <i class="arrow_ic"></i>
+                    </label>
+                    <label class="inputBox">
+                        <input type="text" value="アカウント番号、ベット番号、またはゲームアカウント番号を入力してください">
+                    </label>
+                </div>
+                <div class="box">
+                    <div class="controlBox openHierarchy">
+                        <p>階層オプション</p>
+                        <i class="control_ic"></i>
+                    </div>
+                    <div class="controlBox openPlatform">
+                        <p>ゲームオプション</p>
+                        <i class="control_ic"></i>
+                    </div>
+                </div>
+                <label class="inputBox">
+                    <i class="clock_ic"></i>
+                    <input type="datetime-local" value="2022-09-13T00:00">
+                    ~
+                    <input type="datetime-local" value="2022-09-13T23:59">
+                </label>
+                <div class="btnBox">
+                    <button class="active">今日</button>
+                    <button>昨日</button>
+                    <button>今週</button>
+                    <button>先週</button>
+                    <button>今月</button>
+                    <button>先月</button>
+                </div>
+                <button class="checkBtn close">検索</button>
+            </div>
+            <div class="bottom">
+                <div class="tableTitle">
+                    <p>ALL</p>
+                    <button>レポートのエクスポート</button>
+                </div>
+                <div class="tableBox index display">
+                    <table>
+                        <tr>
+                            <th>
+                                <p>会社</p>
+                            </th>
+                            <th>
+                                <p>
+                                    ゲームプラ
+                                    <br>
+                                    ットフォーム
+                                </p>
+                            </th>
+                            <th>
+                                <p>
+                                    ゲーム
+                                    <br>
+                                    タイプ
+                                </p>
+                            </th>
+                            <th>
+                                <p>数</p>
+                            </th>
+                            <th>
+                                <p>ベット額</p>
+                            </th>
+                            <th>
+                                <p>
+                                    有効な
+                                    <br>
+                                    賭け額
+                                </p>
+                            </th>
+                            <th>
+                                <p>賞金</p>
+                            </th>
+                            <th>
+                                <p>チップ</p>
+                            </th>
+                            <th>
+                                <p>会員リベート</p>
+                            </th>
+                            <th>
+                                <p>
+                                    メンバーの
+                                    <br>
+                                    ボーナス
+                                </p>
+                            </th>
+                            <th>
+                                <p>メンバー小計</p>
+                            </th>
+                            <th>
+                                <p>
+                                    比率
+                                    <br>
+                                    （％）
+                                </p>
+                            </th>
+                            <th>
+                                <p>
+                                    パーセンテー
+                                    <br>
+                                    ジクォータ
+                                </p>
+                            </th>
+                            <th>
+                                <p>合計出金総額</p>
+                            </th>
+                            <th>
+                                <p>リベート</p>
+                            </th>
+                            <th>
+                                <p>
+                                    コミッション
+                                    <br>
+                                    リベート
+                                </p>
+                            </th>
+                            <th>
+                                <p>
+                                    エージェント
+                                    <br>
+                                    リベート
+                                </p>
+                            </th>
+                            <th>
+                                <p>
+                                    会員
+                                    <br>
+                                    リベート
+                                </p>
+                            </th>
+                            <th>
+                                <p>
+                                    メンバーの
+                                    <br>
+                                    ボーナス
+                                </p>
+                            </th>
+                            <th>
+                                <p>小計</p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td class="clickable openAll">
+                                <p>
+                                    j005
+                                    <br>
+                                    【測試代理】
+                                </p>
+                            </td>
+                            <td class="clickable openWindow_type2">
+                                <p>IFUN GAMES</p>
+                            </td>
+                            <td>
+                                <p>スロット</p>
+                            </td>
+                            <td class="clickable openRecord_2">
+                                <p>24</p>
+                            </td>
+                            <td class="positive">
+                                <p>252</p>
+                            </td>
+                            <td class="positive">
+                                <p>252</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td class="positive">
+                                <p>14.7</p>
+                            </td>
+                            <td class="percent">
+                                <p>0 %</p>
+                            </td>
+                            <td>
+                                <p>
+                                    0
+                                    <i class="question_ic">
+                                        <span>メンバー小計 * 比率（％）= パーセンテージクォータ</span>
+                                    </i>
+                                </p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>
+                                    0
+                                    <i class="question_ic">
+                                        <span class="sp">
+                                            パーセンテージクォータ + リベート + 
+                                            <br>
+                                            コミッションリベート - エージェントリベート - 
+                                            <br>
+                                            会員リベート - メンバーのボーナス = 
+                                            <br>
+                                            小計
+                                        </span>
+                                    </i>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="clickable openAll">
+                                <p>
+                                    j005
+                                    <br>
+                                    【測試代理】
+                                </p>
+                            </td>
+                            <td class="clickable openWindow_type1">
+                                <p>36588 SPORTS</p>
+                            </td>
+                            <td>
+                                <p>スポーツ</p>
+                            </td>
+                            <td class="clickable openRecord_1">
+                                <p>1</p>
+                            </td>
+                            <td class="positive">
+                                <p>100</p>
+                            </td>
+                            <td class="positive">
+                                <p>100</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td class="positive">
+                                <p>0.3</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td class="positive">
+                                <p>100</p>
+                            </td>
+                            <td class="percent">
+                                <p>0 %</p>
+                            </td>
+                            <td>
+                                <p>
+                                    0
+                                    <i class="question_ic">
+                                        <span class="sp">
+                                            パーセンテージクォータ + リベート + 
+                                            <br>
+                                            コミッションリベート - エージェントリベート - 
+                                            <br>
+                                            会員リベート - メンバーのボーナス = 
+                                            <br>
+                                            小計
+                                        </span>
+                                    </i>
+                                </p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>
+                                    0
+                                    <i class="question_ic">
+                                        <span class="sp">
+                                            パーセンテージクォータ + リベート + 
+                                            <br>
+                                            コミッションリベート - エージェントリベート - 
+                                            <br>
+                                            会員リベート - メンバーのボーナス = 
+                                            <br>
+                                            小計
+                                        </span>
+                                    </i>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="tableBox account all">
+                    <table>
+                        <tr>
+                            <th>
+                                <p>名前</p>
+                            </th>
+                            <th>
+                                <p>ゲームプラットフォーム</p>
+                            </th>
+                            <th>
+                                <p>
+                                    ゲーム
+                                    <br>
+                                    タイプ
+                                </p>
+                            </th>
+                            <th>
+                                <p>数</p>
+                            </th>
+                            <th>
+                                <p>ベット額</p>
+                            </th>
+                            <th>
+                                <p>
+                                    有効な
+                                    <br>
+                                    賭け額
+                                </p>
+                            </th>
+                            <th>
+                                <p>賞金</p>
+                            </th>
+                            <th>
+                                <p>チップ</p>
+                            </th>
+                            <th>
+                                <p>会員リベート</p>
+                            </th>
+                            <th>
+                                <p>
+                                    メンバーの
+                                    <br>
+                                    ボーナス
+                                </p>
+                            </th>
+                            <th>
+                                <p>メンバー小計</p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td class="clickable openAccount_1">
+                                <p>
+                                    Testjp99
+                                    <br>
+                                    【****】
+                                </p>
+                            </td>
+                            <td class="clickable openWindow_type1">
+                                <p>36588 SPORTS</p>
+                            </td>
+                            <td>
+                                <p>スポーツ</p>
+                            </td>
+                            <td class="clickable openRecord_1">
+                                <p>1</p>
+                            </td>
+                            <td class="positive">
+                                <p>100</p>
+                            </td>
+                            <td class="positive">
+                                <p>100</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td class="positive">
+                                <p>0.3</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td class="positive">
+                                <p>100</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="clickable openAccount_2">
+                                <p>
+                                    opp121
+                                    <br>
+                                    【****】
+                                </p>
+                            </td>
+                            <td class="clickable openWindow_type2">
+                                <p>IFUN GAMES</p>
+                            </td>
+                            <td>
+                                <p>スロット</p>
+                            </td>
+                            <td class="clickable openRecord_2">
+                                <p>24</p>
+                            </td>
+                            <td class="positive">
+                                <p>252</p>
+                            </td>
+                            <td class="positive">
+                                <p>252</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td class="positive">
+                                <p>14.7</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="tableBox account single_1">
+                    <table>
+                        <tr>
+                            <th>
+                                <p>名前</p>
+                            </th>
+                            <th>
+                                <p>ゲームプラットフォーム</p>
+                            </th>
+                            <th>
+                                <p>
+                                    ゲーム
+                                    <br>
+                                    タイプ
+                                </p>
+                            </th>
+                            <th>
+                                <p>数</p>
+                            </th>
+                            <th>
+                                <p>ベット額</p>
+                            </th>
+                            <th>
+                                <p>
+                                    有効な
+                                    <br>
+                                    賭け額
+                                </p>
+                            </th>
+                            <th>
+                                <p>賞金</p>
+                            </th>
+                            <th>
+                                <p>チップ</p>
+                            </th>
+                            <th>
+                                <p>会員リベート</p>
+                            </th>
+                            <th>
+                                <p>
+                                    メンバーの
+                                    <br>
+                                    ボーナス
+                                </p>
+                            </th>
+                            <th>
+                                <p>メンバー小計</p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td class="clickable openIndex">
+                                <p>
+                                    Testjp99
+                                    <br>
+                                    【****】
+                                </p>
+                            </td>
+                            <td class="clickable openWindow_type1">
+                                <p>36588 SPORTS</p>
+                            </td>
+                            <td>
+                                <p>スポーツ</p>
+                            </td>
+                            <td class="clickable openRecord_1">
+                                <p>1</p>
+                            </td>
+                            <td class="positive">
+                                <p>100</p>
+                            </td>
+                            <td class="positive">
+                                <p>100</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td class="positive">
+                                <p>0.3</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td class="positive">
+                                <p>100</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="tableBox account single_2">
+                    <table>
+                        <tr>
+                            <th>
+                                <p>名前</p>
+                            </th>
+                            <th>
+                                <p>ゲームプラットフォーム</p>
+                            </th>
+                            <th>
+                                <p>
+                                    ゲーム
+                                    <br>
+                                    タイプ
+                                </p>
+                            </th>
+                            <th>
+                                <p>数</p>
+                            </th>
+                            <th>
+                                <p>ベット額</p>
+                            </th>
+                            <th>
+                                <p>
+                                    有効な
+                                    <br>
+                                    賭け額
+                                </p>
+                            </th>
+                            <th>
+                                <p>賞金</p>
+                            </th>
+                            <th>
+                                <p>チップ</p>
+                            </th>
+                            <th>
+                                <p>会員リベート</p>
+                            </th>
+                            <th>
+                                <p>
+                                    メンバーの
+                                    <br>
+                                    ボーナス
+                                </p>
+                            </th>
+                            <th>
+                                <p>メンバー小計</p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td class="clickable openIndex">
+                                <p>
+                                    opp121
+                                    <br>
+                                    【****】
+                                </p>
+                            </td>
+                            <td class="clickable openWindow_type2">
+                                <p>IFUN GAMES</p>
+                            </td>
+                            <td>
+                                <p>スロット</p>
+                            </td>
+                            <td class="clickable openRecord_2">
+                                <p>24</p>
+                            </td>
+                            <td class="positive">
+                                <p>252</p>
+                            </td>
+                            <td class="positive">
+                                <p>252</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td class="positive">
+                                <p>14.7</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="tableBox betRecord single_1">
+                    <table>
+                        <tr>
+                            <th>
+                                <p>
+                                    メインのベット
+                                    <br>
+                                    スリップ番号
+                                </p>
+                            </th>
+                            <th>
+                                <p>会員</p>
+                            </th>
+                            <th>
+                                <p>ゲームプラットフォーム</p>
+                            </th>
+                            <th>
+                                <p>ベッティングコンテンツ</p>
+                            </th>
+                            <th>
+                                <p>ベット額</p>
+                            </th>
+                            <th>
+                                <p>
+                                    有効な
+                                    <br>
+                                    賭け額
+                                </p>
+                            </th>
+                            <th>
+                                <p>リベート</p>
+                            </th>
+                            <th>
+                                <p>賞金</p>
+                            </th>
+                            <th>
+                                <p>チップ</p>
+                            </th>
+                            <th>
+                                <p>ボーナス</p>
+                            </th>
+                            <th>
+                                <p>メンバー小計</p>
+                            </th>
+                            <th>
+                                <p>IP</p>
+                            </th>
+                            <th>
+                                <p>
+                                    ベットタイム
+                                    <i class="arrow_db_ic"></i>
+                                </p>
+                            </th>
+                            <th>
+                                <p>当選発表時間</p>
+                            </th>
+                            <th>
+                                <p>状態</p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>R8674199</p>
+                            </td>
+                            <td class="clickable openAccount_1">
+                                <p>
+                                    Testjp99
+                                    <br>
+                                    【體育測試】
+                                </p>
+                            </td>
+                            <td>
+                                <p>36588 SPORTS</p>
+                            </td>
+                            <td>
+                                <p>
+                                    CPBL 中華職棒
+                                    <br>
+                                    [全場][讓球][CB10979]統一獅 3 1+70 味全龍[主] 4
+                                    <br>
+                                    味全龍 @ 1
+                                </p>
+                            </td>
+                            <td class="positive">
+                                <p>100</p>
+                            </td>
+                            <td class="positive">
+                                <p>100</p>
+                            </td>
+                            <td class="positive">
+                                <p>0.3</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td class="positive">
+                                <p>100</p>
+                            </td>
+                            <td>
+                                <p>13.*.*.57</p>
+                            </td>
+                            <td>
+                                <p>
+                                    2022-08-11
+                                    <br>
+                                    17:55:08
+                                </p>
+                            </td>
+                            <td>
+                                <p>&ensp;</p>
+                            </td>
+                            <td>
+                                <p>すでに決算済み</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="tableBox betRecord single_2">
+                    <table>
+                        <tr>
+                            <th>
+                                <p>
+                                    メインのベット
+                                    <br>
+                                    スリップ番号
+                                </p>
+                            </th>
+                            <th>
+                                <p>会員</p>
+                            </th>
+                            <th>
+                                <p>ゲームプラットフォーム</p>
+                            </th>
+                            <th>
+                                <p>ベッティングコンテンツ</p>
+                            </th>
+                            <th>
+                                <p>ベット額</p>
+                            </th>
+                            <th>
+                                <p>
+                                    有効な
+                                    <br>
+                                    賭け額
+                                </p>
+                            </th>
+                            <th>
+                                <p>リベート</p>
+                            </th>
+                            <th>
+                                <p>賞金</p>
+                            </th>
+                            <th>
+                                <p>チップ</p>
+                            </th>
+                            <th>
+                                <p>ボーナス</p>
+                            </th>
+                            <th>
+                                <p>メンバー小計</p>
+                            </th>
+                            <th>
+                                <p>IP</p>
+                            </th>
+                            <th>
+                                <p>
+                                    ベットタイム
+                                    <i class="arrow_db_ic"></i>
+                                </p>
+                            </th>
+                            <th>
+                                <p>当選発表時間</p>
+                            </th>
+                            <th>
+                                <p>状態</p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>11678681</p>
+                            </td>
+                            <td class="clickable openAccount_2">
+                                <p>
+                                    opp121
+                                    <br>
+                                    【美術1】
+                                </p>
+                            </td>
+                            <td>
+                                <p>IFUN GAMES</p>
+                            </td>
+                            <td>
+                                <p>IFUN: memberModule.undefined-module</p>
+                            </td>
+                            <td class="positive">
+                                <p>10.5</p>
+                            </td>
+                            <td class="positive">
+                                <p>10.5</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td class="negative">
+                                <p>-10.5</p>
+                            </td>
+                            <td>
+                                <p>&ensp;</p>
+                            </td>
+                            <td>
+                                <p>
+                                    2022-08-16
+                                    <br>
+                                    10:28:48
+                                </p>
+                            </td>
+                            <td>
+                                <p>&ensp;</p>
+                            </td>
+                            <td>
+                                <p>すでに決算済み</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>11678680</p>
+                            </td>
+                            <td class="clickable openAccount_2">
+                                <p>
+                                    opp121
+                                    <br>
+                                    【美術1】
+                                </p>
+                            </td>
+                            <td>
+                                <p>IFUN GAMES</p>
+                            </td>
+                            <td>
+                                <p>IFUN: memberModule.undefined-module</p>
+                            </td>
+                            <td class="positive">
+                                <p>10.5</p>
+                            </td>
+                            <td class="positive">
+                                <p>10.5</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td class="positive">
+                                <p>0.7</p>
+                            </td>
+                            <td>
+                                <p>&ensp;</p>
+                            </td>
+                            <td>
+                                <p>
+                                    2022-08-16
+                                    <br>
+                                    10:28:48
+                                </p>
+                            </td>
+                            <td>
+                                <p>&ensp;</p>
+                            </td>
+                            <td>
+                                <p>すでに決算済み</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>11678654</p>
+                            </td>
+                            <td class="clickable openAccount_2">
+                                <p>
+                                    opp121
+                                    <br>
+                                    【美術1】
+                                </p>
+                            </td>
+                            <td>
+                                <p>IFUN GAMES</p>
+                            </td>
+                            <td>
+                                <p>IFUN: memberModule.undefined-module</p>
+                            </td>
+                            <td class="positive">
+                                <p>10.5</p>
+                            </td>
+                            <td class="positive">
+                                <p>10.5</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td class="positive">
+                                <p>3.5</p>
+                            </td>
+                            <td>
+                                <p>&ensp;</p>
+                            </td>
+                            <td>
+                                <p>
+                                    2022-08-16
+                                    <br>
+                                    10:28:48
+                                </p>
+                            </td>
+                            <td>
+                                <p>&ensp;</p>
+                            </td>
+                            <td>
+                                <p>すでに決算済み</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>11678681</p>
+                            </td>
+                            <td class="clickable openAccount_2">
+                                <p>
+                                    opp121
+                                    <br>
+                                    【美術1】
+                                </p>
+                            </td>
+                            <td>
+                                <p>IFUN GAMES</p>
+                            </td>
+                            <td>
+                                <p>IFUN: memberModule.undefined-module</p>
+                            </td>
+                            <td class="positive">
+                                <p>10.5</p>
+                            </td>
+                            <td class="positive">
+                                <p>10.5</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td class="negative">
+                                <p>-10.5</p>
+                            </td>
+                            <td>
+                                <p>&ensp;</p>
+                            </td>
+                            <td>
+                                <p>
+                                    2022-08-16
+                                    <br>
+                                    10:28:48
+                                </p>
+                            </td>
+                            <td>
+                                <p>&ensp;</p>
+                            </td>
+                            <td>
+                                <p>すでに決算済み</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>11678680</p>
+                            </td>
+                            <td class="clickable openAccount_2">
+                                <p>
+                                    opp121
+                                    <br>
+                                    【美術1】
+                                </p>
+                            </td>
+                            <td>
+                                <p>IFUN GAMES</p>
+                            </td>
+                            <td>
+                                <p>IFUN: memberModule.undefined-module</p>
+                            </td>
+                            <td class="positive">
+                                <p>10.5</p>
+                            </td>
+                            <td class="positive">
+                                <p>10.5</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td class="positive">
+                                <p>0.7</p>
+                            </td>
+                            <td>
+                                <p>&ensp;</p>
+                            </td>
+                            <td>
+                                <p>
+                                    2022-08-16
+                                    <br>
+                                    10:28:48
+                                </p>
+                            </td>
+                            <td>
+                                <p>&ensp;</p>
+                            </td>
+                            <td>
+                                <p>すでに決算済み</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>11678654</p>
+                            </td>
+                            <td class="clickable openAccount_2">
+                                <p>
+                                    opp121
+                                    <br>
+                                    【美術1】
+                                </p>
+                            </td>
+                            <td>
+                                <p>IFUN GAMES</p>
+                            </td>
+                            <td>
+                                <p>IFUN: memberModule.undefined-module</p>
+                            </td>
+                            <td class="positive">
+                                <p>10.5</p>
+                            </td>
+                            <td class="positive">
+                                <p>10.5</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td class="positive">
+                                <p>3.5</p>
+                            </td>
+                            <td>
+                                <p>&ensp;</p>
+                            </td>
+                            <td>
+                                <p>
+                                    2022-08-16
+                                    <br>
+                                    10:28:48
+                                </p>
+                            </td>
+                            <td>
+                                <p>&ensp;</p>
+                            </td>
+                            <td>
+                                <p>すでに決算済み</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>11678681</p>
+                            </td>
+                            <td class="clickable openAccount_2">
+                                <p>
+                                    opp121
+                                    <br>
+                                    【美術1】
+                                </p>
+                            </td>
+                            <td>
+                                <p>IFUN GAMES</p>
+                            </td>
+                            <td>
+                                <p>IFUN: memberModule.undefined-module</p>
+                            </td>
+                            <td class="positive">
+                                <p>10.5</p>
+                            </td>
+                            <td class="positive">
+                                <p>10.5</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td class="negative">
+                                <p>-10.5</p>
+                            </td>
+                            <td>
+                                <p>&ensp;</p>
+                            </td>
+                            <td>
+                                <p>
+                                    2022-08-16
+                                    <br>
+                                    10:28:48
+                                </p>
+                            </td>
+                            <td>
+                                <p>&ensp;</p>
+                            </td>
+                            <td>
+                                <p>すでに決算済み</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>11678680</p>
+                            </td>
+                            <td class="clickable openAccount_2">
+                                <p>
+                                    opp121
+                                    <br>
+                                    【美術1】
+                                </p>
+                            </td>
+                            <td>
+                                <p>IFUN GAMES</p>
+                            </td>
+                            <td>
+                                <p>IFUN: memberModule.undefined-module</p>
+                            </td>
+                            <td class="positive">
+                                <p>10.5</p>
+                            </td>
+                            <td class="positive">
+                                <p>10.5</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td class="positive">
+                                <p>0.7</p>
+                            </td>
+                            <td>
+                                <p>&ensp;</p>
+                            </td>
+                            <td>
+                                <p>
+                                    2022-08-16
+                                    <br>
+                                    10:28:48
+                                </p>
+                            </td>
+                            <td>
+                                <p>&ensp;</p>
+                            </td>
+                            <td>
+                                <p>すでに決算済み</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>11678654</p>
+                            </td>
+                            <td class="clickable openAccount_2">
+                                <p>
+                                    opp121
+                                    <br>
+                                    【美術1】
+                                </p>
+                            </td>
+                            <td>
+                                <p>IFUN GAMES</p>
+                            </td>
+                            <td>
+                                <p>IFUN: memberModule.undefined-module</p>
+                            </td>
+                            <td class="positive">
+                                <p>10.5</p>
+                            </td>
+                            <td class="positive">
+                                <p>10.5</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td class="positive">
+                                <p>3.5</p>
+                            </td>
+                            <td>
+                                <p>&ensp;</p>
+                            </td>
+                            <td>
+                                <p>
+                                    2022-08-16
+                                    <br>
+                                    10:28:48
+                                </p>
+                            </td>
+                            <td>
+                                <p>&ensp;</p>
+                            </td>
+                            <td>
+                                <p>すでに決算済み</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--footer-->
+    <footer>
+        <div class="tableBox gameReport index display">
+            <table>
+                <tr>
+                    <th>
+                        <p>会社</p>
+                    </th>
+                    <th>
+                        <p>
+                            ゲームプラ
+                            <br>
+                            ットフォーム
+                        </p>
+                    </th>
+                    <th>
+                        <p>
+                            ゲーム
+                            <br>
+                            タイプ
+                        </p>
+                    </th>
+                    <th>
+                        <p>数</p>
+                    </th>
+                    <th>
+                        <p>ベット額</p>
+                    </th>
+                    <th>
+                        <p>
+                            有効な
+                            <br>
+                            賭け額
+                        </p>
+                    </th>
+                    <th>
+                        <p>賞金</p>
+                    </th>
+                    <th>
+                        <p>チップ</p>
+                    </th>
+                    <th>
+                        <p>会員リベート</p>
+                    </th>
+                    <th>
+                        <p>
+                            メンバーの
+                            <br>
+                            ボーナス
+                        </p>
+                    </th>
+                    <th>
+                        <p>メンバー小計</p>
+                    </th>
+                    <th>
+                        <p>
+                            比率
+                            <br>
+                            （％）
+                        </p>
+                    </th>
+                    <th>
+                        <p>
+                            パーセンテー
+                            <br>
+                            ジクォータ
+                        </p>
+                    </th>
+                    <th>
+                        <p>合計出金総額</p>
+                    </th>
+                    <th>
+                        <p>リベート</p>
+                    </th>
+                    <th>
+                        <p>
+                            コミッション
+                            <br>
+                            リベート
+                        </p>
+                    </th>
+                    <th>
+                        <p>
+                            エージェント
+                            <br>
+                            リベート
+                        </p>
+                    </th>
+                    <th>
+                        <p>
+                            会員
+                            <br>
+                            リベート
+                        </p>
+                    </th>
+                    <th>
+                        <p>
+                            メンバーの
+                            <br>
+                            ボーナス
+                        </p>
+                    </th>
+                    <th>
+                        <p>小計</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <p>合計</p>
+                    </td>
+                    <td>
+                        <p>&ensp;</p>
+                    </td>
+                    <td>
+                        <p>&ensp;</p>
+                    </td>
+                    <td>
+                        <p>25</p>
+                    </td>
+                    <td class="positive">
+                        <p>352</p>
+                    </td>
+                    <td class="positive">
+                        <p>352</p>
+                    </td>
+                    <td>
+                        <p>0</p>
+                    </td>
+                    <td>
+                        <p>0</p>
+                    </td>
+                    <td class="positive">
+                        <p>0.3</p>
+                    </td>
+                    <td>
+                        <p>0</p>
+                    </td>
+                    <td class="positive">
+                        <p>114.7</p>
+                    </td>
+                    <td>
+                        <p>&ensp;</p>
+                    </td>
+                    <td>
+                        <p>0</p>
+                    </td>
+                    <td>
+                        <p>0</p>
+                    </td>
+                    <td>
+                        <p>0</p>
+                    </td>
+                    <td>
+                        <p>0</p>
+                    </td>
+                    <td>
+                        <p>0</p>
+                    </td>
+                    <td>
+                        <p>0</p>
+                    </td>
+                    <td>
+                        <p>0</p>
+                    </td>
+                    <td>
+                        <p>0</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="tableBox gameReport account all">
+            <table>
+                <tr>
+                    <th>
+                        <p>名前</p>
+                    </th>
+                    <th>
+                        <p>ゲームプラットフォーム</p>
+                    </th>
+                    <th>
+                        <p>
+                            ゲーム
+                            <br>
+                            タイプ
+                        </p>
+                    </th>
+                    <th>
+                        <p>数</p>
+                    </th>
+                    <th>
+                        <p>ベット額</p>
+                    </th>
+                    <th>
+                        <p>
+                            有効な
+                            <br>
+                            賭け額
+                        </p>
+                    </th>
+                    <th>
+                        <p>賞金</p>
+                    </th>
+                    <th>
+                        <p>チップ</p>
+                    </th>
+                    <th>
+                        <p>会員リベート</p>
+                    </th>
+                    <th>
+                        <p>
+                            メンバーの
+                            <br>
+                            ボーナス
+                        </p>
+                    </th>
+                    <th>
+                        <p>メンバー小計</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <p>合計</p>
+                    </td>
+                    <td>
+                        <p>&ensp;</p>
+                    </td>
+                    <td>
+                        <p>&ensp;</p>
+                    </td>
+                    <td>
+                        <p>25</p>
+                    </td>
+                    <td class="positive">
+                        <p>352</p>
+                    </td>
+                    <td class="positive">
+                        <p>352</p>
+                    </td>
+                    <td>
+                        <p>0</p>
+                    </td>
+                    <td>
+                        <p>0</p>
+                    </td>
+                    <td class="positive">
+                        <p>0.3</p>
+                    </td>
+                    <td>
+                        <p>0</p>
+                    </td>
+                    <td class="positive">
+                        <p>114.7</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="tableBox gameReport account single_1">
+            <table>
+                <tr>
+                    <th>
+                        <p>名前</p>
+                    </th>
+                    <th>
+                        <p>ゲームプラットフォーム</p>
+                    </th>
+                    <th>
+                        <p>
+                            ゲーム
+                            <br>
+                            タイプ
+                        </p>
+                    </th>
+                    <th>
+                        <p>数</p>
+                    </th>
+                    <th>
+                        <p>ベット額</p>
+                    </th>
+                    <th>
+                        <p>
+                            有効な
+                            <br>
+                            賭け額
+                        </p>
+                    </th>
+                    <th>
+                        <p>賞金</p>
+                    </th>
+                    <th>
+                        <p>チップ</p>
+                    </th>
+                    <th>
+                        <p>会員リベート</p>
+                    </th>
+                    <th>
+                        <p>
+                            メンバーの
+                            <br>
+                            ボーナス
+                        </p>
+                    </th>
+                    <th>
+                        <p>メンバー小計</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <p>合計</p>
+                    </td>
+                    <td>
+                        <p>&ensp;</p>
+                    </td>
+                    <td>
+                        <p>&ensp;</p>
+                    </td>
+                    <td>
+                        <p>1</p>
+                    </td>
+                    <td class="positive">
+                        <p>100</p>
+                    </td>
+                    <td class="positive">
+                        <p>100</p>
+                    </td>
+                    <td>
+                        <p>0</p>
+                    </td>
+                    <td>
+                        <p>0</p>
+                    </td>
+                    <td class="positive">
+                        <p>0.3</p>
+                    </td>
+                    <td>
+                        <p>0</p>
+                    </td>
+                    <td class="positive">
+                        <p>100</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="tableBox gameReport account single_2">
+            <table>
+                <tr>
+                    <th>
+                        <p>名前</p>
+                    </th>
+                    <th>
+                        <p>ゲームプラットフォーム</p>
+                    </th>
+                    <th>
+                        <p>
+                            ゲーム
+                            <br>
+                            タイプ
+                        </p>
+                    </th>
+                    <th>
+                        <p>数</p>
+                    </th>
+                    <th>
+                        <p>ベット額</p>
+                    </th>
+                    <th>
+                        <p>
+                            有効な
+                            <br>
+                            賭け額
+                        </p>
+                    </th>
+                    <th>
+                        <p>賞金</p>
+                    </th>
+                    <th>
+                        <p>チップ</p>
+                    </th>
+                    <th>
+                        <p>会員リベート</p>
+                    </th>
+                    <th>
+                        <p>
+                            メンバーの
+                            <br>
+                            ボーナス
+                        </p>
+                    </th>
+                    <th>
+                        <p>メンバー小計</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <p>合計</p>
+                    </td>
+                    <td>
+                        <p>&ensp;</p>
+                    </td>
+                    <td>
+                        <p>&ensp;</p>
+                    </td>
+                    <td>
+                        <p>24</p>
+                    </td>
+                    <td class="positive">
+                        <p>252</p>
+                    </td>
+                    <td class="positive">
+                        <p>252</p>
+                    </td>
+                    <td>
+                        <p>0</p>
+                    </td>
+                    <td>
+                        <p>0</p>
+                    </td>
+                    <td>
+                        <p>0</p>
+                    </td>
+                    <td>
+                        <p>0</p>
+                    </td>
+                    <td class="positive">
+                        <p>14.7</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="tableBox gameReport betRecord single_1">
+            <table>
+                <tr>
+                    <th>
+                        <p>
+                                メインのベット
+                                <br>
+                                スリップ番号
+                            </p>
+                    </th>
+                    <th>
+                        <p>会員</p>
+                    </th>
+                    <th>
+                        <p>ゲームプラットフォーム</p>
+                    </th>
+                    <th>
+                        <p>ベッティングコンテンツ</p>
+                    </th>
+                    <th>
+                        <p>ベット額</p>
+                    </th>
+                    <th>
+                        <p>
+                            有効な
+                            <br>
+                            賭け額
+                        </p>
+                    </th>
+                    <th>
+                        <p>リベート</p>
+                    </th>
+                    <th>
+                        <p>賞金</p>
+                    </th>
+                    <th>
+                        <p>チップ</p>
+                    </th>
+                    <th>
+                        <p>ボーナス</p>
+                    </th>
+                    <th>
+                        <p>メンバー小計</p>
+                    </th>
+                    <th>
+                        <p>IP</p>
+                    </th>
+                    <th>
+                        <p>
+                            ベットタイム
+                            <i class="arrow_db_ic"></i>
+                        </p>
+                    </th>
+                    <th>
+                        <p>当選発表時間</p>
+                    </th>
+                    <th>
+                        <p>状態</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <p>合計</p>
+                    </td>
+                    <td>
+                        <p>&ensp;</p>
+                    </td>
+                    <td>
+                        <p>&ensp;</p>
+                    </td>
+                    <td>
+                        <p>&ensp;</p>
+                    </td>
+                    <td class="positive">
+                        <p>100</p>
+                    </td>
+                    <td class="positive">
+                        <p>100</p>
+                    </td>
+                    <td>
+                        <p>0</p>
+                    </td>
+                    <td>
+                        <p>0</p>
+                    </td>
+                    <td>
+                        <p>0</p>
+                    </td>
+                    <td>
+                        <p>0</p>
+                    </td>
+                    <td class="positive">
+                        <p>100</p>
+                    </td>
+                    <td>
+                        <p>&ensp;</p>
+                    </td>
+                    <td>
+                        <p>&ensp;</p>
+                    </td>
+                    <td>
+                        <p>&ensp;</p>
+                    </td>
+                    <td>
+                        <p>&ensp;</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="tableBox gameReport betRecord single_2">
+            <table>
+                <tr>
+                    <th>
+                        <p>
+                                メインのベット
+                                <br>
+                                スリップ番号
+                            </p>
+                    </th>
+                    <th>
+                        <p>会員</p>
+                    </th>
+                    <th>
+                        <p>ゲームプラットフォーム</p>
+                    </th>
+                    <th>
+                        <p>ベッティングコンテンツ</p>
+                    </th>
+                    <th>
+                        <p>ベット額</p>
+                    </th>
+                    <th>
+                        <p>
+                            有効な
+                            <br>
+                            賭け額
+                        </p>
+                    </th>
+                    <th>
+                        <p>リベート</p>
+                    </th>
+                    <th>
+                        <p>賞金</p>
+                    </th>
+                    <th>
+                        <p>チップ</p>
+                    </th>
+                    <th>
+                        <p>ボーナス</p>
+                    </th>
+                    <th>
+                        <p>メンバー小計</p>
+                    </th>
+                    <th>
+                        <p>IP</p>
+                    </th>
+                    <th>
+                        <p>
+                            ベットタイム
+                            <i class="arrow_db_ic"></i>
+                        </p>
+                    </th>
+                    <th>
+                        <p>当選発表時間</p>
+                    </th>
+                    <th>
+                        <p>状態</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <p>合計</p>
+                    </td>
+                    <td>
+                        <p>&ensp;</p>
+                    </td>
+                    <td>
+                        <p>&ensp;</p>
+                    </td>
+                    <td>
+                        <p>&ensp;</p>
+                    </td>
+                    <td class="positive">
+                        <p>252</p>
+                    </td>
+                    <td class="positive">
+                        <p>252</p>
+                    </td>
+                    <td>
+                        <p>0</p>
+                    </td>
+                    <td>
+                        <p>0</p>
+                    </td>
+                    <td>
+                        <p>0</p>
+                    </td>
+                    <td>
+                        <p>0</p>
+                    </td>
+                    <td class="positive">
+                        <p>14.7</p>
+                    </td>
+                    <td>
+                        <p>&ensp;</p>
+                    </td>
+                    <td>
+                        <p>&ensp;</p>
+                    </td>
+                    <td>
+                        <p>&ensp;</p>
+                    </td>
+                    <td>
+                        <p>&ensp;</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <p>© 2022, AU8.com すべての権利を保有しています。</p>
+    </footer>
+    <!--filter-->
+    <div class="filter">
+        <div class="downList hierarchyWindow">
+            <label class="selectBox">
+                <select>
+                    <option value="">ランク</option>
+                    <option value="">ランク</option>
+                    <option value="">ランク</option>
+                </select>
+                <i class="arrow_ic"></i>
+            </label>
+            <label class="selectBox">
+                <select>
+                    <option value="">時間タイプ</option>
+                    <option value="">時間タイプ</option>
+                    <option value="">時間タイプ</option>
+                </select>
+                <i class="arrow_ic"></i>
+            </label>
+            <p class="smallTitle">状態</p>
+            <div class="checkBox">
+                <ul>
+                    <li>
+                        <label class="checkStyle">
+                            <input type="checkbox">
+                        </label>
+                        <p>すでに決算済み</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle">
+                            <input type="checkbox">
+                        </label>
+                        <p>ベットスリップエラー</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle">
+                            <input type="checkbox">
+                        </label>
+                        <p>ベット中</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle">
+                            <input type="checkbox">
+                        </label>
+                        <p>ロールバック</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle">
+                            <input type="checkbox">
+                        </label>
+                        <p>当選発表済み</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle">
+                            <input type="checkbox">
+                        </label>
+                        <p>すでにキャンセル</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="changeBox">
+                <p>使用マネーフォーマット</p>
+                <div class="rowBox">
+                    <div></div>
+                </div>
+            </div>
+            <button class="checkBtn close">検索</button>
+        </div>
+        <div class="downList platformWindow">
+            <p class="smallTitle sp">ゲームプラットフォーム</p>
+            <div class="checkBox sp">
+                <ul>
+                    <li>
+                        <label class="checkStyle">
+                            <input type="checkbox">
+                        </label>
+                        <p>すべて選択</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle active">
+                            <input type="checkbox">
+                        </label>
+                        <p class="active">ELYSIUM GAMES</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle active">
+                            <input type="checkbox">
+                        </label>
+                        <p class="active">ELK GAMES</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle active">
+                            <input type="checkbox">
+                        </label>
+                        <p class="active">4ThePlayer</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle active">
+                            <input type="checkbox">
+                        </label>
+                        <p class="active">RED RAKE</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle active">
+                            <input type="checkbox">
+                        </label>
+                        <p class="active">BLUEPRINT</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle active">
+                            <input type="checkbox">
+                        </label>
+                        <p class="active">PLAYSON</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle">
+                            <input type="checkbox">
+                        </label>
+                        <p>DG CASINO</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle active">
+                            <input type="checkbox">
+                        </label>
+                        <p class="active">SIMPLEPLAY</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle active">
+                            <input type="checkbox">
+                        </label>
+                        <p class="active">RTG SOLTS</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle">
+                            <input type="checkbox">
+                        </label>
+                        <p>WM CASINO</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle active">
+                            <input type="checkbox">
+                        </label>
+                        <p class="active">PX GAMES</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle active">
+                            <input type="checkbox">
+                        </label>
+                        <p class="active">OG PLUS CASINO</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle active">
+                            <input type="checkbox">
+                        </label>
+                        <p class="active">YGG</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle active">
+                            <input type="checkbox">
+                        </label>
+                        <p class="active">B WIN SLOTS</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle">
+                            <input type="checkbox">
+                        </label>
+                        <p>PLAY'n GO</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle active">
+                            <input type="checkbox">
+                        </label>
+                        <p class="active">TPG GAMES</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle active">
+                            <input type="checkbox">
+                        </label>
+                        <p class="active">BLUEPRINT</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle active">
+                            <input type="checkbox">
+                        </label>
+                        <p class="active">GS LOTTERY</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle active">
+                            <input type="checkbox">
+                        </label>
+                        <p class="active">ALL BET CASINO</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle active">
+                            <input type="checkbox">
+                        </label>
+                        <p class="active">AUX</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle active">
+                            <input type="checkbox">
+                        </label>
+                        <p class="active">SG88 LOTTERY</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle active">
+                            <input type="checkbox">
+                        </label>
+                        <p class="active">白鹿</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle">
+                            <input type="checkbox">
+                        </label>
+                        <p>HABANERO</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle active">
+                            <input type="checkbox">
+                        </label>
+                        <p class="active">Evolution</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle active">
+                            <input type="checkbox">
+                        </label>
+                        <p class="active">NO LIMIT CITY</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle active">
+                            <input type="checkbox">
+                        </label>
+                        <p class="active">QUICKSPIN</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle active">
+                            <input type="checkbox">
+                        </label>
+                        <p class="active">RELAX</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle active">
+                            <input type="checkbox">
+                        </label>
+                        <p class="active">EVO PLAY</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle active">
+                            <input type="checkbox">
+                        </label>
+                        <p class="active">Microgaming</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle active">
+                            <input type="checkbox">
+                        </label>
+                        <p class="active">MG CASINO</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle active">
+                            <input type="checkbox">
+                        </label>
+                        <p class="active">Pragmatic Play SLOT</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle active">
+                            <input type="checkbox">
+                        </label>
+                        <p class="active">36588 SPORTS</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle active">
+                            <input type="checkbox">
+                        </label>
+                        <p class="active">RED TIGER</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle active">
+                            <input type="checkbox">
+                        </label>
+                        <p class="active">JILI SLOTS</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle active">
+                            <input type="checkbox">
+                        </label>
+                        <p class="active">AG CASINO</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle active">
+                            <input type="checkbox">
+                        </label>
+                        <p class="active">RSG GAMES</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle active">
+                            <input type="checkbox">
+                        </label>
+                        <p class="active">PNG SLOTS</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle active">
+                            <input type="checkbox">
+                        </label>
+                        <p class="active">Pragmatic Play Live</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle active">
+                            <input type="checkbox">
+                        </label>
+                        <p class="active">NETENT GAMES</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle active">
+                            <input type="checkbox">
+                        </label>
+                        <p class="active">GoldenHero</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle active">
+                            <input type="checkbox">
+                        </label>
+                        <p class="active">BOOONGO</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle active">
+                            <input type="checkbox">
+                        </label>
+                        <p class="active">PG SLOTS</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle active">
+                            <input type="checkbox">
+                        </label>
+                        <p class="active">AG GAMES</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle active">
+                            <input type="checkbox">
+                        </label>
+                        <p class="active">IFUN GAMES</p>
+                    </li>
+                </ul>
+            </div>
+            <p class="smallTitle">ゲームタイプ</p>
+            <div class="checkBox">
+                <ul>
+                    <li>
+                        <label class="checkStyle active">
+                            <input type="checkbox">
+                        </label>
+                        <p class="active">すべて選択</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle active">
+                            <input type="checkbox">
+                        </label>
+                        <p class="active">テーブルゲーム</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle active">
+                            <input type="checkbox">
+                        </label>
+                        <p class="active">釣りゲーム</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle active">
+                            <input type="checkbox">
+                        </label>
+                        <p class="active">ライブゲーム</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle active">
+                            <input type="checkbox">
+                        </label>
+                        <p class="active">スロット</p>
+                    </li>
+                    <li>
+                        <label class="checkStyle active">
+                            <input type="checkbox">
+                        </label>
+                        <p class="active">スポーツ</p>
+                    </li>
+                </ul>
+            </div>
+            <button class="checkBtn close">確認</button>
+        </div>
+        <div class="leftList">
+            <div class="topBox">
+                <p>アフィリエイト</p>
+                <label class="selectBox">
+                    <select>
+                        <option value="">NJ1</option>
+                        <option value="">NJ1</option>
+                        <option value="">NJ1</option>
+                    </select>
+                    <i class="arrow_ic"></i>
+                </label>
+                <i class="arrow_db_ic close"></i>
+            </div>
+            <div class="content">
+                <div class="nameBox">
+                    <div class="top">
+                        <i class="user_ic"></i>
+                        <div class="textBox">
+                            <p class="title">j005 【 測試代理 】</p>
+                            <p class="sub">前回のログイン:Tue Sep 13 16:54 2022</p>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <p>役割: 測試代理權限</p>
+                        <p>
+                            利用可能なポイント: 0
+                            <i class="re_ic"></i>
+                        </p>
+                        <p>決算金: 0</p>
+                    </div>
+                </div>
+                <div class="listBox">
+                    <ul>
+                        <li class="active">
+                            <p>
+                                <i class="home_ic"></i>
+                                ホーム
+                            </p>
+                            <i class="arrow_ic"></i>
+                        </li>
+                        <div class="smallList display">
+                            <div onclick="window.location.href='../index.html'">
+                                <p>ホーム</p>
+                            </div>
+                            <div class="active" onclick="window.location.href='./activeReport.html'">
+                                <p>メンバーアクティブな状況</p>
+                            </div>
+                        </div>
+                        <li>
+                            <p>
+                                <i class="member_ic"></i>
+                                個人管理
+                            </p>
+                            <i class="arrow_ic"></i>
+                        </li>
+                        <div class="smallList">
+                            <div onclick="window.location.href='./member.html'">
+                                <p>個人情報</p>
+                            </div>
+                            <div onclick="window.location.href='./loginRecord.html'">
+                                <p>ログイン記録</p>
+                            </div>
+                        </div>
+                        <li>
+                            <p>
+                                <i class="report_ic"></i>
+                                報告書
+                            </p>
+                            <i class="arrow_ic"></i>
+                        </li>
+                        <div class="smallList">
+                            <div onclick="window.location.href='./profit.html'">
+                                <p>コミッション決算予測</p>
+                            </div>
+                            <!-- <div onclick="window.location.href='./gameReport.html'">
+                                <p>ゲームレポート</p>
+                            </div> -->
+                            <div onclick="window.location.href='./agent.html'">
+                                <p>コミッション決算書</p>
+                            </div>
+                        </div>
+                        <li class="remind">
+                            <p>
+                                <i class="remind_ic"></i>
+                                お知らせ
+                            </p>
+                        </li>
+                        <li class="lang">
+                            <p>
+                                <i class="lang_ic"></i>
+                                言語
+                            </p>
+                            <p class="lang">
+                                日本語
+                                <i class="arrow_ic"></i>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <i class="logout_ic"></i>
+                                ログアウト
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="jumpWindow gameReportWindow type_1">
+            <div class="title">
+                <p>
+                    ゲームプラットフォーム会計
+                    <br>
+                    （36588 SPORTS）
+                </p>
+                <i class="close_ic close"></i>
+            </div>
+            <div class="content">
+                <div class="tableBox">
+                    <table>
+                        <tr>
+                            <th>
+                                <p>ゲームプラットフォーム</p>
+                            </th>
+                            <th>
+                                <p>ゲーム名</p>
+                            </th>
+                            <th>
+                                <p>ベット額</p>
+                            </th>
+                            <th>
+                                <p>有効な賭け額</p>
+                            </th>
+                            <th>
+                                <p>勝ち額</p>
+                            </th>
+                            <th>
+                                <p>
+                                    エージェント
+                                    <br>
+                                    リベート（％）
+                                </p>
+                            </th>
+                            <th>
+                                <p>リベート</p>
+                            </th>
+                            <th>
+                                <p>コミッションリベート</p>
+                            </th>
+                            <th>
+                                <p>賞金</p>
+                            </th>
+                            <th>
+                                <p>チップ</p>
+                            </th>
+                            <th>
+                                <p>メンバー小計</p>
+                            </th>
+                            <th>
+                                <p>
+                                    パーセンテー
+                                    <br>
+                                    ジクォータ
+                                </p>
+                            </th>
+                            <th>
+                                <p>比率（％）</p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>36588 SPORTS</p>
+                            </td>
+                            <td>
+                                <p>スポーツ / 36588 SPORTS</p>
+                            </td>
+                            <td class="positive">
+                                <p>100</p>
+                            </td>
+                            <td class="positive">
+                                <p>100</p>
+                            </td>
+                            <td class="positive">
+                                <p>200</p>
+                            </td>
+                            <td>
+                                <p>0%</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td class="positive">
+                                <p>100</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0%</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>小計</p>
+                            </td>
+                            <td>
+                                <p>&ensp;</p>
+                            </td>
+                            <td class="positive">
+                                <p>100</p>
+                            </td>
+                            <td class="positive">
+                                <p>100</p>
+                            </td>
+                            <td class="positive">
+                                <p>200</p>
+                            </td>
+                            <td>
+                                <p>&ensp;</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td class="positive">
+                                <p>100</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>&ensp;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>合計</p>
+                            </td>
+                            <td>
+                                <p>&ensp;</p>
+                            </td>
+                            <td class="positive">
+                                <p>100</p>
+                            </td>
+                            <td class="positive">
+                                <p>100</p>
+                            </td>
+                            <td class="positive">
+                                <p>200</p>
+                            </td>
+                            <td>
+                                <p>&ensp;</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td class="positive">
+                                <p>100</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>&ensp;</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="pageBox">
+                    <div class="arrowBtn left">
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="numBox active">
+                        <p>1</p>
+                    </div>
+                    <div class="arrowBtn right active">
+                        <i class="arrow_ic"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jumpWindow gameReportWindow type_2">
+            <div class="title">
+                <p>
+                    ゲームプラットフォーム会計
+                    <br>
+                    （IFUN GAMES）
+                </p>
+                <i class="close_ic close"></i>
+            </div>
+            <div class="content">
+                <div class="tableBox">
+                    <table>
+                        <tr>
+                            <th>
+                                <p>ゲームプラットフォーム</p>
+                            </th>
+                            <th>
+                                <p>ゲーム名</p>
+                            </th>
+                            <th>
+                                <p>ベット額</p>
+                            </th>
+                            <th>
+                                <p>有効な賭け額</p>
+                            </th>
+                            <th>
+                                <p>勝ち額</p>
+                            </th>
+                            <th>
+                                <p>
+                                    エージェント
+                                    <br>
+                                    リベート（％）
+                                </p>
+                            </th>
+                            <th>
+                                <p>リベート</p>
+                            </th>
+                            <th>
+                                <p>コミッションリベート</p>
+                            </th>
+                            <th>
+                                <p>賞金</p>
+                            </th>
+                            <th>
+                                <p>チップ</p>
+                            </th>
+                            <th>
+                                <p>メンバー小計</p>
+                            </th>
+                            <th>
+                                <p>
+                                    パーセンテー
+                                    <br>
+                                    ジクォータ
+                                </p>
+                            </th>
+                            <th>
+                                <p>比率（％）</p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>IFUN GAMES</p>
+                            </td>
+                            <td>
+                                <p>スロット / ゴールデンエジプト</p>
+                            </td>
+                            <td class="positive">
+                                <p>252</p>
+                            </td>
+                            <td class="positive">
+                                <p>252</p>
+                            </td>
+                            <td class="positive">
+                                <p>266.7</p>
+                            </td>
+                            <td>
+                                <p>0%</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td class="positive">
+                                <p>14.7</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0%</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>小計</p>
+                            </td>
+                            <td>
+                                <p>&ensp;</p>
+                            </td>
+                            <td class="positive">
+                                <p>252</p>
+                            </td>
+                            <td class="positive">
+                                <p>252</p>
+                            </td>
+                            <td class="positive">
+                                <p>266.7</p>
+                            </td>
+                            <td>
+                                <p>&ensp;</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td class="positive">
+                                <p>14.7</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>&ensp;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>合計</p>
+                            </td>
+                            <td>
+                                <p>&ensp;</p>
+                            </td>
+                            <td class="positive">
+                                <p>252</p>
+                            </td>
+                            <td class="positive">
+                                <p>252</p>
+                            </td>
+                            <td class="positive">
+                                <p>266.7</p>
+                            </td>
+                            <td>
+                                <p>&ensp;</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td class="positive">
+                                <p>14.7</p>
+                            </td>
+                            <td>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>&ensp;</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="pageBox">
+                    <div class="arrowBtn left">
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="numBox active">
+                        <p>1</p>
+                    </div>
+                    <div class="arrowBtn right active">
+                        <i class="arrow_ic"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jumpWindow firstWindow">
+            <div class="title">
+                <p>お知らせ</p>
+                <i class="close_ic close"></i>
+            </div>
+            <div class="content">
+                <div class="tableBox">
+                    <table>
+                        <tr>
+                            <th>
+                                <p>タイトル</p>
+                            </th>
+                            <th>
+                                <p>
+                                    設立時間
+                                    <i class="arrow_db_ic"></i>
+                                </p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>TEST1</p>
+                            </td>
+                            <td>
+                                <p>2021-04-18</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>AAAAaaa11...</p>
+                            </td>
+                            <td>
+                                <p>2022-08-02</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>TEST123</p>
+                            </td>
+                            <td>
+                                <p>2022-08-16</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="pageBox">
+                    <div class="arrowBtn left">
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="numBox active">
+                        <p>1</p>
+                    </div>
+                    <div class="arrowBtn right">
+                        <i class="arrow_ic"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="downList lang">
+            <div class="langBox active">
+                <p>日本語</p>
+                <i class="arrow_ic"></i>
+            </div>
+            <div class="langBox">
+                <p>繁體中文</p>
+                <i class="arrow_ic"></i>
+            </div>
+            <div class="langBox">
+                <p>简体中文</p>
+                <i class="arrow_ic"></i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

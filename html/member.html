@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="../js/javascript.js"></script>
+</head>
+<body>
+    <!--header-->
+    <header>
+        <i class="listBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </i>
+        <p class="title">個人情報</p>
+        <i class="null"></i>
+    </header>
+    <!--mainWrap-->
+    <main>
+        <div class="memberWrap">
+            <div class="title">
+                <p>個人情報</p>
+            </div>
+            <ul>
+                <li>
+                    <p class="name">名前</p>
+                    <div class="btnBox">
+                        <p>測試員</p>
+                        <button class="changeBtn forName">変更する</button>
+                    </div>
+                </li>
+                <li>
+                    <p class="name">役割</p>
+                    <div class="btnBox">
+                        <p>測試代理權限</p>
+                    </div>
+                </li>
+                <li>
+                    <p class="name">アカウント</p>
+                    <div class="btnBox">
+                        <p>j005</p>
+                    </div>
+                </li>
+                <li>
+                    <p class="name">招待コード</p>
+                    <div class="btnBox">
+                        <p>A8b326ba</p>
+                        <button class="copyBtn">コピー</button>
+                    </div>
+                </li>
+                <li class="auto">
+                    <p class="name">招待リンク</p>
+                    <div class="qrBox">
+                        <label class="selectBox">
+                            <select>
+                                <option value="">www.fortuna888.net/register?code=A8b326ba</option>
+                            </select>
+                            <i class="arrow_ic"></i>
+                        </label>
+                        <button class="copyBtn">コピー</button>
+                        <div class="qrImg"></div>
+                        <button class="copyBtn">コピー</button>
+                    </div>
+                </li>
+                <li class="auto">
+                    <p class="name">製品</p>
+                    <div class="btnBox">
+                        <p>テーブルゲーム，釣りゲーム，ライブゲーム，スロット   スポーツ</p>
+                    </div>
+                </li>
+                <li>
+                    <p class="name">
+                        前回の
+                        <br>
+                        ログイン
+                    </p>
+                    <div class="btnBox">
+                        <p>2022-09-15 10:59:41</p>
+                    </div>
+                </li>
+                <li>
+                    <p class="name">
+                        最終
+                        <br>
+                        ログインIP 
+                    </p>
+                    <div class="btnBox">
+                        <p>111.*.*.64</p>
+                    </div>
+                </li>
+                <li class="auto">
+                    <button class="checkBtn" onclick="window.location.href='./loginRecord.html'">ログイン記録検索</button>
+                </li>
+                <li>
+                    <p class="name">パスワード</p>
+                    <div class="btnBox">
+                        <p>********</p>
+                        <button class="changeBtn forPW">変更する</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <!--footer-->
+    <footer>
+        <p>© 2022, AU8.com すべての権利を保有しています。</p>
+    </footer>
+    <!--filter-->
+    <div class="filter">
+        <div class="leftList">
+            <div class="topBox">
+                <p>アフィリエイト</p>
+                <label class="selectBox">
+                    <select>
+                        <option value="">NJ1</option>
+                        <option value="">NJ1</option>
+                        <option value="">NJ1</option>
+                    </select>
+                    <i class="arrow_ic"></i>
+                </label>
+                <i class="arrow_db_ic close"></i>
+            </div>
+            <div class="content">
+                <div class="nameBox">
+                    <div class="top">
+                        <i class="user_ic"></i>
+                        <div class="textBox">
+                            <p class="title">j005 【 測試代理 】</p>
+                            <p class="sub">前回のログイン:Tue Sep 13 16:54 2022</p>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <p>役割: 測試代理權限</p>
+                        <p>
+                            利用可能なポイント: 0
+                            <i class="re_ic"></i>
+                        </p>
+                        <p>決算金: 0</p>
+                    </div>
+                </div>
+                <div class="listBox">
+                    <ul>
+                        <li>
+                            <p>
+                                <i class="home_ic"></i>
+                                ホーム
+                            </p>
+                            <i class="arrow_ic"></i>
+                        </li>
+                        <div class="smallList">
+                            <div onclick="window.location.href='../index.html'">
+                                <p>ホーム</p>
+                            </div>
+                            <div onclick="window.location.href='./activeReport.html'">
+                                <p>メンバーアクティブな状況</p>
+                            </div>
+                        </div>
+                        <li class="active">
+                            <p>
+                                <i class="member_ic"></i>
+                                個人管理
+                            </p>
+                            <i class="arrow_ic"></i>
+                        </li>
+                        <div class="smallList display">
+                            <div class="active" onclick="window.location.href='./member.html'">
+                                <p>個人情報</p>
+                            </div>
+                            <div onclick="window.location.href='./loginRecord.html'">
+                                <p>ログイン記録</p>
+                            </div>
+                        </div>
+                        <li>
+                            <p>
+                                <i class="report_ic"></i>
+                                報告書
+                            </p>
+                            <i class="arrow_ic"></i>
+                        </li>
+                        <div class="smallList">
+                            <div onclick="window.location.href='./profit.html'">
+                                <p>コミッション決算予測</p>
+                            </div>
+                            <!-- <div onclick="window.location.href='./gameReport.html'">
+                                <p>ゲームレポート</p>
+                            </div> -->
+                            <div onclick="window.location.href='./agent.html'">
+                                <p>コミッション決算書</p>
+                            </div>
+                        </div>
+                        <li class="remind">
+                            <p>
+                                <i class="remind_ic"></i>
+                                お知らせ
+                            </p>
+                        </li>
+                        <li class="lang">
+                            <p>
+                                <i class="lang_ic"></i>
+                                言語
+                            </p>
+                            <p class="lang">
+                                日本語
+                                <i class="arrow_ic"></i>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <i class="logout_ic"></i>
+                                ログアウト
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="jumpWindow changeName">
+            <div class="title">
+                <p>名前を編集する</p>
+                <i class="close_ic close"></i>
+            </div>
+            <div class="content">
+                <p class="name">元の名前 : 測試員</p>
+                <label class="inputBox">
+                    <input type="text" placeholder="名前を入力してください">
+                </label>
+                <button class="check close">確定</button>
+                <button class="back close">キャンセル</button>
+            </div>
+        </div>
+        <div class="jumpWindow changePW">
+            <div class="title">
+                <p>バスワード変更</p>
+                <i class="close_ic close"></i>
+            </div>
+            <div class="content">
+                <div class="target">
+                    <p>対象: j005【測試代理】</p>
+                </div>
+                <label class="inputBox">
+                    <input type="text" placeholder="旧パスワード">
+                </label>
+                <label class="inputBox">
+                    <input type="text" placeholder="新しいパスワード">
+                </label>
+                <label class="inputBox">
+                    <input type="text" placeholder="新しいパスワードを確認">
+                </label>
+                <button class="check close">確定</button>
+                <button class="back close">キャンセル</button>
+            </div>
+        </div>
+        <div class="jumpWindow firstWindow">
+            <div class="title">
+                <p>お知らせ</p>
+                <i class="close_ic close"></i>
+            </div>
+            <div class="content">
+                <div class="tableBox">
+                    <table>
+                        <tr>
+                            <th>
+                                <p>タイトル</p>
+                            </th>
+                            <th>
+                                <p>
+                                    設立時間
+                                    <i class="arrow_db_ic"></i>
+                                </p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>TEST1</p>
+                            </td>
+                            <td>
+                                <p>2021-04-18</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>AAAAaaa11...</p>
+                            </td>
+                            <td>
+                                <p>2022-08-02</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>TEST123</p>
+                            </td>
+                            <td>
+                                <p>2022-08-16</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="pageBox">
+                    <div class="arrowBtn left">
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="numBox active">
+                        <p>1</p>
+                    </div>
+                    <div class="arrowBtn right">
+                        <i class="arrow_ic"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="downList lang">
+            <div class="langBox active">
+                <p>日本語</p>
+                <i class="arrow_ic"></i>
+            </div>
+            <div class="langBox">
+                <p>繁體中文</p>
+                <i class="arrow_ic"></i>
+            </div>
+            <div class="langBox">
+                <p>简体中文</p>
+                <i class="arrow_ic"></i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

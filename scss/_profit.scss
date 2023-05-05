@@ -1,0 +1,398 @@
+.profitWrap {
+    @include BGStyle_1;
+
+    //top
+    .top {
+        width: 100%;
+        height: auto;
+        // display: flex;
+        // align-items: center;
+        padding: 16px;
+
+        .rowBox {
+            width: 100%;
+            height: auto;
+            padding: 4px 12px 0;
+            margin-bottom: 16px;
+
+            .innerBox {
+                width: 100%;
+                height: 9.5vw;
+                @include rowStyle;
+            }
+        }
+
+        .textBox {
+            width: 100%;
+            height: auto;
+
+            p {
+                color: $mainColor_2;
+                font-size: 3vw;
+                font-weight: bold;
+                line-height: 4vw;
+            }
+        }
+
+        // .changeStyle {
+        //     @include changeStyle;
+        //     flex-shrink: 0;
+        //     margin-left: 8px;
+        // }
+    }
+
+    .listBox {
+        width: 100%;
+        height: auto;
+        display: none;
+
+        &.display {
+            display: block;
+        }
+
+        //mid
+        .mid {
+            width: 100%;
+            height: auto;
+            background: $subBG_1;
+            border-top: solid 1px $mainBorder_1;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            margin-bottom: 10px;
+
+            &>div {
+                width: auto;
+                height: 28vw;
+                border-bottom: solid 1px $mainBorder_1;
+                display: flex;
+                align-items: center;
+                padding: 0 16px;
+
+                &:nth-of-type(odd) {
+                    border-right: solid 1px $mainBorder_1;
+                }
+
+                i:not(.question_ic) {
+                    width: 12vw;
+                    height: 12vw;
+                    flex-shrink: 0;
+                    margin-right: 16px;
+                }
+
+                .question_ic {
+                    width: 5vw;
+                    height: 5vw;
+                    flex-shrink: 0;
+                    position: relative;
+                    margin-left: 8px;
+
+                    span {
+                        @include tips;
+                        top: -40px;
+                        left: 50%;
+                        transform: translateX(-50%);
+
+                        &.sp {
+                            left: unset;
+                            right: 0;
+                            transform: translateX(0);
+
+                            &::before {
+                                left: unset;
+                                right: 5px;
+                                transform: translateX(0);
+                            }
+                        }
+
+                        &::before {
+                            border-width: 6px 4px 0 4px;
+                            border-color: $tips_BG transparent;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            bottom: -6px;
+                        }
+                    }
+                }
+
+                p {
+                    color: $mainColor_1;
+                    font-size: 4vw;
+                    font-weight: bold;
+                    line-height: 5.5vw;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+
+        //bottom
+        .bottom {
+            width: 100%;
+            height: auto;
+            background: $subBG_1;
+            border-top: solid 1px $mainBorder_1;
+
+            .totalBox {
+                width: 100%;
+                height: 22vw;
+                border-bottom: solid 1px $mainBorder_1;
+                display: flex;
+                align-items: center;
+                padding: 0 16px;
+
+                .profit_ic {
+                    width: 12vw;
+                    height: 12vw;
+                    flex-shrink: 0;
+                    margin-right: 16px;
+                }
+
+                p {
+                    width: 100%;
+                    color: $mainColor_1;
+                    font-size: 4vw;
+                    font-weight: bold;
+                    display: flex;
+                    align-items: center;
+
+                    &.money {
+                        width: auto;
+                        font-size: 5vw;
+                        flex-shrink: 0;
+                        margin-right: 8px;
+                    }
+
+                    i {
+                        width: 6vw;
+                        height: 6vw;
+                        position: relative;
+                        margin: -1px 0 0 8px;
+
+                        span {
+                            @include tips;
+                            top: -30px;
+                            left: -85px;
+    
+                            &::before {
+                                border-width: 6px 4px 0 4px;
+                                border-color: $tips_BG transparent;
+                                left: 93px;
+                                bottom: -6px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .elseBox {
+                width: 100%;
+                height: auto;
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+
+                &>div {
+                    width: auto;
+                    height: 22vw;
+                    border-bottom: solid 1px $mainBorder_1;
+                    display: flex;
+                    align-items: center;
+                    padding: 0 16px;
+
+                    &:nth-of-type(odd) {
+                        border-right: solid 1px $mainBorder_1;
+                    }
+
+                    i {
+                        width: 12vw;
+                        height: 12vw;
+                        flex-shrink: 0;
+                        margin-right: 16px;
+                    }
+
+                    p {
+                        color: $mainColor_1;
+                        font-size: 4vw;
+                        font-weight: bold;
+                        line-height: 5.5vw;
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+
+        .tableTitle {
+            width: 100%;
+            height: 10vw;
+            background: $table_thBG_1;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 16px;
+
+            &.active {
+
+                span {
+                    
+                    i {
+                        transform: scaleY(1);
+                    }
+                }
+            }
+
+            span {
+                color: $table_TitleColor_1;
+                font-size: 3.7vw;
+                font-weight: bold;
+                display: flex;
+                align-items: center;
+
+                i {
+                    width: 3vw;
+                    height: 3vw;
+                    transform: scaleY(-1);
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        .tableBox {
+            width: 100%;
+            height: 0;
+            overflow: hidden;
+            
+            &.display {
+                height: auto;
+            }
+            
+            &.partner {
+                max-height: 40vh;
+                overflow-y: auto;
+            }
+
+            table {
+                width: 100%;
+                height: auto;
+    
+                tr {
+    
+                    th {
+                        height: 10vw;
+                        background: $table_thBG_2;
+                        vertical-align: middle;
+                        padding: 0 8px;
+    
+                        p {
+                            color: $table_TitleColor_1;
+                            font-size: 3.7vw;
+                            font-weight: bold;
+                            line-height: 4vw;
+                            white-space: nowrap;
+                        }
+                    }
+
+                    td {
+                        width: 34%;
+                        height: 10vw;
+                        background: $table_tdBG_1;
+                        vertical-align: middle;
+                        border-bottom: solid 1px $table_Border_2;
+
+                        &.positive {
+                            background: $table_positiveBG;
+
+                            p  {
+                                color: $table_positiveColor;
+                            }
+                        }
+                        &.negative {
+                            background: $table_negativeBG;
+
+                            p {
+                                color: $table_negativeColor;
+                            }
+                        }
+                        &.disable {
+
+                            p {
+                                color: $table_disableColor;
+                            }
+                        }
+
+                        p {
+                            color: $table_Color_1;
+                            font-size: 3.7vw;
+                            font-weight: bold;
+                            line-height: 4vw;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+
+        .totalBox {
+            width: 100%;
+            height: auto;
+
+            &.partner {
+                margin-bottom: 10px;
+            }
+
+            table {
+                width: 100%;
+                height: auto;
+
+                tr {
+                    border-top: solid 2px $table_Border_1;
+
+                    td {
+                        width: 34%;
+                        height: 10vw;
+                        background: $table_tdBG_1;
+                        vertical-align: middle;
+                        border-bottom: solid 1px $table_Border_2;
+
+                        &.positive {
+                            background: $table_positiveBG;
+
+                            p  {
+                                color: $table_positiveColor;
+                            }
+                        }
+                        &.negative {
+                            background: $table_negativeBG;
+
+                            p {
+                                color: $table_negativeColor;
+                            }
+                        }
+                        &.disable {
+
+                            p {
+                                color: $table_disableColor;
+                            }
+                        }
+
+                        &:nth-of-type(1) {
+                            width: 68%;
+
+                            p {
+                                text-align: left;
+                                padding-left: 32px;
+                            }
+                        }
+
+                        p {
+                            color: $table_Color_1;
+                            font-size: 3.7vw;
+                            font-weight: bold;
+                            line-height: 4vw;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

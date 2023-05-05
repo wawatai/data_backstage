@@ -1,0 +1,61 @@
+.loginRecordWrap {
+    @include BGStyle_1;
+    padding: 4vw 0 7vw;
+
+    table {
+        width: 100%;
+        height: auto;
+
+        tr {
+
+            &:nth-of-type(odd) {
+
+                td {
+                    background: $table_tdBG_2;
+                }
+            }
+
+            th {
+                height: 10vw;
+                background: $table_thBG_1;
+                vertical-align: middle;
+
+                p {
+                    color: $table_TitleColor_1;
+                    font-size: 3.7vw;
+                    font-weight: bold;
+                    line-height: 4vw;
+                }
+            }
+
+            td {
+                width: 25%;
+                height: 10vw;
+                background: $table_tdBG_1;
+                vertical-align: middle;
+
+                &:first-child {
+                    
+                    p {
+                        color: $table_Color_1;
+                    }
+                }
+
+                &.false {
+
+                    p {
+                        color: $table_negativeColor;
+                    }
+                }
+
+                p {
+                    color: $table_Color_2;
+                    font-size: 3.7vw;
+                    font-weight: bold;
+                    line-height: 4vw;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
