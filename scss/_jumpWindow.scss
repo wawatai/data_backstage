@@ -1,0 +1,761 @@
+.filter {
+    width: 100%;
+    height: 100%;
+    background: $filter;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 101;
+
+    &.display {
+        display: flex;
+    }
+
+    .jumpWindow {
+        width: 92vw;
+        height: auto;
+        background: $jumpWindow_BG;
+        border: solid 1px $jumpWindow_Border;
+        border-radius: 16px;
+        position: relative;
+        overflow: hidden;
+        display: none;
+
+        &.display {
+            display: block;
+        }
+
+        .title {
+            width: 100%;
+            height: 11vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            p {
+                color: $jumpWindow_TitleColor;
+                font-size: 5vw;
+                font-weight: bold;
+            }
+
+            .close {
+                width: 11vw;
+                height: 11vw;
+                background: $jumpWindow_CloseBG;
+                border-radius: 0 16px 0 0;
+                position: absolute;
+                right: 0;
+                top: 0;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%,-50%);
+                    width: 4vw;
+                    height: 4vw;
+                }
+            }
+        }
+
+        &.record {
+
+            .topList {
+                width: 88%;
+                height: auto;
+                margin: 5vw auto 2vw;
+
+                ul {
+                    width: 100%;
+                    height: auto;
+                    border-bottom: solid 3px $jumpWindow_topList_Border;
+                    display: flex;
+
+                    li {
+                        width: 14vw;
+                        height: 7vw;
+                        @include topList;
+                        margin-right: 2vw;
+                    }
+                }
+            }
+
+            .content {
+                width: 88%;
+                height: auto;
+                margin: 0 auto 2vw;
+
+                .tableBox {
+                    width: 100%;
+                    height: auto;
+                    background: $jumpWindow_Table_BG;
+                    border: solid 1px $jumpWindow_Table_Border;
+                    overflow-x: auto;
+
+                    table {
+                        width: auto;
+                        height: auto;
+
+                        tr {
+
+                            &:last-child {
+
+                                td {
+                                    border: none;
+                                }
+                            }
+
+                            th {
+                                height: 8vw;
+                                background: $jumpWindow_Table_TitleBG;
+                                vertical-align: middle;
+
+                                &:last-child {
+
+                                    p {
+                                        border: none;
+                                    }
+                                }
+
+                                p {
+                                    width: 100%;
+                                    border-right: solid 1px $jumpWindow_Table_Border;
+                                    color: $jumpWindow_Table_TitleColor;
+                                    font-size: 4vw;
+                                    font-weight: bold;
+                                    text-align: center;
+                                }
+                            }
+
+                            td {
+                                width: auto;
+                                min-width: 24vw;
+                                height: 8vw;
+                                border-bottom: solid 1px $jumpWindow_Table_innerBorder;
+                                vertical-align: middle;
+
+                                &:last-child {
+
+                                    p {
+                                        border: none;
+                                    }
+                                }
+
+                                p {
+                                    width: auto;
+                                    border-right: solid 1px $jumpWindow_Table_innerBorder;
+                                    color: $jumpWindow_Table_Color;
+                                    font-size: 4vw;
+                                    font-weight: bold;
+                                    text-align: center;
+                                    white-space: nowrap;
+                                    padding: 0 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .pageBox {
+                width: 88%;
+                height: auto;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                margin: 0 auto 5vw;
+
+                i {
+                    width: 3vw;
+                    height: 3vw;
+
+                    &.arrow_right {
+                        transform: scaleX(-1);
+                    }
+                }
+
+                ul {
+                    width: auto;
+                    height: auto;
+                    display: flex;
+                    margin: 0 2vw;
+
+                    li {
+                        width: 6vw;
+                        height: 6vw;
+                        @include pageBox;
+                        margin-right: 2vw;
+
+                        &:last-child {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.rule {
+
+            .content {
+                width: 88%;
+                height: auto;
+                max-height: 45vh;
+                background: $jumpWindow_Table_BG;
+                margin: 5vw auto;
+                padding: 16px 10px;
+                overflow-y: auto;
+
+                p {
+                    color: $jumpWindow_Table_Color;
+                    font-size: 4vw;
+                    font-weight: bold;
+                    line-height: 7vw;
+
+                    &.mar {
+                        margin-bottom: 5vw;
+                    }
+
+                    &.mainTeam {
+                        color: $jumpWindow_rule_mainTeamColor;
+                    }
+                    &.cusTeam {
+                        color: $jumpWindow_rule_cusTeamColor;
+                    }
+                    
+                    span {
+                        display: inline-block;
+                        color: $jumpWindow_rule_remindColor;
+                        padding: 0 10px;
+
+                        &.mainWin {
+                            background: $jumpWindow_rule_mainWinBG;
+                        }
+                        &.cusWin {
+                            background: $jumpWindow_rule_cusWinBG;
+                        }
+                    }
+                }
+
+                .img {
+                    width: 100%;
+                    height: 0;
+                    padding-top: 141%;
+                    margin: 10px 0;
+                }
+            }
+
+            .check {
+                width: 70%;
+                height: 11vw;
+                @include checkBtn;
+                display: block;
+                margin: 0 auto 5vw;
+            }
+        }
+
+        &.betting {
+
+            .content {
+                width: 88%;
+                height: auto;
+                background: $jumpWindow_Table_BG;
+                margin: 3vw auto 0;
+
+                .smallTitle {
+                    width: 100%;
+                    height: 8vw;
+                    background: $jumpWindow_Table_TitleBG;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    p {
+                        color: $jumpWindow_Table_TitleColor;
+                        font-size: 4vw;
+                        font-weight: bold;
+                    }
+                }
+                
+                .teamBox {
+                    width: 100%;
+                    height: 10vw;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    i {
+                        width: 9vw;
+                        height: 7vw;
+                        filter: drop-shadow(0 2px 1px #00000080);
+                        margin-right: 2vw;
+                    }
+
+                    p {
+                        color: $jumpWindow_Table_Color;
+                        font-size: 4vw;
+                        font-weight: bold;
+                    }
+                }
+
+                .bettingBox {
+                    width: 100%;
+                    height: auto;
+                    
+                    .inputBox {
+                        width: 100%;
+                        height: 11vw;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        input {
+                            width: 45%;
+                            height: 7vw;
+                            @include inputStyle_1;
+                        }
+                    }
+
+                    .btnBox {
+                        width: 100%;
+                        height: auto;
+                        display: grid;
+                        grid-template-columns: repeat(4,1fr);
+                        gap: 1.5vw;
+                        padding: 2vw;
+
+                        button {
+                            width: auto;
+                            height: 8vw;
+                            @include betBtn;
+
+                            &:last-child {
+                                grid-column-start: -1;
+                                grid-column-end: 3;
+                            }
+
+                        }
+                    }
+                }
+            }
+            
+            .check {
+                width: 70%;
+                height: 11vw;
+                @include checkBtn;
+                display: block;
+                margin: 5vw auto;
+            }
+        }
+
+        &.acting {
+            
+            .topBox {
+                width: 92%;
+                height: auto;
+                border-bottom: solid 3px $jumpWindow_topList_Border;
+                margin: 3vw auto;
+                padding-bottom: 3vw;
+
+                .row {
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    align-items: center;
+
+                    .smallTitle {
+                        width: 20vw;
+                        color: $jumpWindow_TitleColor;
+                        font-size: 4vw;
+                        font-weight: bold;
+                        margin-bottom: 2vw;
+                        flex-shrink: 0;
+                    }
+
+                    .selectBox {
+                        display: block;
+                        width: 100%;
+                        height: 10vw;
+                        position: relative;
+                        margin-bottom: 2vw;
+
+                        select {
+                            width: 100%;
+                            height: 100%;
+                            @include selectStyle_1;
+                        }
+
+                        i {
+                            width: 4vw;
+                            height: 4vw;
+                            position: absolute;
+                            right: 10px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+                    }
+
+                    .inputBox {
+                        width: 100%;
+                        height: 10vw;
+                        @include inputStyle_2;
+                        margin-bottom: 3vw;
+                        
+                        input {
+                            background: none;
+                            border: none;
+                            color: $inputStyle_2_Color;
+                            font-size: 3.4vw;
+                            font-weight: bold;
+                        }
+
+                        p {
+                            color: $inputStyle_2_midColor;
+                            font-size: 3.7vw;
+                            font-weight: bold;
+                            margin-right: 4vw;
+                        }
+
+                        i {
+                            width: 4vw;
+                            height: 4vw;
+                            position: absolute;
+                            right: 10px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+                    }
+                }
+
+                .btnBox {
+                    width: 92%;
+                    height: auto;
+                    display: grid;
+                    grid-template-columns: repeat(3,1fr);
+                    gap: 1vw;
+                    margin: 0 auto 2vw;
+
+                    button {
+                        width: auto;
+                        height: 8vw;
+                        @include betBtn;
+                    }
+                }
+
+                .check {
+                    width: 75%;
+                    height: 11vw;
+                    @include checkBtn;
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+
+            .content {
+                width: 92%;
+                height: auto;
+                background: $jumpWindow_Table_BG;
+                border: solid 1px $jumpWindow_Table_Border;
+                margin: 0 auto;
+                overflow-x: auto;
+
+                table {
+                    width: auto;
+                    height: auto;
+
+                    tr {
+
+                        &:last-child {
+
+                            td {
+                                background: $jumpWindow_Table_totalBG;
+                                border: none;
+
+                                p {
+                                    border-color: $jumpWindow_Table_totalBorder;
+                                    color: $jumpWindow_Table_totalColor;
+                                }
+                            }
+                        }
+
+                        th {
+                            width: auto;
+                            height: 10vw;
+                            background: $jumpWindow_Table_TitleBG;
+                            vertical-align: middle;
+
+                            &:last-child {
+                                
+                                p {
+                                    border: none;
+                                }
+                            }
+
+                            p {
+                                width: 100%;
+                                border-right: solid 1px $jumpWindow_Table_Border;
+                                color: $jumpWindow_Table_TitleColor;
+                                font-size: 3.7vw;
+                                font-weight: bold;
+                                text-align: center;
+                                white-space: nowrap;
+                            }
+                        }
+
+                        td {
+                            width: auto;
+                            min-width: 24vw;
+                            height: 10vw;
+                            border-bottom: solid 1px $jumpWindow_Table_innerBorder;
+                            vertical-align: middle;
+
+                            &:last-child {
+
+                                p {
+                                    border: none;
+                                }
+                            }
+
+                            p {
+                                width: 100%;
+                                border-right: solid 1px $jumpWindow_Table_innerBorder;
+                                color: $jumpWindow_Table_Color;
+                                font-size: 3.7vw;
+                                font-weight: bold;
+                                text-align: center;
+                                white-space: nowrap;
+                                padding: 0 5vw;
+
+                                &.win {
+                                    color: $jumpWindow_acting_winColor;
+                                }
+                                &.lose {
+                                    color: $jumpWindow_acting_loseColor;
+                                }
+                                &.allWin {
+                                    color: $jumpWindow_acting_allWinColor;
+                                }
+                                &.allLose {
+                                    color: $jumpWindow_acting_allLoseColor;
+                                }
+
+                                &.clickable {
+                                    color: $jumpWindow_Table_firstColor;
+                                    text-decoration: underline;
+                                }
+
+                                span {
+                                    color: $jumpWindow_Table_firstColor;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .pageBox {
+                width: 88%;
+                height: auto;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                margin: 5vw auto;
+
+                i {
+                    width: 3vw;
+                    height: 3vw;
+
+                    &.arrow_right {
+                        transform: scaleX(-1);
+                    }
+                }
+
+                ul {
+                    width: auto;
+                    height: auto;
+                    display: flex;
+                    margin: 0 2vw;
+
+                    li {
+                        width: 6vw;
+                        height: 6vw;
+                        @include pageBox;
+                        margin-right: 2vw;
+
+                        &:last-child {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.actingDetail {
+
+            .content {
+                width: 92%;
+                height: auto;
+                background: $jumpWindow_Table_BG;
+                border: solid 1px $jumpWindow_Table_Border;
+                margin: 5vw auto 0;
+                overflow-x: auto;
+
+                table {
+                    width: auto;
+                    height: auto;
+
+                    tr {
+
+                        &:last-child {
+
+                            td {
+                                background: $jumpWindow_Table_totalBG;
+                                border: none;
+
+                                p {
+                                    color: $jumpWindow_Table_totalColor;
+
+                                    &::before {
+                                        background: $jumpWindow_Table_totalBorder;
+                                    }
+                                }
+                            }
+                        }
+
+                        th {
+                            width: auto;
+                            height: 10vw;
+                            background: $jumpWindow_Table_TitleBG;
+                            vertical-align: middle;
+
+                            &:last-child {
+                                
+                                p {
+                                    border: none;
+                                }
+                            }
+
+                            p {
+                                width: 100%;
+                                border-right: solid 1px $jumpWindow_Table_Border;
+                                color: $jumpWindow_Table_TitleColor;
+                                font-size: 3.7vw;
+                                font-weight: bold;
+                                text-align: center;
+                                white-space: nowrap;
+                            }
+                        }
+
+                        td {
+                            width: auto;
+                            min-width: 24vw;
+                            height: 10vw;
+                            border-bottom: solid 1px $jumpWindow_Table_innerBorder;
+                            vertical-align: middle;
+
+                            &:last-child {
+
+                                p {
+                                    
+                                    &::before {
+                                        display: none;
+                                    }
+                                }
+                            }
+
+                            p {
+                                width: 100%;
+                                color: $jumpWindow_Table_Color;
+                                font-size: 3.7vw;
+                                font-weight: bold;
+                                text-align: center;
+                                line-height: 5vw;
+                                white-space: nowrap;
+                                position: relative;
+                                padding: 0 5vw;
+
+                                &::before {
+                                    content: "";
+                                    position: absolute;
+                                    right: 0;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    width: 1px;
+                                    height: 4vw;
+                                    background: $jumpWindow_Table_innerBorder;
+
+                                }
+
+                                &.win {
+                                    color: $jumpWindow_acting_winColor;
+                                }
+                                &.lose {
+                                    color: $jumpWindow_acting_loseColor;
+                                }
+                                &.allWin {
+                                    color: $jumpWindow_acting_allWinColor;
+                                }
+                                &.allLose {
+                                    color: $jumpWindow_acting_allLoseColor;
+                                }
+
+                                span {
+                                    color: $jumpWindow_actingDetail_betColor;
+
+                                    &.code {
+                                        color: $jumpWindow_actingDetail_codeColor;
+                                    }
+                                    &.vs {
+                                        color: $jumpWindow_actingDetail_vsColor;
+                                    }
+                                    &.mainTeam {
+                                        color: $jumpWindow_actingDetail_mainTeamColor;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .pageBox {
+                width: 88%;
+                height: auto;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                margin: 5vw auto;
+
+                i {
+                    width: 3vw;
+                    height: 3vw;
+
+                    &.arrow_right {
+                        transform: scaleX(-1);
+                    }
+                }
+
+                ul {
+                    width: auto;
+                    height: auto;
+                    display: flex;
+                    margin: 0 2vw;
+
+                    li {
+                        width: 6vw;
+                        height: 6vw;
+                        @include pageBox;
+                        margin-right: 2vw;
+
+                        &:last-child {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
