@@ -1,0 +1,3261 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "微軟正黑體";
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-calendar-picker-indicator,
+input[type=datetime-local]::-webkit-inner-spin-button,
+input[type=datetime-local]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+          appearance: none;
+}
+
+i {
+  display: block;
+}
+
+main {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "微軟正黑體";
+}
+
+input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "微軟正黑體";
+  outline: none;
+}
+
+button {
+  font-family: "微軟正黑體";
+}
+
+header .re_ic {
+  background: url("../images/icon/svg/reset.svg") no-repeat center;
+  background-size: contain;
+}
+
+header .back_ic {
+  background: url("../images/icon/arrow_1.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainWrap .listBox .mid .total_ic {
+  background: url("../images/icon/svg/hasBG_yellowMoney.svg") no-repeat center;
+  background-size: contain;
+}
+
+.mainWrap .listBox .mid .deposit_ic {
+  background: url("../images/icon/svg/hasBG_greenMoney.svg") no-repeat center;
+  background-size: contain;
+}
+
+.mainWrap .listBox .mid .withdrawal_ic {
+  background: url("../images/icon/svg/hasBG_redMoney.svg") no-repeat center;
+  background-size: contain;
+}
+
+.mainWrap .listBox .mid .person_ic {
+  background: url("../images/icon/svg/hasBG_person.svg") no-repeat center;
+  background-size: contain;
+}
+
+.mainWrap .listBox .mid .people_ic {
+  background: url("../images/icon/svg/hasBG_people.svg") no-repeat center;
+  background-size: contain;
+}
+
+.mainWrap .listBox .mid .question_ic {
+  background: url("../images/icon/svg/question.svg") no-repeat center;
+  background-size: contain;
+}
+
+.profitWrap .mid .profit_ic,
+.profitWrap .bottom .profit_ic {
+  background: url("../images/icon/svg/hasBG_bank.svg") no-repeat center;
+  background-size: contain;
+}
+
+.profitWrap .mid .reward_ic,
+.profitWrap .bottom .reward_ic {
+  background: url("../images/icon/svg/hasBG_redMoney.svg") no-repeat center;
+  background-size: contain;
+}
+
+.profitWrap .mid .money_ic,
+.profitWrap .bottom .money_ic {
+  background: url("../images/icon/svg/hasBG_yellowMoney.svg") no-repeat center;
+  background-size: contain;
+}
+
+.profitWrap .mid .person_ic {
+  background: url("../images/icon/svg/hasBG_person.svg") no-repeat center;
+  background-size: contain;
+}
+
+.profitWrap .mid .question_ic,
+.profitWrap .bottom .question_ic {
+  background: url("../images/icon/svg/question.svg") no-repeat center;
+  background-size: contain;
+}
+
+.profitWrap .tableTitle .arrow_db_ic {
+  background: url("../images/icon/arrow_db_3.png") no-repeat center;
+  background-size: contain;
+}
+
+.memberWrap .qrImg {
+  background: url("../images/qr.png") no-repeat;
+  background-size: contain;
+}
+
+.gameReportWrap .control_ic {
+  background: url("../images/icon/control.png") no-repeat center;
+  background-size: contain;
+}
+
+.gameReportWrap .question_ic {
+  background: url("../images/icon/svg/question.svg") no-repeat center;
+  background-size: contain;
+}
+
+.gameReportWrap .tableBox th .arrow_db_ic {
+  background: url("../images/icon/arrow_db_2.png") no-repeat;
+  background-size: contain;
+}
+
+.agentWrap .tableTitle .arrow_ic {
+  background: url("../images/icon/arrow_1.png") no-repeat center;
+  background-size: contain;
+}
+
+.agent_innerWrap .question_ic {
+  background: url("../images/icon/svg/question_2.svg") no-repeat center;
+  background-size: contain;
+}
+
+.jumpWindow.firstWindow .arrow_db_ic {
+  background: url("../images/icon/arrow_db_2.png") no-repeat;
+  background-size: contain;
+}
+
+.downList.lang .arrow_ic {
+  background: url("../images/icon/arrow_2.png") no-repeat center;
+  background-size: contain;
+}
+
+.leftList .topBox .arrow_db_ic {
+  background: url("../images/icon/arrow_db_1.png") no-repeat center;
+  background-size: contain;
+}
+
+.leftList .nameBox .user_ic {
+  background: url("../images/icon/svg/user.svg") no-repeat center;
+  background-size: contain;
+}
+
+.leftList .nameBox .re_ic {
+  background: url("../images/icon/svg/reset_green.svg") no-repeat center;
+  background-size: contain;
+}
+
+.leftList .listBox .arrow_ic {
+  background: url("../images/icon/arrow_1.png") no-repeat center;
+  background-size: contain;
+}
+
+.leftList .listBox .home_ic {
+  background: url("../images/icon/svg/leftList_home.svg") no-repeat center;
+  background-size: contain;
+}
+
+.leftList .listBox .member_ic {
+  background: url("../images/icon/svg/leftList_member.svg") no-repeat center;
+  background-size: contain;
+}
+
+.leftList .listBox .report_ic {
+  background: url("../images/icon/svg/leftList_report.svg") no-repeat center;
+  background-size: contain;
+}
+
+.leftList .listBox .remind_ic {
+  background: url("../images/icon/svg/leftList_remind.svg") no-repeat center;
+  background-size: contain;
+}
+
+.leftList .listBox .lang_ic {
+  background: url("../images/icon/svg/leftList_language.svg") no-repeat center;
+  background-size: contain;
+}
+
+.leftList .listBox .logout_ic {
+  background: url("../images/icon/svg/leftList_logout.svg") no-repeat center;
+  background-size: contain;
+}
+
+.selectBox .arrow_ic {
+  background: url("../images/icon/arrow_1.png") no-repeat center;
+  background-size: contain;
+}
+
+.inputBox .search_ic::before {
+  background: url("../images/icon/svg/search.svg") no-repeat center;
+  background-size: contain;
+}
+
+.inputBox .clock_ic {
+  background: url("../images/icon/svg/clock.svg") no-repeat center;
+  background-size: contain;
+}
+
+.pageBox .arrowBtn i {
+  background: url("../images/icon/arrow_1.png") no-repeat center;
+  background-size: contain;
+}
+
+.checkStyle::before {
+  background: url("../images/icon/arrow_2.png") no-repeat center;
+  background-size: contain;
+}
+
+.jumpWindow .close_ic {
+  background: url("../images/icon/close_1.png") no-repeat center;
+  background-size: contain;
+}
+
+.rowBox .left {
+  background: url("../images/icon/changeStyleIcon_1.png") no-repeat center;
+  background-size: contain;
+}
+
+.rowBox .right {
+  background: url("../images/icon/changeStyleIcon_2.png") no-repeat center;
+  background-size: contain;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  background: #f5f9fc;
+}
+html body {
+  width: 100%;
+  height: 100%;
+}
+html body main {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 50px 0 45px;
+}
+html body header {
+  width: 100%;
+  height: 50px;
+  background: #354052;
+  -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.5019607843);
+          box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.5019607843);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  padding: 0 16px;
+}
+html body header .listBtn {
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html body header .listBtn span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #ffffff;
+}
+html body header .null,
+html body header .re_ic {
+  width: 20px;
+  height: 20px;
+}
+html body header .back_ic {
+  width: 20px;
+  height: 20px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-filter: grayscale(1) brightness(15);
+          filter: grayscale(1) brightness(15);
+}
+html body header .title {
+  color: #ffffff;
+  font-size: 4.5vw;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+html body .mainWrap {
+  width: 100%;
+  height: auto;
+  padding-bottom: 7vw;
+}
+html body .mainWrap .top {
+  width: 100%;
+  height: auto;
+  padding: 12px 16px;
+}
+html body .mainWrap .top .rowBox {
+  width: 100%;
+  height: auto;
+  padding: 4px 12px 0;
+  margin-bottom: 16px;
+}
+html body .mainWrap .top .rowBox .innerBox {
+  width: 100%;
+  height: 9.5vw;
+  background: #495568;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+html body .mainWrap .top .rowBox .innerBox.left .cnt {
+  background: #35c8d1;
+  left: 1%;
+}
+html body .mainWrap .top .rowBox .innerBox.right .cnt {
+  background: #ff6065;
+  left: 51%;
+}
+html body .mainWrap .top .rowBox .innerBox p {
+  width: 50%;
+  height: 100%;
+  color: #ffffff;
+  font-size: 4vw;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+html body .mainWrap .top .rowBox .innerBox p i {
+  width: 3.7vw;
+  height: 3.7vw;
+  margin-right: 10px;
+}
+html body .mainWrap .top .rowBox .innerBox .cnt {
+  width: 48%;
+  height: 82%;
+  border-radius: 30px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+html body .mainWrap .top .inputBox {
+  width: 100%;
+  height: 10vw;
+  background: #ffffff;
+  border-radius: 3px;
+  border: solid 1px #dee2e6;
+  color: #606266;
+  font-size: 3.7vw;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: 0 8px;
+}
+html body .mainWrap .top .inputBox p {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 8px;
+}
+html body .mainWrap .top .inputBox input {
+  background: none;
+  border: none;
+  color: #606266;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  pointer-events: none;
+}
+html body .mainWrap .top .inputBox input:last-child {
+  margin-left: 10px;
+}
+html body .mainWrap .top .inputBox i {
+  width: 10vw;
+  height: 10vw;
+  background: #ffffff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  pointer-events: none;
+}
+html body .mainWrap .top .inputBox i::before {
+  content: "";
+  position: absolute;
+  width: 4vw;
+  height: 4vw;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+html body .mainWrap .listBox {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+html body .mainWrap .listBox.display {
+  display: block;
+}
+html body .mainWrap .listBox .mid {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  border-top: solid 1px #dce0e2;
+}
+html body .mainWrap .listBox .mid .totalBox {
+  width: 100%;
+  height: 22vw;
+  border-bottom: solid 1px #dce0e2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 16px;
+}
+html body .mainWrap .listBox .mid .totalBox .total_ic {
+  width: 12vw;
+  height: 12vw;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 16px;
+}
+html body .mainWrap .listBox .mid .totalBox p {
+  width: 100%;
+  color: #212529;
+  font-size: 4vw;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .mainWrap .listBox .mid .totalBox p.money {
+  width: auto;
+  font-size: 5vw;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 8px;
+}
+html body .mainWrap .listBox .mid .totalBox p i {
+  width: 5vw;
+  height: 5vw;
+  position: relative;
+  margin: 0 0 -2px 5px;
+}
+html body .mainWrap .listBox .mid .totalBox p i span {
+  width: auto;
+  height: auto;
+  background: #343434;
+  border-radius: 3px;
+  color: #ffffff;
+  font-size: 3vw;
+  font-weight: bold;
+  position: absolute;
+  white-space: nowrap;
+  padding: 5px 5px 6px;
+  display: none;
+  top: -30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+html body .mainWrap .listBox .mid .totalBox p i span.display {
+  display: block;
+}
+html body .mainWrap .listBox .mid .totalBox p i span::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+html body .mainWrap .listBox .mid .totalBox p i span::before {
+  border-width: 6px 4px 0 4px;
+  border-color: #343434 transparent;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: -6px;
+}
+html body .mainWrap .listBox .mid .elseBox {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+}
+html body .mainWrap .listBox .mid .elseBox > div {
+  width: auto;
+  height: 22vw;
+  border-bottom: solid 1px #dce0e2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 16px;
+}
+html body .mainWrap .listBox .mid .elseBox > div:nth-of-type(odd) {
+  border-right: solid 1px #dce0e2;
+}
+html body .mainWrap .listBox .mid .elseBox > div i:not(.question_ic) {
+  width: 12vw;
+  height: 12vw;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 16px;
+}
+html body .mainWrap .listBox .mid .elseBox > div .question_ic {
+  width: 5vw;
+  height: 5vw;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  position: relative;
+  margin-left: 8px;
+}
+html body .mainWrap .listBox .mid .elseBox > div .question_ic span {
+  width: auto;
+  height: auto;
+  background: #343434;
+  border-radius: 3px;
+  color: #ffffff;
+  font-size: 3vw;
+  font-weight: bold;
+  position: absolute;
+  white-space: nowrap;
+  padding: 5px 5px 6px;
+  display: none;
+  top: -40px;
+  right: 0;
+}
+html body .mainWrap .listBox .mid .elseBox > div .question_ic span.display {
+  display: block;
+}
+html body .mainWrap .listBox .mid .elseBox > div .question_ic span::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+html body .mainWrap .listBox .mid .elseBox > div .question_ic span::before {
+  border-width: 6px 4px 0 4px;
+  border-color: #343434 transparent;
+  right: 5px;
+  bottom: -6px;
+}
+html body .mainWrap .listBox .mid .elseBox > div p {
+  color: #212529;
+  font-size: 4vw;
+  font-weight: bold;
+  line-height: 5.5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .mainWrap .listBox .bottom {
+  width: 100%;
+  height: auto;
+  background: #303845;
+  padding: 16px;
+}
+html body .mainWrap .listBox .bottom ul {
+  width: 100%;
+  height: auto;
+}
+html body .mainWrap .listBox .bottom ul li {
+  width: 100%;
+  height: auto;
+  border-bottom: solid 2px #ff7377;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+}
+html body .mainWrap .listBox .bottom ul li:first-child {
+  border-color: #34e0ea;
+}
+html body .mainWrap .listBox .bottom ul li:first-child .smallTitle {
+  color: #34e0ea;
+}
+html body .mainWrap .listBox .bottom ul li:last-child {
+  margin: 0;
+}
+html body .mainWrap .listBox .bottom ul li div {
+  width: 50%;
+  height: auto;
+}
+html body .mainWrap .listBox .bottom ul li div p {
+  color: #ffffff;
+  font-size: 4.5vw;
+  font-weight: bold;
+}
+html body .mainWrap .listBox .bottom ul li div p.smallTitle {
+  color: #ff7377;
+  font-size: 4vw;
+  margin-bottom: 12px;
+}
+html body .mainWrap .listBox .tableTitle {
+  width: 100%;
+  height: 10vw;
+  background: #495057;
+  color: #ffffff;
+  font-size: 3.7vw;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 16px;
+}
+html body .mainWrap .listBox .tableBox {
+  width: 100%;
+  height: auto;
+  overflow-x: auto;
+  padding-bottom: 7vw;
+}
+html body .mainWrap .listBox .tableBox table {
+  width: auto;
+  height: auto;
+}
+html body .mainWrap .listBox .tableBox table tr th {
+  height: 10vw;
+  background: #95a0aa;
+  vertical-align: middle;
+  padding: 0 8px;
+}
+html body .mainWrap .listBox .tableBox table tr th:first-child {
+  padding-left: 16px;
+}
+html body .mainWrap .listBox .tableBox table tr th:last-child {
+  padding-right: 16px;
+}
+html body .mainWrap .listBox .tableBox table tr th p {
+  color: #ffffff;
+  font-size: 3.7vw;
+  font-weight: bold;
+  line-height: 4vw;
+  white-space: nowrap;
+}
+html body .mainWrap .listBox .tableBox table tr td {
+  height: 10vw;
+  background: #ffffff;
+  vertical-align: middle;
+  border-bottom: solid 1px #dce0e2;
+}
+html body .mainWrap .listBox .tableBox table tr td:first-child {
+  padding-left: 8px;
+}
+html body .mainWrap .listBox .tableBox table tr td:last-child {
+  padding-right: 8px;
+}
+html body .mainWrap .listBox .tableBox table tr td.positive {
+  background: #d4edda;
+}
+html body .mainWrap .listBox .tableBox table tr td.positive p {
+  color: #007bff;
+}
+html body .mainWrap .listBox .tableBox table tr td.negative {
+  background: #f8d7da;
+}
+html body .mainWrap .listBox .tableBox table tr td.negative p {
+  color: #dc3545;
+}
+html body .mainWrap .listBox .tableBox table tr td.disable p {
+  color: #999da3;
+}
+html body .mainWrap .listBox .tableBox table tr td p {
+  color: #212529;
+  font-size: 3.7vw;
+  font-weight: bold;
+  line-height: 4vw;
+  text-align: center;
+}
+html body .activeWrap {
+  width: 100%;
+  height: auto;
+  padding-bottom: 7vw;
+}
+html body .activeWrap .top {
+  width: 100%;
+  height: auto;
+  padding: 16px;
+}
+html body .activeWrap .top .selectBox {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+html body .activeWrap .top .selectBox select {
+  width: 100%;
+  height: 10vw;
+  background: #ffffff;
+  border-radius: 3px;
+  border: solid 1px #dee2e6;
+  color: #606266;
+  font-size: 3.7vw;
+  font-weight: bold;
+  padding-left: 8px;
+}
+html body .activeWrap .top .selectBox i {
+  width: 3vw;
+  height: 3vw;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 16px;
+  pointer-events: none;
+}
+html body .activeWrap .top .inputBox {
+  width: 100%;
+  height: 10vw;
+  background: #ffffff;
+  border-radius: 3px;
+  border: solid 1px #dee2e6;
+  color: #606266;
+  font-size: 3.7vw;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  margin: 10px 0;
+}
+html body .activeWrap .top .inputBox i {
+  width: 4vw;
+  height: 4vw;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin: 0 8px;
+}
+html body .activeWrap .top .inputBox input {
+  background: none;
+  border: none;
+  color: #606266;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  pointer-events: none;
+}
+html body .activeWrap .top .inputBox input:last-child {
+  margin-left: 10px;
+}
+html body .activeWrap .top .btnBox {
+  width: 90%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 8px 1fr 8px 1fr 8px 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin: 0 auto 10px;
+}
+html body .activeWrap .top .btnBox button {
+  width: auto;
+  height: 10vw;
+  background: #ffffff;
+  border-radius: 3px;
+  border: solid 1px #dee2e6;
+  color: #606266;
+  font-size: 3.7vw;
+  font-weight: bold;
+  padding-bottom: 4px;
+}
+html body .activeWrap .top .btnBox button:active, html body .activeWrap .top .btnBox button.active {
+  background: #29abe2;
+  color: #ffffff;
+}
+html body .activeWrap .top .checkBtn {
+  width: 80%;
+  height: 10vw;
+  background: #44bac1;
+  border-radius: 3px;
+  border: none;
+  color: #ffffff;
+  font-size: 3.7vw;
+  font-weight: bold;
+  display: block;
+  margin: 0 auto;
+}
+html body .activeWrap .top .checkBtn:active, html body .activeWrap .top .checkBtn.active {
+  background: #1a7d83;
+}
+html body .activeWrap .bottom {
+  width: 100%;
+  height: auto;
+}
+html body .activeWrap .bottom .tableTitle {
+  width: 100%;
+  height: 10vw;
+  background: #495057;
+  color: #ffffff;
+  font-size: 3.7vw;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 16px;
+}
+html body .activeWrap .bottom .tableBox {
+  width: 100%;
+  height: auto;
+  overflow-x: auto;
+  padding-bottom: 7vw;
+}
+html body .activeWrap .bottom .tableBox table {
+  width: auto;
+  height: auto;
+}
+html body .activeWrap .bottom .tableBox table tr th {
+  height: 10vw;
+  background: #95a0aa;
+  vertical-align: middle;
+  padding: 0 8px;
+}
+html body .activeWrap .bottom .tableBox table tr th:first-child {
+  padding-left: 16px;
+}
+html body .activeWrap .bottom .tableBox table tr th:last-child {
+  padding-right: 16px;
+}
+html body .activeWrap .bottom .tableBox table tr th p {
+  color: #ffffff;
+  font-size: 3.7vw;
+  font-weight: bold;
+  line-height: 4vw;
+  white-space: nowrap;
+}
+html body .activeWrap .bottom .tableBox table tr td {
+  height: 10vw;
+  background: #ffffff;
+  vertical-align: middle;
+  border-bottom: solid 1px #dce0e2;
+}
+html body .activeWrap .bottom .tableBox table tr td:first-child {
+  padding-left: 8px;
+}
+html body .activeWrap .bottom .tableBox table tr td:last-child {
+  padding-right: 8px;
+}
+html body .activeWrap .bottom .tableBox table tr td.positive p {
+  color: #007bff;
+  text-decoration: underline;
+}
+html body .activeWrap .bottom .tableBox table tr td p {
+  color: #212529;
+  font-size: 3.7vw;
+  font-weight: bold;
+  line-height: 4vw;
+  text-align: center;
+}
+html body .profitWrap {
+  width: 100%;
+  height: auto;
+  padding-bottom: 7vw;
+}
+html body .profitWrap .top {
+  width: 100%;
+  height: auto;
+  padding: 16px;
+}
+html body .profitWrap .top .rowBox {
+  width: 100%;
+  height: auto;
+  padding: 4px 12px 0;
+  margin-bottom: 16px;
+}
+html body .profitWrap .top .rowBox .innerBox {
+  width: 100%;
+  height: 9.5vw;
+  background: #495568;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+html body .profitWrap .top .rowBox .innerBox.left .cnt {
+  background: #35c8d1;
+  left: 1%;
+}
+html body .profitWrap .top .rowBox .innerBox.right .cnt {
+  background: #ff6065;
+  left: 51%;
+}
+html body .profitWrap .top .rowBox .innerBox p {
+  width: 50%;
+  height: 100%;
+  color: #ffffff;
+  font-size: 4vw;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+html body .profitWrap .top .rowBox .innerBox p i {
+  width: 3.7vw;
+  height: 3.7vw;
+  margin-right: 10px;
+}
+html body .profitWrap .top .rowBox .innerBox .cnt {
+  width: 48%;
+  height: 82%;
+  border-radius: 30px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+html body .profitWrap .top .textBox {
+  width: 100%;
+  height: auto;
+}
+html body .profitWrap .top .textBox p {
+  color: #606266;
+  font-size: 3vw;
+  font-weight: bold;
+  line-height: 4vw;
+}
+html body .profitWrap .listBox {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+html body .profitWrap .listBox.display {
+  display: block;
+}
+html body .profitWrap .listBox .mid {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  border-top: solid 1px #dce0e2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 10px;
+}
+html body .profitWrap .listBox .mid > div {
+  width: auto;
+  height: 28vw;
+  border-bottom: solid 1px #dce0e2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 16px;
+}
+html body .profitWrap .listBox .mid > div:nth-of-type(odd) {
+  border-right: solid 1px #dce0e2;
+}
+html body .profitWrap .listBox .mid > div i:not(.question_ic) {
+  width: 12vw;
+  height: 12vw;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 16px;
+}
+html body .profitWrap .listBox .mid > div .question_ic {
+  width: 5vw;
+  height: 5vw;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  position: relative;
+  margin-left: 8px;
+}
+html body .profitWrap .listBox .mid > div .question_ic span {
+  width: auto;
+  height: auto;
+  background: #343434;
+  border-radius: 3px;
+  color: #ffffff;
+  font-size: 3vw;
+  font-weight: bold;
+  position: absolute;
+  white-space: nowrap;
+  padding: 5px 5px 6px;
+  display: none;
+  top: -40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+html body .profitWrap .listBox .mid > div .question_ic span.display {
+  display: block;
+}
+html body .profitWrap .listBox .mid > div .question_ic span::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+html body .profitWrap .listBox .mid > div .question_ic span.sp {
+  left: unset;
+  right: 0;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+html body .profitWrap .listBox .mid > div .question_ic span.sp::before {
+  left: unset;
+  right: 5px;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+html body .profitWrap .listBox .mid > div .question_ic span::before {
+  border-width: 6px 4px 0 4px;
+  border-color: #343434 transparent;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: -6px;
+}
+html body .profitWrap .listBox .mid > div p {
+  color: #212529;
+  font-size: 4vw;
+  font-weight: bold;
+  line-height: 5.5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .profitWrap .listBox .bottom {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  border-top: solid 1px #dce0e2;
+}
+html body .profitWrap .listBox .bottom .totalBox {
+  width: 100%;
+  height: 22vw;
+  border-bottom: solid 1px #dce0e2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 16px;
+}
+html body .profitWrap .listBox .bottom .totalBox .profit_ic {
+  width: 12vw;
+  height: 12vw;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 16px;
+}
+html body .profitWrap .listBox .bottom .totalBox p {
+  width: 100%;
+  color: #212529;
+  font-size: 4vw;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .profitWrap .listBox .bottom .totalBox p.money {
+  width: auto;
+  font-size: 5vw;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 8px;
+}
+html body .profitWrap .listBox .bottom .totalBox p i {
+  width: 6vw;
+  height: 6vw;
+  position: relative;
+  margin: -1px 0 0 8px;
+}
+html body .profitWrap .listBox .bottom .totalBox p i span {
+  width: auto;
+  height: auto;
+  background: #343434;
+  border-radius: 3px;
+  color: #ffffff;
+  font-size: 3vw;
+  font-weight: bold;
+  position: absolute;
+  white-space: nowrap;
+  padding: 5px 5px 6px;
+  display: none;
+  top: -30px;
+  left: -85px;
+}
+html body .profitWrap .listBox .bottom .totalBox p i span.display {
+  display: block;
+}
+html body .profitWrap .listBox .bottom .totalBox p i span::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+html body .profitWrap .listBox .bottom .totalBox p i span::before {
+  border-width: 6px 4px 0 4px;
+  border-color: #343434 transparent;
+  left: 93px;
+  bottom: -6px;
+}
+html body .profitWrap .listBox .bottom .elseBox {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+}
+html body .profitWrap .listBox .bottom .elseBox > div {
+  width: auto;
+  height: 22vw;
+  border-bottom: solid 1px #dce0e2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 16px;
+}
+html body .profitWrap .listBox .bottom .elseBox > div:nth-of-type(odd) {
+  border-right: solid 1px #dce0e2;
+}
+html body .profitWrap .listBox .bottom .elseBox > div i {
+  width: 12vw;
+  height: 12vw;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 16px;
+}
+html body .profitWrap .listBox .bottom .elseBox > div p {
+  color: #212529;
+  font-size: 4vw;
+  font-weight: bold;
+  line-height: 5.5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .profitWrap .listBox .tableTitle {
+  width: 100%;
+  height: 10vw;
+  background: #495057;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 16px;
+}
+html body .profitWrap .listBox .tableTitle.active span i {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+html body .profitWrap .listBox .tableTitle span {
+  color: #ffffff;
+  font-size: 3.7vw;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .profitWrap .listBox .tableTitle span i {
+  width: 3vw;
+  height: 3vw;
+  -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
+  margin-left: 10px;
+}
+html body .profitWrap .listBox .tableBox {
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+}
+html body .profitWrap .listBox .tableBox.display {
+  height: auto;
+}
+html body .profitWrap .listBox .tableBox.partner {
+  max-height: 40vh;
+  overflow-y: auto;
+}
+html body .profitWrap .listBox .tableBox table {
+  width: 100%;
+  height: auto;
+}
+html body .profitWrap .listBox .tableBox table tr th {
+  height: 10vw;
+  background: #95a0aa;
+  vertical-align: middle;
+  padding: 0 8px;
+}
+html body .profitWrap .listBox .tableBox table tr th p {
+  color: #ffffff;
+  font-size: 3.7vw;
+  font-weight: bold;
+  line-height: 4vw;
+  white-space: nowrap;
+}
+html body .profitWrap .listBox .tableBox table tr td {
+  width: 34%;
+  height: 10vw;
+  background: #ffffff;
+  vertical-align: middle;
+  border-bottom: solid 1px #dce0e2;
+}
+html body .profitWrap .listBox .tableBox table tr td.positive {
+  background: #d4edda;
+}
+html body .profitWrap .listBox .tableBox table tr td.positive p {
+  color: #007bff;
+}
+html body .profitWrap .listBox .tableBox table tr td.negative {
+  background: #f8d7da;
+}
+html body .profitWrap .listBox .tableBox table tr td.negative p {
+  color: #dc3545;
+}
+html body .profitWrap .listBox .tableBox table tr td.disable p {
+  color: #999da3;
+}
+html body .profitWrap .listBox .tableBox table tr td p {
+  color: #212529;
+  font-size: 3.7vw;
+  font-weight: bold;
+  line-height: 4vw;
+  text-align: center;
+}
+html body .profitWrap .listBox .totalBox {
+  width: 100%;
+  height: auto;
+}
+html body .profitWrap .listBox .totalBox.partner {
+  margin-bottom: 10px;
+}
+html body .profitWrap .listBox .totalBox table {
+  width: 100%;
+  height: auto;
+}
+html body .profitWrap .listBox .totalBox table tr {
+  border-top: solid 2px #44bac1;
+}
+html body .profitWrap .listBox .totalBox table tr td {
+  width: 34%;
+  height: 10vw;
+  background: #ffffff;
+  vertical-align: middle;
+  border-bottom: solid 1px #dce0e2;
+}
+html body .profitWrap .listBox .totalBox table tr td.positive {
+  background: #d4edda;
+}
+html body .profitWrap .listBox .totalBox table tr td.positive p {
+  color: #007bff;
+}
+html body .profitWrap .listBox .totalBox table tr td.negative {
+  background: #f8d7da;
+}
+html body .profitWrap .listBox .totalBox table tr td.negative p {
+  color: #dc3545;
+}
+html body .profitWrap .listBox .totalBox table tr td.disable p {
+  color: #999da3;
+}
+html body .profitWrap .listBox .totalBox table tr td:nth-of-type(1) {
+  width: 68%;
+}
+html body .profitWrap .listBox .totalBox table tr td:nth-of-type(1) p {
+  text-align: left;
+  padding-left: 32px;
+}
+html body .profitWrap .listBox .totalBox table tr td p {
+  color: #212529;
+  font-size: 3.7vw;
+  font-weight: bold;
+  line-height: 4vw;
+  text-align: center;
+}
+html body .memberWrap {
+  width: 100%;
+  height: auto;
+  padding-bottom: 7vw;
+  padding: 16px 16px 7vw;
+}
+html body .memberWrap .title {
+  width: 100%;
+  height: 10vw;
+  background: #495057;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 16px;
+}
+html body .memberWrap .title p {
+  color: #ffffff;
+  font-size: 3.7vw;
+  font-weight: bold;
+}
+html body .memberWrap ul {
+  width: 100%;
+  height: auto;
+}
+html body .memberWrap ul li {
+  width: 100%;
+  height: 12vw;
+  background: #ffffff;
+  border: solid 1px #dce0e2;
+  border-width: 0 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 16px;
+}
+html body .memberWrap ul li:last-child {
+  border-width: 0 1px 1px;
+}
+html body .memberWrap ul li:nth-of-type(even) {
+  background: #eaeff3;
+}
+html body .memberWrap ul li.auto {
+  height: auto;
+  padding: 8px 16px;
+}
+html body .memberWrap ul li .name {
+  width: 40%;
+  color: #212529;
+  font-size: 3.7vw;
+  font-weight: bold;
+  line-height: 4.5vw;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html body .memberWrap ul li .btnBox {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html body .memberWrap ul li .btnBox p {
+  color: #606266;
+  font-size: 3.7vw;
+  font-weight: bold;
+}
+html body .memberWrap ul li .btnBox button {
+  width: 22vw;
+  height: 7.5vw;
+}
+html body .memberWrap ul li .btnBox button.changeBtn {
+  background: #ff6064;
+  border-radius: 3px;
+  border: none;
+  color: #ffffff;
+  font-size: 3.7vw;
+  font-weight: bold;
+}
+html body .memberWrap ul li .btnBox button.changeBtn:active, html body .memberWrap ul li .btnBox button.changeBtn.active {
+  background: #db1e23;
+}
+html body .memberWrap ul li .btnBox button.copyBtn {
+  background: #44bac1;
+  border-radius: 3px;
+  border: none;
+  color: #ffffff;
+  font-size: 3.7vw;
+  font-weight: bold;
+}
+html body .memberWrap ul li .btnBox button.copyBtn:active, html body .memberWrap ul li .btnBox button.copyBtn.active {
+  background: #1a7d83;
+}
+html body .memberWrap ul li .qrBox {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+html body .memberWrap ul li .qrBox .selectBox {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-bottom: 5px;
+}
+html body .memberWrap ul li .qrBox .selectBox select {
+  width: 100%;
+  height: 10vw;
+  background: #ffffff;
+  border-radius: 3px;
+  border: solid 1px #dee2e6;
+  color: #606266;
+  font-size: 3.7vw;
+  font-weight: bold;
+  padding-left: 8px;
+  padding: 0 28px 0 8px;
+}
+html body .memberWrap ul li .qrBox .selectBox i {
+  width: 4vw;
+  height: 4vw;
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  pointer-events: none;
+}
+html body .memberWrap ul li .qrBox button {
+  width: 22vw;
+  height: 7.5vw;
+  background: #44bac1;
+  border-radius: 3px;
+  border: none;
+  color: #ffffff;
+  font-size: 3.7vw;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+html body .memberWrap ul li .qrBox button:active, html body .memberWrap ul li .qrBox button.active {
+  background: #1a7d83;
+}
+html body .memberWrap ul li .qrBox button:last-child {
+  margin: 0;
+}
+html body .memberWrap ul li .qrBox .qrImg {
+  width: 42vw;
+  height: 42vw;
+  margin-bottom: 5px;
+}
+html body .memberWrap ul li .checkBtn {
+  width: 80%;
+  height: 10vw;
+  background: #44bac1;
+  border-radius: 3px;
+  border: none;
+  color: #ffffff;
+  font-size: 3.7vw;
+  font-weight: bold;
+  display: block;
+  margin: 0 auto;
+}
+html body .memberWrap ul li .checkBtn:active, html body .memberWrap ul li .checkBtn.active {
+  background: #1a7d83;
+}
+html body .loginRecordWrap {
+  width: 100%;
+  height: auto;
+  padding-bottom: 7vw;
+  padding: 4vw 0 7vw;
+}
+html body .loginRecordWrap table {
+  width: 100%;
+  height: auto;
+}
+html body .loginRecordWrap table tr:nth-of-type(odd) td {
+  background: #eaeff3;
+}
+html body .loginRecordWrap table tr th {
+  height: 10vw;
+  background: #495057;
+  vertical-align: middle;
+}
+html body .loginRecordWrap table tr th p {
+  color: #ffffff;
+  font-size: 3.7vw;
+  font-weight: bold;
+  line-height: 4vw;
+}
+html body .loginRecordWrap table tr td {
+  width: 25%;
+  height: 10vw;
+  background: #ffffff;
+  vertical-align: middle;
+}
+html body .loginRecordWrap table tr td:first-child p {
+  color: #212529;
+}
+html body .loginRecordWrap table tr td.false p {
+  color: #dc3545;
+}
+html body .loginRecordWrap table tr td p {
+  color: #606266;
+  font-size: 3.7vw;
+  font-weight: bold;
+  line-height: 4vw;
+  text-align: center;
+}
+html body .gameReportWrap {
+  width: 100%;
+  height: auto;
+  padding-bottom: 7vw;
+}
+html body .gameReportWrap .top {
+  width: 100%;
+  height: auto;
+  padding: 16px;
+}
+html body .gameReportWrap .top .selectBox {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+html body .gameReportWrap .top .selectBox select {
+  width: 100%;
+  height: 10vw;
+  background: #ffffff;
+  border-radius: 3px;
+  border: solid 1px #dee2e6;
+  color: #606266;
+  font-size: 3.7vw;
+  font-weight: bold;
+  padding-left: 8px;
+}
+html body .gameReportWrap .top .selectBox i {
+  width: 3vw;
+  height: 3vw;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 16px;
+  pointer-events: none;
+}
+html body .gameReportWrap .top .inputBox {
+  width: 100%;
+  height: 10vw;
+  background: #ffffff;
+  border-radius: 3px;
+  border: solid 1px #dee2e6;
+  color: #606266;
+  font-size: 3.7vw;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  margin: 10px 0;
+}
+html body .gameReportWrap .top .inputBox i {
+  width: 4vw;
+  height: 4vw;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin: 0 8px;
+}
+html body .gameReportWrap .top .inputBox input {
+  background: none;
+  border: none;
+  color: #606266;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  pointer-events: none;
+}
+html body .gameReportWrap .top .inputBox input:last-child {
+  margin-left: 10px;
+}
+html body .gameReportWrap .top .btnBox {
+  width: 90%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 8px 1fr 8px 1fr 8px 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin: 0 auto 10px;
+}
+html body .gameReportWrap .top .btnBox button {
+  width: auto;
+  height: 10vw;
+  background: #ffffff;
+  border-radius: 3px;
+  border: solid 1px #dee2e6;
+  color: #606266;
+  font-size: 3.7vw;
+  font-weight: bold;
+  padding-bottom: 4px;
+}
+html body .gameReportWrap .top .btnBox button:active, html body .gameReportWrap .top .btnBox button.active {
+  background: #29abe2;
+  color: #ffffff;
+}
+html body .gameReportWrap .top .box {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+}
+html body .gameReportWrap .top .box .selectBox {
+  margin-right: 8px;
+}
+html body .gameReportWrap .top .box .selectBox select {
+  padding-right: 28px;
+}
+html body .gameReportWrap .top .box .selectBox .arrow_ic {
+  right: 10px;
+}
+html body .gameReportWrap .top .box .inputBox {
+  width: 60%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding: 0 8px;
+  margin: 0;
+}
+html body .gameReportWrap .top .box .inputBox input {
+  width: 100%;
+  margin: 0;
+}
+html body .gameReportWrap .top .box .controlBox {
+  width: 100%;
+  height: 10vw;
+  background: #ffffff;
+  border-radius: 3px;
+  border: solid 1px #dee2e6;
+  color: #606266;
+  font-size: 3.7vw;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 8px;
+  margin-right: 8px;
+}
+html body .gameReportWrap .top .box .controlBox:last-child {
+  margin: 0;
+}
+html body .gameReportWrap .top .box .controlBox i {
+  width: 4vw;
+  height: 4vw;
+}
+html body .gameReportWrap .top .checkBtn {
+  width: 80%;
+  height: 10vw;
+  background: #44bac1;
+  border-radius: 3px;
+  border: none;
+  color: #ffffff;
+  font-size: 3.7vw;
+  font-weight: bold;
+  display: block;
+  margin: 0 auto;
+}
+html body .gameReportWrap .top .checkBtn:active, html body .gameReportWrap .top .checkBtn.active {
+  background: #1a7d83;
+}
+html body .gameReportWrap .bottom {
+  width: 100%;
+  height: auto;
+}
+html body .gameReportWrap .bottom .tableTitle {
+  width: 100%;
+  height: 10vw;
+  background: #495057;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 16px;
+}
+html body .gameReportWrap .bottom .tableTitle p {
+  color: #ffffff;
+  font-size: 3.7vw;
+  font-weight: bold;
+}
+html body .gameReportWrap .bottom .tableTitle button {
+  width: auto;
+  height: 7.5vw;
+  background: #ff6064;
+  border-radius: 3px;
+  border: none;
+  color: #ffffff;
+  font-size: 3.7vw;
+  font-weight: bold;
+  padding: 0 10px;
+}
+html body .gameReportWrap .bottom .tableTitle button:active, html body .gameReportWrap .bottom .tableTitle button.active {
+  background: #db1e23;
+}
+html body .gameReportWrap .bottom .tableBox {
+  width: 100%;
+  height: auto;
+  overflow-x: auto;
+  padding-bottom: 7vw;
+  display: none;
+}
+html body .gameReportWrap .bottom .tableBox.display {
+  display: block;
+}
+html body .gameReportWrap .bottom .tableBox.index th:first-child, html body .gameReportWrap .bottom .tableBox.account th:first-child {
+  padding: 0 32px;
+}
+html body .gameReportWrap .bottom .tableBox.betRecord th:nth-of-type(2), html body .gameReportWrap .bottom .tableBox.betRecord th:nth-of-type(12) {
+  padding: 0 48px;
+}
+html body .gameReportWrap .bottom .tableBox.betRecord th:last-child {
+  padding: 0 32px;
+}
+html body .gameReportWrap .bottom .tableBox.betRecord td {
+  padding: 10px 8px;
+}
+html body .gameReportWrap .bottom .tableBox table {
+  width: auto;
+  height: auto;
+}
+html body .gameReportWrap .bottom .tableBox table tr th {
+  height: 10vw;
+  background: #95a0aa;
+  vertical-align: middle;
+  padding: 0 16px;
+}
+html body .gameReportWrap .bottom .tableBox table tr th p {
+  color: #ffffff;
+  font-size: 3.7vw;
+  font-weight: bold;
+  line-height: 4vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  white-space: nowrap;
+}
+html body .gameReportWrap .bottom .tableBox table tr th p .arrow_db_ic {
+  width: 4vw;
+  height: 4vw;
+  margin-left: 5px;
+}
+html body .gameReportWrap .bottom .tableBox table tr td {
+  height: auto;
+  background: #ffffff;
+  vertical-align: middle;
+  border-bottom: solid 1px #dce0e2;
+  padding: 10px 0;
+}
+html body .gameReportWrap .bottom .tableBox table tr td.positive {
+  background: #d4edda;
+}
+html body .gameReportWrap .bottom .tableBox table tr td.positive p {
+  color: #007bff;
+}
+html body .gameReportWrap .bottom .tableBox table tr td.negative {
+  background: #f8d7da;
+}
+html body .gameReportWrap .bottom .tableBox table tr td.negative p {
+  color: #dc3545;
+}
+html body .gameReportWrap .bottom .tableBox table tr td.percent p {
+  color: #dc3545;
+}
+html body .gameReportWrap .bottom .tableBox table tr td.clickable p {
+  color: #007bff;
+  text-decoration: underline;
+}
+html body .gameReportWrap .bottom .tableBox table tr td p {
+  color: #212529;
+  font-size: 3.7vw;
+  font-weight: bold;
+  line-height: 4.5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+html body .gameReportWrap .bottom .tableBox table tr td p i {
+  width: 4vw;
+  height: 4vw;
+  position: relative;
+  margin-left: 5px;
+}
+html body .gameReportWrap .bottom .tableBox table tr td p i span {
+  width: auto;
+  height: auto;
+  background: #343434;
+  border-radius: 3px;
+  color: #ffffff;
+  font-size: 3vw;
+  font-weight: bold;
+  position: absolute;
+  white-space: nowrap;
+  padding: 5px 5px 6px;
+  display: none;
+  top: -35px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+html body .gameReportWrap .bottom .tableBox table tr td p i span.display {
+  display: block;
+}
+html body .gameReportWrap .bottom .tableBox table tr td p i span::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+html body .gameReportWrap .bottom .tableBox table tr td p i span.sp {
+  line-height: 5.5vw;
+  top: 50%;
+  left: unset;
+  right: 22px;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+html body .gameReportWrap .bottom .tableBox table tr td p i span.sp::before {
+  border-width: 4px 0 4px 6px;
+  border-color: transparent #343434;
+  top: 50%;
+  bottom: unset;
+  left: unset;
+  right: -5px;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+html body .gameReportWrap .bottom .tableBox table tr td p i span::before {
+  border-width: 6px 4px 0 4px;
+  border-color: #343434 transparent;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: -6px;
+}
+html body .agentWrap {
+  width: 100%;
+  height: auto;
+  padding-bottom: 7vw;
+  padding: 5vw 0 7vw;
+}
+html body .agentWrap .tableTitle {
+  width: 100%;
+  height: 10vw;
+  background: #495057;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 16px;
+}
+html body .agentWrap .tableTitle p {
+  color: #ffffff;
+  font-size: 3.7vw;
+  font-weight: bold;
+}
+html body .agentWrap .tableTitle p span {
+  padding-left: 8px;
+}
+html body .agentWrap .tableTitle button {
+  width: auto;
+  height: auto;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 3.7vw;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .agentWrap .tableTitle button i {
+  width: 3vw;
+  height: 3vw;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-filter: grayscale(1) brightness(15);
+          filter: grayscale(1) brightness(15);
+  margin: 0 0 -2px 5px;
+}
+html body .agentWrap .tableBox {
+  width: 100%;
+  height: auto;
+  overflow-x: auto;
+  padding-bottom: 7vw;
+}
+html body .agentWrap .tableBox table {
+  width: auto;
+  height: auto;
+}
+html body .agentWrap .tableBox table tr th {
+  height: 10vw;
+  background: #95a0aa;
+  vertical-align: middle;
+  padding: 0 16px;
+}
+html body .agentWrap .tableBox table tr th:first-child {
+  padding-left: 24px;
+}
+html body .agentWrap .tableBox table tr th:last-child {
+  padding-right: 24px;
+}
+html body .agentWrap .tableBox table tr th p {
+  color: #ffffff;
+  font-size: 3.7vw;
+  font-weight: bold;
+  line-height: 4vw;
+  white-space: nowrap;
+}
+html body .agentWrap .tableBox table tr td {
+  height: 10vw;
+  background: #ffffff;
+  vertical-align: middle;
+  border-bottom: solid 1px #dce0e2;
+}
+html body .agentWrap .tableBox table tr td:first-child {
+  padding-left: 8px;
+}
+html body .agentWrap .tableBox table tr td:last-child {
+  padding-right: 8px;
+}
+html body .agentWrap .tableBox table tr td p {
+  color: #212529;
+  font-size: 3.7vw;
+  font-weight: bold;
+  line-height: 4vw;
+  text-align: center;
+}
+html body .agent_innerWrap {
+  width: 100%;
+  height: auto;
+  padding-bottom: 7vw;
+  padding: 16px 16px 7vw;
+}
+html body .agent_innerWrap .tableTitle {
+  width: 100%;
+  height: 10vw;
+  background: #495057;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 16px;
+}
+html body .agent_innerWrap .tableTitle p {
+  color: #ffffff;
+  font-size: 3.7vw;
+  font-weight: bold;
+}
+html body .agent_innerWrap .tableBox {
+  width: 100%;
+  height: auto;
+  padding-bottom: 7vw;
+}
+html body .agent_innerWrap .tableBox table {
+  width: 100%;
+  height: auto;
+  -webkit-box-shadow: 0 0 0 1px #dce0e2;
+          box-shadow: 0 0 0 1px #dce0e2;
+}
+html body .agent_innerWrap .tableBox table tr:nth-of-type(even) td {
+  background: #eaeff3;
+}
+html body .agent_innerWrap .tableBox table tr td {
+  width: 100%;
+  height: 10vw;
+  background: #ffffff;
+  vertical-align: middle;
+}
+html body .agent_innerWrap .tableBox table tr td:nth-of-type(1) {
+  width: 35%;
+}
+html body .agent_innerWrap .tableBox table tr td:last-child {
+  padding-right: 8px;
+}
+html body .agent_innerWrap .tableBox table tr td.positive p {
+  background: #d4edda;
+  color: #007bff;
+}
+html body .agent_innerWrap .tableBox table tr td.negative p {
+  background: #f8d7da;
+  color: #dc3545;
+}
+html body .agent_innerWrap .tableBox table tr td p {
+  height: 70%;
+  color: #212529;
+  font-size: 3.7vw;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 16px;
+}
+html body .agent_innerWrap .tableBox table tr td p i {
+  width: 4vw;
+  height: 4vw;
+  margin-left: 5px;
+}
+html body footer {
+  width: 100%;
+  height: 45px;
+  background: #354052;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+html body footer p {
+  color: #ffffff;
+  font-size: 3.7vw;
+  font-weight: bold;
+}
+html body footer .tableBox {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: -18vw;
+  left: 0;
+  display: none;
+  overflow-x: auto;
+}
+html body footer .tableBox.display {
+  display: block;
+}
+html body footer .tableBox.gameReport.index th:first-child, html body footer .tableBox.gameReport.account th:first-child {
+  padding: 0 32px;
+}
+html body footer .tableBox.gameReport.betRecord th:nth-of-type(2), html body footer .tableBox.gameReport.betRecord th:nth-of-type(12) {
+  padding: 0 48px;
+}
+html body footer .tableBox.gameReport.betRecord th:last-child {
+  padding: 0 32px;
+}
+html body footer .tableBox.gameReport tr th {
+  padding: 0 16px;
+}
+html body footer .tableBox.gameReport tr th p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html body footer .tableBox.gameReport tr th p .arrow_db_ic {
+  width: 4vw;
+  height: 4vw;
+  margin-left: 5px;
+}
+html body footer .tableBox.gameReport tr td:first-child, html body footer .tableBox.gameReport tr td:last-child {
+  padding: 0;
+}
+html body footer .tableBox table {
+  width: auto;
+  height: auto;
+}
+html body footer .tableBox table tr th {
+  height: 10vw;
+  background: #95a0aa;
+  vertical-align: middle;
+  padding: 0 8px;
+  opacity: 0;
+}
+html body footer .tableBox table tr th:first-child {
+  padding-left: 16px;
+}
+html body footer .tableBox table tr th:last-child {
+  padding-right: 16px;
+}
+html body footer .tableBox table tr th p {
+  color: #ffffff;
+  font-size: 3.7vw;
+  font-weight: bold;
+  line-height: 4vw;
+  white-space: nowrap;
+}
+html body footer .tableBox table tr td {
+  height: 8vw;
+  background: #ffffff;
+  border-top: solid 2px #44bac1;
+  vertical-align: middle;
+}
+html body footer .tableBox table tr td:first-child {
+  padding-left: 8px;
+}
+html body footer .tableBox table tr td:last-child {
+  padding-right: 8px;
+}
+html body footer .tableBox table tr td.positive {
+  background: #d4edda;
+}
+html body footer .tableBox table tr td.positive p {
+  color: #007bff;
+}
+html body footer .tableBox table tr td.negative {
+  background: #f8d7da;
+}
+html body footer .tableBox table tr td.negative p {
+  color: #dc3545;
+}
+html body footer .tableBox table tr td.disable p {
+  color: #999da3;
+}
+html body footer .tableBox table tr td p {
+  color: #212529;
+  font-size: 3.7vw;
+  font-weight: bold;
+  line-height: 4vw;
+  text-align: center;
+}
+html body .filter {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5019607843);
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  overflow: hidden;
+  z-index: 100;
+}
+html body .filter.display {
+  opacity: 1;
+  pointer-events: visible;
+}
+html body .filter .downList {
+  width: 100%;
+  height: auto;
+  background: #f5f9fc;
+  border-radius: 10px 10px 0 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 16px 16px 32px;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+html body .filter .downList.display {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+html body .filter .downList.hierarchyWindow, html body .filter .downList.platformWindow {
+  padding: 16px 0 32px;
+}
+html body .filter .downList.hierarchyWindow .selectBox, html body .filter .downList.platformWindow .selectBox {
+  display: block;
+  padding: 0 16px;
+}
+html body .filter .downList.hierarchyWindow .selectBox:nth-of-type(2), html body .filter .downList.platformWindow .selectBox:nth-of-type(2) {
+  margin: 10px 0;
+}
+html body .filter .downList.hierarchyWindow .selectBox i, html body .filter .downList.platformWindow .selectBox i {
+  right: 32px;
+}
+html body .filter .downList.hierarchyWindow .smallTitle, html body .filter .downList.platformWindow .smallTitle {
+  color: #212529;
+  font-size: 3.7vw;
+  font-weight: bold;
+  padding: 0 16px;
+}
+html body .filter .downList.hierarchyWindow .smallTitle.sp, html body .filter .downList.platformWindow .smallTitle.sp {
+  padding-bottom: 10px;
+}
+html body .filter .downList.hierarchyWindow .checkBox, html body .filter .downList.platformWindow .checkBox {
+  width: 100%;
+  height: auto;
+  padding: 10px 16px 24px;
+}
+html body .filter .downList.hierarchyWindow .checkBox.sp, html body .filter .downList.platformWindow .checkBox.sp {
+  max-height: 45vh;
+  border-bottom: solid 1px #dce0e2;
+  padding: 0 16px 10px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+html body .filter .downList.hierarchyWindow .checkBox.sp ul, html body .filter .downList.platformWindow .checkBox.sp ul {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+html body .filter .downList.hierarchyWindow .checkBox ul, html body .filter .downList.platformWindow .checkBox ul {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 0 1fr 0 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px 0;
+}
+html body .filter .downList.hierarchyWindow .checkBox ul li, html body .filter .downList.platformWindow .checkBox ul li {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .filter .downList.hierarchyWindow .checkBox ul li label, html body .filter .downList.platformWindow .checkBox ul li label {
+  width: 4vw;
+  height: 4vw;
+  background: #ffffff;
+  border-radius: 3px;
+  border: solid 1px #919eaa;
+  position: relative;
+  margin: 0 5px -2px 0;
+}
+html body .filter .downList.hierarchyWindow .checkBox ul li label.active::before, html body .filter .downList.platformWindow .checkBox ul li label.active::before {
+  content: "";
+  position: absolute;
+  width: 4.5vw;
+  height: 4.5vw;
+  left: 0;
+  bottom: 2px;
+}
+html body .filter .downList.hierarchyWindow .checkBox ul li label input, html body .filter .downList.platformWindow .checkBox ul li label input {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  margin: 0;
+}
+html body .filter .downList.hierarchyWindow .checkBox ul li p, html body .filter .downList.platformWindow .checkBox ul li p {
+  color: #606266;
+  font-size: 3.7vw;
+  font-weight: bold;
+}
+html body .filter .downList.hierarchyWindow .checkBox ul li p.active, html body .filter .downList.platformWindow .checkBox ul li p.active {
+  color: #129bd5;
+}
+html body .filter .downList.hierarchyWindow .changeBox, html body .filter .downList.platformWindow .changeBox {
+  width: 100%;
+  height: auto;
+  border: solid 1px #dee2e6;
+  border-width: 1px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 8px 16px;
+  margin-bottom: 24px;
+}
+html body .filter .downList.hierarchyWindow .changeBox p, html body .filter .downList.platformWindow .changeBox p {
+  color: #212529;
+  font-size: 3.7vw;
+  font-weight: bold;
+}
+html body .filter .downList.hierarchyWindow .changeBox .rowBox, html body .filter .downList.platformWindow .changeBox .rowBox {
+  width: 15vw;
+  height: 7vw;
+  background: #d6d6d6;
+  border-radius: 30px;
+  position: relative;
+}
+html body .filter .downList.hierarchyWindow .changeBox .rowBox.active, html body .filter .downList.platformWindow .changeBox .rowBox.active {
+  background: #29abe2;
+}
+html body .filter .downList.hierarchyWindow .changeBox .rowBox.active div, html body .filter .downList.platformWindow .changeBox .rowBox.active div {
+  -webkit-transform: translate(26%, -50%);
+          transform: translate(26%, -50%);
+}
+html body .filter .downList.hierarchyWindow .changeBox .rowBox div, html body .filter .downList.platformWindow .changeBox .rowBox div {
+  background: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-125%, -50%);
+          transform: translate(-125%, -50%);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+html body .filter .downList.hierarchyWindow .changeBox .rowBox div, html body .filter .downList.platformWindow .changeBox .rowBox div {
+  width: 5vw;
+  height: 5vw;
+}
+html body .filter .downList .selectBox {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+html body .filter .downList .selectBox select {
+  width: 100%;
+  height: 10vw;
+  background: #ffffff;
+  border-radius: 3px;
+  border: solid 1px #dee2e6;
+  color: #606266;
+  font-size: 3.7vw;
+  font-weight: bold;
+  padding-left: 8px;
+}
+html body .filter .downList .selectBox i {
+  width: 3vw;
+  height: 3vw;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 16px;
+  pointer-events: none;
+}
+html body .filter .downList .inputBox {
+  width: 100%;
+  height: 10vw;
+  background: #ffffff;
+  border-radius: 3px;
+  border: solid 1px #dee2e6;
+  color: #606266;
+  font-size: 3.7vw;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  margin: 10px 0;
+}
+html body .filter .downList .inputBox i {
+  width: 4vw;
+  height: 4vw;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin: 0 8px;
+}
+html body .filter .downList .inputBox input {
+  background: none;
+  border: none;
+  color: #606266;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  pointer-events: none;
+}
+html body .filter .downList .inputBox input:last-child {
+  margin-left: 10px;
+}
+html body .filter .downList .btnBox {
+  width: 90%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 8px 1fr 8px 1fr 8px 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin: 0 auto 10px;
+}
+html body .filter .downList .btnBox button {
+  width: auto;
+  height: 10vw;
+  background: #ffffff;
+  border-radius: 3px;
+  border: solid 1px #dee2e6;
+  color: #606266;
+  font-size: 3.7vw;
+  font-weight: bold;
+  padding-bottom: 4px;
+}
+html body .filter .downList .btnBox button:active, html body .filter .downList .btnBox button.active {
+  background: #29abe2;
+  color: #ffffff;
+}
+html body .filter .downList .langBox {
+  width: 100%;
+  height: 10vw;
+  background: #ffffff;
+  border-radius: 3px;
+  border: solid 1px #dee2e6;
+  color: #212529;
+  font-size: 3.7vw;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+html body .filter .downList .langBox.active {
+  border: solid 2px #29abe2;
+}
+html body .filter .downList .langBox:last-child {
+  margin: 0;
+}
+html body .filter .downList .langBox.active .arrow_ic {
+  display: block;
+}
+html body .filter .downList .langBox .arrow_ic {
+  width: 4vw;
+  height: 4vw;
+  display: none;
+}
+html body .filter .downList .checkBtn {
+  width: 80%;
+  height: 10vw;
+  background: #44bac1;
+  border-radius: 3px;
+  border: none;
+  color: #ffffff;
+  font-size: 3.7vw;
+  font-weight: bold;
+  display: block;
+  margin: 0 auto;
+}
+html body .filter .downList .checkBtn:active, html body .filter .downList .checkBtn.active {
+  background: #1a7d83;
+}
+html body .filter .leftList {
+  width: 96%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+html body .filter .leftList.display {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+html body .filter .leftList .topBox {
+  width: 100%;
+  height: 12vw;
+  background: #ffffff;
+  border-radius: 0 5px 5px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding: 0 16px;
+}
+html body .filter .leftList .topBox p {
+  color: #212529;
+  font-size: 4vw;
+  font-weight: bold;
+  margin-right: 8px;
+}
+html body .filter .leftList .topBox .selectBox {
+  width: 40vw;
+  height: auto;
+  position: relative;
+}
+html body .filter .leftList .topBox .selectBox select {
+  width: 100%;
+  height: 7vw;
+  background: #ffffff;
+  border-radius: 3px;
+  border: solid 1px #dee2e6;
+  color: #606266;
+  font-size: 3.7vw;
+  font-weight: bold;
+  padding-left: 8px;
+  background: #f5f9fc;
+}
+html body .filter .leftList .topBox .selectBox i {
+  width: 3vw;
+  height: 3vw;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  pointer-events: none;
+}
+html body .filter .leftList .topBox .arrow_db_ic {
+  width: 4vw;
+  height: 4vw;
+  position: absolute;
+  right: 16px;
+}
+html body .filter .leftList .content {
+  width: 86%;
+  height: 100%;
+  background: #ffffff;
+}
+html body .filter .leftList .content .nameBox {
+  width: 100%;
+  height: auto;
+  background: #303845;
+  padding: 20px 16px;
+}
+html body .filter .leftList .content .nameBox .top {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .filter .leftList .content .nameBox .top i {
+  width: 12vw;
+  height: 12vw;
+  margin-right: 16px;
+}
+html body .filter .leftList .content .nameBox .top .textBox {
+  width: auto;
+  height: auto;
+}
+html body .filter .leftList .content .nameBox .top .textBox .title {
+  color: #ffffff;
+  font-size: 4vw;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+html body .filter .leftList .content .nameBox .top .textBox .sub {
+  color: #999da3;
+  font-size: 3vw;
+  font-weight: bold;
+}
+html body .filter .leftList .content .nameBox .bottom {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+html body .filter .leftList .content .nameBox .bottom p {
+  color: #ffffff;
+  font-size: 3.7vw;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 8px;
+}
+html body .filter .leftList .content .nameBox .bottom p:last-child {
+  margin: 0;
+}
+html body .filter .leftList .content .nameBox .bottom p i {
+  width: 3vw;
+  height: 3vw;
+  margin-left: 5px;
+}
+html body .filter .leftList .content .listBox {
+  width: 100%;
+  height: auto;
+}
+html body .filter .leftList .content .listBox ul {
+  width: 100%;
+  height: auto;
+}
+html body .filter .leftList .content .listBox ul li {
+  width: 100%;
+  height: 12vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 16px;
+}
+html body .filter .leftList .content .listBox ul li.lang {
+  border-bottom: solid 1px #dce0e2;
+}
+html body .filter .leftList .content .listBox ul li:active, html body .filter .leftList .content .listBox ul li.active {
+  background: #f5fafe;
+}
+html body .filter .leftList .content .listBox ul li:active .arrow_ic, html body .filter .leftList .content .listBox ul li.active .arrow_ic {
+  -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
+}
+html body .filter .leftList .content .listBox ul li p {
+  color: #212529;
+  font-size: 4vw;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .filter .leftList .content .listBox ul li p i {
+  width: 5vw;
+  height: 5vw;
+  margin-right: 10px;
+}
+html body .filter .leftList .content .listBox ul li .arrow_ic {
+  width: 3vw;
+  height: 3vw;
+}
+html body .filter .leftList .content .listBox ul li .lang {
+  color: #606266;
+}
+html body .filter .leftList .content .listBox ul li .lang .arrow_ic {
+  margin: 0 0 0 10px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+html body .filter .leftList .content .listBox ul .smallList {
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+}
+html body .filter .leftList .content .listBox ul .smallList.display {
+  height: auto;
+}
+html body .filter .leftList .content .listBox ul .smallList div {
+  width: 100%;
+  height: 10vw;
+  background: #e5edf0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: calc(5vw + 26px);
+}
+html body .filter .leftList .content .listBox ul .smallList div:active, html body .filter .leftList .content .listBox ul .smallList div.active {
+  background: #44bac1;
+}
+html body .filter .leftList .content .listBox ul .smallList div:active p, html body .filter .leftList .content .listBox ul .smallList div.active p {
+  color: #ffffff;
+}
+html body .filter .leftList .content .listBox ul .smallList div p {
+  color: #606266;
+  font-size: 3.7vw;
+  font-weight: bold;
+}
+html body .filter .jumpWindow {
+  width: 90%;
+  height: auto;
+  background: #f5f9fc;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 0 16px;
+  display: none;
+}
+html body .filter .jumpWindow.display {
+  display: block;
+}
+html body .filter .jumpWindow .title {
+  width: 100%;
+  height: auto;
+  border-bottom: solid 2px #44bac1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 16px 0;
+}
+html body .filter .jumpWindow .title p {
+  color: #212529;
+  font-size: 5vw;
+  font-weight: bold;
+}
+html body .filter .jumpWindow .title i {
+  width: 4vw;
+  height: 4vw;
+}
+html body .filter .jumpWindow .content {
+  width: 100%;
+  height: auto;
+}
+html body .filter .jumpWindow .content .tableBox {
+  width: 98%;
+  height: auto;
+  overflow-x: auto;
+  padding: 1px;
+  margin: 16px auto;
+}
+html body .filter .jumpWindow .content .tableBox table {
+  width: 100%;
+  height: auto;
+  -webkit-box-shadow: 0 0 0 1px #dce0e2;
+          box-shadow: 0 0 0 1px #dce0e2;
+  overflow: hidden;
+}
+html body .filter .jumpWindow .content .tableBox table tr:last-child td p {
+  border-bottom: none;
+}
+html body .filter .jumpWindow .content .tableBox table tr th {
+  height: 10vw;
+  background: #495057;
+  vertical-align: middle;
+}
+html body .filter .jumpWindow .content .tableBox table tr th p {
+  width: 100%;
+  color: #ffffff;
+  font-size: 4vw;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  white-space: nowrap;
+}
+html body .filter .jumpWindow .content .tableBox table tr th p i {
+  width: 3vw;
+  height: 4vw;
+  margin-left: 8px;
+}
+html body .filter .jumpWindow .content .tableBox table tr td {
+  height: 10vw;
+  background: #ffffff;
+  vertical-align: middle;
+}
+html body .filter .jumpWindow .content .tableBox table tr td:last-child p::before {
+  display: none;
+}
+html body .filter .jumpWindow .content .tableBox table tr td p {
+  width: 100%;
+  height: 100%;
+  border-bottom: solid 1px #dce0e2;
+  color: #212529;
+  font-size: 4vw;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  position: relative;
+}
+html body .filter .jumpWindow .content .tableBox table tr td p::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 55%;
+  background: #dce0e2;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+html body .filter .jumpWindow .content .pageBox {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+html body .filter .jumpWindow .content .pageBox .arrowBtn {
+  width: 8vw;
+  height: 8vw;
+  background: #e2ebf1;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html body .filter .jumpWindow .content .pageBox .arrowBtn.right i {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+html body .filter .jumpWindow .content .pageBox .arrowBtn.active i {
+  -webkit-filter: grayscale(0) brightness(1);
+          filter: grayscale(0) brightness(1);
+}
+html body .filter .jumpWindow .content .pageBox .arrowBtn i {
+  width: 3vw;
+  height: 3vw;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-filter: grayscale(1) brightness(3);
+          filter: grayscale(1) brightness(3);
+}
+html body .filter .jumpWindow .content .pageBox .numBox {
+  width: 8vw;
+  height: 8vw;
+  background: #e2ebf1;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 8px 24px 0;
+}
+html body .filter .jumpWindow .content .pageBox .numBox:nth-of-type(2) {
+  margin-left: 8px;
+}
+html body .filter .jumpWindow .content .pageBox .numBox.active {
+  background: #44bac1;
+}
+html body .filter .jumpWindow .content .pageBox .numBox.active p {
+  color: #ffffff;
+}
+html body .filter .jumpWindow .content .pageBox .numBox p {
+  color: #212529;
+  font-size: 4vw;
+  font-weight: bold;
+}
+html body .filter .jumpWindow.firstWindow .content .tableBox table tr td {
+  width: 50%;
+}
+html body .filter .jumpWindow.active_signup .content .tableBox table tr td p, html body .filter .jumpWindow.active_login .content .tableBox table tr td p, html body .filter .jumpWindow.active_depositPeopleTotal .content .tableBox table tr td p, html body .filter .jumpWindow.active_depositTotal .content .tableBox table tr td p, html body .filter .jumpWindow.active_depositAgain .content .tableBox table tr td p {
+  padding: 0 15px;
+}
+html body .filter .jumpWindow.active_withdrawalTotal .content .tableBox table tr td:nth-of-type(3), html body .filter .jumpWindow.active_withdrawalTotal .content .tableBox table tr td:nth-of-type(5), html body .filter .jumpWindow.active_withdrawalAgain .content .tableBox table tr td:nth-of-type(3), html body .filter .jumpWindow.active_withdrawalAgain .content .tableBox table tr td:nth-of-type(5), html body .filter .jumpWindow.active_withdrawal .content .tableBox table tr td:nth-of-type(3), html body .filter .jumpWindow.active_withdrawal .content .tableBox table tr td:nth-of-type(5) {
+  min-width: 100px;
+}
+html body .filter .jumpWindow.active_withdrawalTotal .content .tableBox table tr td p, html body .filter .jumpWindow.active_withdrawalAgain .content .tableBox table tr td p, html body .filter .jumpWindow.active_withdrawal .content .tableBox table tr td p {
+  padding: 0 15px;
+}
+html body .filter .jumpWindow.changeName .content {
+  padding: 24px 16px 32px;
+}
+html body .filter .jumpWindow.changeName .content .name {
+  color: #606266;
+  font-size: 3.7vw;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+html body .filter .jumpWindow.changeName .content .inputBox {
+  width: 100%;
+  height: auto;
+}
+html body .filter .jumpWindow.changeName .content .inputBox input {
+  width: 100%;
+  height: 10vw;
+  background: #ffffff;
+  border-radius: 3px;
+  border: solid 1px #495057;
+  color: #212529;
+  font-size: 3.7vw;
+  font-weight: bold;
+  padding-left: 16px;
+}
+html body .filter .jumpWindow.changeName .content .inputBox input::-webkit-input-placeholder {
+  color: #999da3;
+}
+html body .filter .jumpWindow.changeName .content .inputBox input::-moz-placeholder {
+  color: #999da3;
+}
+html body .filter .jumpWindow.changeName .content .inputBox input:-ms-input-placeholder {
+  color: #999da3;
+}
+html body .filter .jumpWindow.changeName .content .inputBox input::-ms-input-placeholder {
+  color: #999da3;
+}
+html body .filter .jumpWindow.changeName .content .inputBox input::placeholder {
+  color: #999da3;
+}
+html body .filter .jumpWindow.changeName .content button {
+  width: 90%;
+  height: 10vw;
+}
+html body .filter .jumpWindow.changeName .content button.check {
+  background: #44bac1;
+  border-radius: 3px;
+  border: none;
+  color: #ffffff;
+  font-size: 3.7vw;
+  font-weight: bold;
+  display: block;
+  margin: 32px auto 16px;
+}
+html body .filter .jumpWindow.changeName .content button.check:active, html body .filter .jumpWindow.changeName .content button.check.active {
+  background: #1a7d83;
+}
+html body .filter .jumpWindow.changeName .content button.back {
+  background: #c3c3c3;
+  border-radius: 3px;
+  border: none;
+  color: #ffffff;
+  font-size: 3.7vw;
+  font-weight: bold;
+  display: block;
+  margin: 0 auto;
+}
+html body .filter .jumpWindow.changeName .content button.back:active, html body .filter .jumpWindow.changeName .content button.back.active {
+  background: #979797;
+}
+html body .filter .jumpWindow.changePW .content {
+  padding: 16px 16px 32px;
+}
+html body .filter .jumpWindow.changePW .content .target {
+  width: 100%;
+  height: 10vw;
+  background: #e1e8ed;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+html body .filter .jumpWindow.changePW .content .target p {
+  color: #212529;
+  font-size: 3.7vw;
+  font-weight: bold;
+}
+html body .filter .jumpWindow.changePW .content .inputBox {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 16px;
+}
+html body .filter .jumpWindow.changePW .content .inputBox input {
+  width: 100%;
+  height: 10vw;
+  background: #ffffff;
+  border-radius: 3px;
+  border: solid 1px #495057;
+  color: #212529;
+  font-size: 3.7vw;
+  font-weight: bold;
+  padding-left: 16px;
+}
+html body .filter .jumpWindow.changePW .content .inputBox input::-webkit-input-placeholder {
+  color: #999da3;
+}
+html body .filter .jumpWindow.changePW .content .inputBox input::-moz-placeholder {
+  color: #999da3;
+}
+html body .filter .jumpWindow.changePW .content .inputBox input:-ms-input-placeholder {
+  color: #999da3;
+}
+html body .filter .jumpWindow.changePW .content .inputBox input::-ms-input-placeholder {
+  color: #999da3;
+}
+html body .filter .jumpWindow.changePW .content .inputBox input::placeholder {
+  color: #999da3;
+}
+html body .filter .jumpWindow.changePW .content button {
+  width: 90%;
+  height: 10vw;
+}
+html body .filter .jumpWindow.changePW .content button.check {
+  background: #44bac1;
+  border-radius: 3px;
+  border: none;
+  color: #ffffff;
+  font-size: 3.7vw;
+  font-weight: bold;
+  display: block;
+  margin: 32px auto 16px;
+}
+html body .filter .jumpWindow.changePW .content button.check:active, html body .filter .jumpWindow.changePW .content button.check.active {
+  background: #1a7d83;
+}
+html body .filter .jumpWindow.changePW .content button.back {
+  background: #c3c3c3;
+  border-radius: 3px;
+  border: none;
+  color: #ffffff;
+  font-size: 3.7vw;
+  font-weight: bold;
+  display: block;
+  margin: 0 auto;
+}
+html body .filter .jumpWindow.changePW .content button.back:active, html body .filter .jumpWindow.changePW .content button.back.active {
+  background: #979797;
+}
+html body .filter .jumpWindow.gameReportWindow .content .tableBox table tr th {
+  padding: 0 15px;
+}
+html body .filter .jumpWindow.gameReportWindow .content .tableBox table tr td.positive {
+  background: #d4edda;
+}
+html body .filter .jumpWindow.gameReportWindow .content .tableBox table tr td.positive p {
+  color: #007bff;
+}
+html body .filter .jumpWindow.gameReportWindow .content .tableBox table tr td p {
+  padding: 0 15px;
+}
+html body .filter .jumpWindow.agentWindow .content .tableBox table tr:last-child td {
+  border: none;
+}
+html body .filter .jumpWindow.agentWindow .content .tableBox table tr td {
+  width: 50%;
+  border-bottom: solid 1px #dce0e2;
+}
+html body .filter .jumpWindow.agentWindow .content .tableBox table tr td:nth-of-type(2) p {
+  width: 80%;
+  margin: 0 auto;
+}
+html body .filter .jumpWindow.agentWindow .content .tableBox table tr td.negative p {
+  background: #f8d7da;
+  color: #dc3545;
+}
+html body .filter .jumpWindow.agentWindow .content .tableBox table tr td.positive p {
+  background: #d4edda;
+  color: #007bff;
+}
+html body .filter .jumpWindow.agentWindow .content .tableBox table tr td p {
+  height: 75%;
+  border: none;
+  padding: 0 8px;
+}

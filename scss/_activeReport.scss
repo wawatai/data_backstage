@@ -1,0 +1,167 @@
+.activeWrap {
+    @include BGStyle_1;
+
+    .top {
+        width: 100%;
+        height: auto;
+        padding: 16px;
+
+        .selectBox {
+            width: 100%;
+            height: auto;
+            position: relative;
+            
+            select {
+                width: 100%;
+                height: 10vw;
+                @include selectStyle_1;
+            }
+
+            i {
+                width: 3vw;
+                height: 3vw;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 16px;
+                pointer-events: none;
+            }
+        }
+
+        .inputBox {
+            width: 100%;
+            height: 10vw;
+            @include inputStyle_1;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            margin: 10px 0;
+
+            i {
+                width: 4vw;
+                height: 4vw;
+                flex-shrink: 0;
+                margin: 0 8px;
+            }
+
+            input {
+                background: none;
+                border: none;
+                color: $inputStyle_1_Color;
+                flex-shrink: 0;
+                pointer-events: none;
+
+                &:last-child {
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        .btnBox {
+            width: 90%;
+            height: auto;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 8px;
+            margin: 0 auto 10px;
+
+            button {
+                width: auto;
+                height: 10vw;
+                @include dateBtn;
+            }
+        }
+
+        .checkBtn {
+            width: 80%;
+            height: 10vw;
+            @include mainBtn;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    .bottom {
+        width: 100%;
+        height: auto;
+
+        .tableTitle {
+            width: 100%;
+            height: 10vw;
+            background: $table_thBG_1;
+            color: $table_TitleColor_1;
+            font-size: 3.7vw;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            padding: 0 16px;
+        }
+
+        .tableBox {
+            width: 100%;
+            height: auto;
+            overflow-x: auto;
+            padding-bottom: 7vw;
+
+            table {
+                width: auto;
+                height: auto;
+    
+                tr {
+    
+                    th {
+                        height: 10vw;
+                        background: $table_thBG_2;
+                        vertical-align: middle;
+                        padding: 0 8px;
+    
+                        &:first-child {
+                            padding-left: 16px;
+                        }
+                        &:last-child {
+                            padding-right: 16px;
+                        }
+    
+                        p {
+                            color: $table_TitleColor_1;
+                            font-size: 3.7vw;
+                            font-weight: bold;
+                            line-height: 4vw;
+                            white-space: nowrap;
+                        }
+                    }
+
+                    td {
+                        height: 10vw;
+                        background: $table_tdBG_1;
+                        vertical-align: middle;
+                        border-bottom: solid 1px $table_Border_2;
+
+                        &:first-child {
+                            padding-left: 8px;
+                        }
+                        &:last-child {
+                            padding-right: 8px;
+                        }
+
+                        &.positive {
+
+                            p  {
+                                color: $table_positiveColor;
+                                text-decoration: underline;
+                            }
+                        }
+
+                        p {
+                            color: $table_Color_1;
+                            font-size: 3.7vw;
+                            font-weight: bold;
+                            line-height: 4vw;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

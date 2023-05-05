@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="../js/javascript.js"></script>
+</head>
+<body>
+    <!--header-->
+    <header>
+        <i class="listBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </i>
+        <p class="title">コミッション決算予測</p>
+        <i class="re_ic"></i>
+    </header>
+    <!--mainWrap-->
+    <main>
+        <div class="profitWrap">
+            <!--top-->
+            <div class="top">
+                <!-- <div class="rowBox">
+                    <div class="innerBox left">
+                        <p>
+                            <i class="left"></i>
+                            総合概要
+                        </p>
+                        <p>
+                            <i class="right"></i>
+                            勝ち負け
+                        </p>
+                        <div class="cnt"></div>
+                    </div>
+                </div> -->
+                <div class="textBox">
+                    <p>決算期間</p>
+                    <p>2022-09-01 00:00:00 ~ 2022-09-14 17:53:28</p>
+                </div>
+                <!-- <div class="changeStyle">
+                    <button class="left active"></button>
+                    <button class="right"></button>
+                </div> -->
+            </div>
+            <div class="listBox display">
+                <!--mid-->
+                <div class="mid">
+                    <div>
+                        <i class="profit_ic"></i>
+                        <div>
+                            <p>
+                                予想コミッション
+                                <i class="question_ic">
+                                    <span>報酬 + 前期未払い報酬</span>
+                                </i>
+                            </p>
+                            <p>¥0</p>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="reward_ic"></i>
+                        <div>
+                            <p>
+                                報酬予想額
+                                <i class="question_ic">
+                                    <span class="sp">利益総計 - 営業代 - 前回マイナス額</span>
+                                </i>
+                            </p>
+                            <p>¥-76,721.99</p>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="money_ic"></i>
+                        <div>
+                            <p>現在のコミッション率</p>
+                            <p>25%</p>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="money_ic"></i>
+                        <div>
+                            <p>次段階のコミッション率</p>
+                            <p>30%</p>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="person_ic"></i>
+                        <div>
+                            <p>初回入金者</p>
+                            <p>0人</p>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="person_ic"></i>
+                        <div>
+                            <p>次の段階の初回入金者の数まで</p>
+                            <p>0人</p>
+                        </div>
+                    </div>
+                </div>
+                <!--bottom-->
+                <div class="bottom">
+                    <div class="totalBox">
+                        <i class="profit_ic"></i>
+                        <p>
+                            報酬
+                            <i class="question_ic">
+                                <span>(利益総計 - 営業代 - 前回マイナス額) x 現在のコミッション率</span>
+                            </i>
+                        </p>
+                        <p class="money">¥0</p>
+                    </div>
+                    <div class="elseBox">
+                        <div>
+                            <i class="money_ic"></i>
+                            <div>
+                                <p>前期未払い報酬</p>
+                                <p>0人</p>
+                            </div>
+                        </div>
+                        <div>
+                            <i class="reward_ic"></i>
+                            <div>
+                                <p>上期負結餘</p>
+                                <p>0人</p>
+                            </div>
+                        </div>
+                        <div>
+                            <i class="money_ic"></i>
+                            <div>
+                                <p>利益総計</p>
+                                <p>0人</p>
+                            </div>
+                        </div>
+                        <div>
+                            <i class="reward_ic"></i>
+                            <div>
+                                <p>料金総計</p>
+                                <p>0人</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="listBox">
+                <p class="tableTitle active">
+                    <span>総収入</span>
+                    <span>
+                        すべて折
+                        <br>
+                        りたたむ
+                        <i class="arrow_db_ic"></i>
+                    </span>
+                </p>
+                <div class="tableBox partner display">
+                    <table>
+                        <tr>
+                            <th>
+                                <p>
+                                    ゲーム
+                                    <br>
+                                    プラット
+                                </p>
+                            </th>
+                            <th>
+                                <p>メンバー小計</p>
+                            </th>
+                            <th>
+                                <p>所得</p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>AUX</p>
+                            </td>
+                            <td class="negative">
+                                <p>-177,725</p>
+                            </td>
+                            <td class="positive">
+                                <p>151,066.25</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>RELAX</p>
+                            </td>
+                            <td class="negative">
+                                <p>-49,681</p>
+                            </td>
+                            <td class="positive">
+                                <p>42,228.85</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>IFUN GAMES</p>
+                            </td>
+                            <td class="negative">
+                                <p>-22,293.85</p>
+                            </td>
+                            <td class="positive">
+                                <p>18,949.77</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Evolution</p>
+                            </td>
+                            <td class="negative">
+                                <p>-22,267.99</p>
+                            </td>
+                            <td class="positive">
+                                <p>18,927.79</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>GoldenHero</p>
+                            </td>
+                            <td class="negative">
+                                <p>-3,892</p>
+                            </td>
+                            <td class="positive">
+                                <p>3,308.2</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>PNG SLOTS</p>
+                            </td>
+                            <td class="negative">
+                                <p>-125</p>
+                            </td>
+                            <td class="positive">
+                                <p>106.25</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    Pragmatic Play
+                                    <br>
+                                    SLOT
+                                </p>
+                            </td>
+                            <td class="negative">
+                                <p>-100</p>
+                            </td>
+                            <td class="positive">
+                                <p>85</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>PG SLOTS</p>
+                            </td>
+                            <td class="negative">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>DG CASINO</p>
+                            </td>
+                            <td class="positive">
+                                <p>12</p>
+                            </td>
+                            <td class="negative">
+                                <p>-12</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>BOOONGO</p>
+                            </td>
+                            <td class="positive">
+                                <p>1,222.25</p>
+                            </td>
+                            <td class="negative">
+                                <p>-1,222.25</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>AG CASINO</p>
+                            </td>
+                            <td class="positive">
+                                <p>19,000</p>
+                            </td>
+                            <td class="negative">
+                                <p>-19,000</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>NO LIMIT CITY</p>
+                            </td>
+                            <td class="positive">
+                                <p>58,431</p>
+                            </td>
+                            <td class="negative">
+                                <p>-58,431</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>ELK GAMES</p>
+                            </td>
+                            <td class="positive">
+                                <p>117,625</p>
+                            </td>
+                            <td class="negative">
+                                <p>-117,625</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="totalBox partner">
+                    <table>
+                        <tr>
+                            <td>
+                                <p>合計</p>
+                            </td>
+                            <td class="positive">
+                                <p>38,381.86</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <p class="tableTitle active">
+                    <span>操業コスト</span>
+                    <span>
+                        すべて折
+                        <br>
+                        りたたむ
+                        <i class="arrow_db_ic"></i>
+                    </span>
+                </p>
+                <div class="tableBox display">
+                    <table>
+                        <tr>
+                            <th>
+                                <p>タイプ</p>
+                            </th>
+                            <th>
+                                <p>金額</p>
+                            </th>
+                            <th>
+                                <p>操業コスト</p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>送金</p>
+                            </td>
+                            <td class="positive">
+                                <p>28,000</p>
+                            </td>
+                            <td class="negative">
+                                <p>-1,960</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>出金手数料</p>
+                            </td>
+                            <td class="positive">
+                                <p>270,647</p>
+                            </td>
+                            <td class="negative">
+                                <p>-8,119.41</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>オンライン支払い</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>割引</p>
+                            </td>
+                            <td class="positive">
+                                <p>4,100</p>
+                            </td>
+                            <td class="negative">
+                                <p>-4,100</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>メンバーリベート</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    プロキシバッ
+                                    <br>
+                                    クウォーター
+                                </p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>会員ボーナス</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>代理ボーナス</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                            <td class="disable">
+                                <p>0</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="totalBox">
+                    <table>
+                        <tr>
+                            <td>
+                                <p>合計</p>
+                            </td>
+                            <td class="positive">
+                                <p>38,381.86</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--footer-->
+    <footer>
+        <p>© 2022, AU8.com すべての権利を保有しています。</p>
+    </footer>
+    <!--filter-->
+    <div class="filter">
+        <div class="leftList">
+            <div class="topBox">
+                <p>アフィリエイト</p>
+                <label class="selectBox">
+                    <select>
+                        <option value="">NJ1</option>
+                        <option value="">NJ1</option>
+                        <option value="">NJ1</option>
+                    </select>
+                    <i class="arrow_ic"></i>
+                </label>
+                <i class="arrow_db_ic close"></i>
+            </div>
+            <div class="content">
+                <div class="nameBox">
+                    <div class="top">
+                        <i class="user_ic"></i>
+                        <div class="textBox">
+                            <p class="title">j005 【 測試代理 】</p>
+                            <p class="sub">前回のログイン:Tue Sep 13 16:54 2022</p>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <p>役割: 測試代理權限</p>
+                        <p>
+                            利用可能なポイント: 0
+                            <i class="re_ic"></i>
+                        </p>
+                        <p>決算金: 0</p>
+                    </div>
+                </div>
+                <div class="listBox">
+                    <ul>
+                        <li>
+                            <p>
+                                <i class="home_ic"></i>
+                                ホーム
+                            </p>
+                            <i class="arrow_ic"></i>
+                        </li>
+                        <div class="smallList">
+                            <div onclick="window.location.href='../index.html'">
+                                <p>ホーム</p>
+                            </div>
+                            <div onclick="window.location.href='./activeReport.html'">
+                                <p>メンバーアクティブな状況</p>
+                            </div>
+                        </div>
+                        <li>
+                            <p>
+                                <i class="member_ic"></i>
+                                個人管理
+                            </p>
+                            <i class="arrow_ic"></i>
+                        </li>
+                        <div class="smallList">
+                            <div onclick="window.location.href='./member.html'">
+                                <p>個人情報</p>
+                            </div>
+                            <div onclick="window.location.href='./loginRecord.html'">
+                                <p>ログイン記録</p>
+                            </div>
+                        </div>
+                        <li class="active">
+                            <p>
+                                <i class="report_ic"></i>
+                                報告書
+                            </p>
+                            <i class="arrow_ic"></i>
+                        </li>
+                        <div class="smallList display">
+                            <div class="active" onclick="window.location.href='./profit.html'">
+                                <p>コミッション決算予測</p>
+                            </div>
+                            <!-- <div onclick="window.location.href='./gameReport.html'">
+                                <p>ゲームレポート</p>
+                            </div> -->
+                            <div onclick="window.location.href='./agent.html'">
+                                <p>コミッション決算書</p>
+                            </div>
+                        </div>
+                        <li class="remind">
+                            <p>
+                                <i class="remind_ic"></i>
+                                お知らせ
+                            </p>
+                        </li>
+                        <li class="lang">
+                            <p>
+                                <i class="lang_ic"></i>
+                                言語
+                            </p>
+                            <p class="lang">
+                                日本語
+                                <i class="arrow_ic"></i>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <i class="logout_ic"></i>
+                                ログアウト
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="jumpWindow firstWindow">
+            <div class="title">
+                <p>お知らせ</p>
+                <i class="close_ic close"></i>
+            </div>
+            <div class="content">
+                <div class="tableBox">
+                    <table>
+                        <tr>
+                            <th>
+                                <p>タイトル</p>
+                            </th>
+                            <th>
+                                <p>
+                                    設立時間
+                                    <i class="arrow_db_ic"></i>
+                                </p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>TEST1</p>
+                            </td>
+                            <td>
+                                <p>2021-04-18</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>AAAAaaa11...</p>
+                            </td>
+                            <td>
+                                <p>2022-08-02</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>TEST123</p>
+                            </td>
+                            <td>
+                                <p>2022-08-16</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="pageBox">
+                    <div class="arrowBtn left">
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="numBox active">
+                        <p>1</p>
+                    </div>
+                    <div class="arrowBtn right">
+                        <i class="arrow_ic"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="downList lang">
+            <div class="langBox active">
+                <p>日本語</p>
+                <i class="arrow_ic"></i>
+            </div>
+            <div class="langBox">
+                <p>繁體中文</p>
+                <i class="arrow_ic"></i>
+            </div>
+            <div class="langBox">
+                <p>简体中文</p>
+                <i class="arrow_ic"></i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

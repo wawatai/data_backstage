@@ -1,0 +1,192 @@
+//header
+header .re_ic {
+    background: url('../images/icon/svg/reset.svg') no-repeat center;
+    background-size: contain;
+}
+header .back_ic {
+    background: url('../images/icon/arrow_1.png') no-repeat center;
+    background-size: contain;
+}
+
+//mainWrap
+.mainWrap .listBox .mid .total_ic {
+    background: url('../images/icon/svg/hasBG_yellowMoney.svg') no-repeat center;
+    background-size: contain;
+}
+.mainWrap .listBox .mid .deposit_ic {
+    background: url('../images/icon/svg/hasBG_greenMoney.svg') no-repeat center;
+    background-size: contain;
+}
+.mainWrap .listBox .mid .withdrawal_ic {
+    background: url('../images/icon/svg/hasBG_redMoney.svg') no-repeat center;
+    background-size: contain;
+}
+.mainWrap .listBox .mid .person_ic {
+    background: url('../images/icon/svg/hasBG_person.svg') no-repeat center;
+    background-size: contain;
+}
+.mainWrap .listBox .mid .people_ic {
+    background: url('../images/icon/svg/hasBG_people.svg') no-repeat center;
+    background-size: contain;
+}
+.mainWrap .listBox .mid .question_ic {
+    background: url('../images/icon/svg/question.svg') no-repeat center;
+    background-size: contain;
+}
+
+//profitWrap
+.profitWrap .mid .profit_ic,
+.profitWrap .bottom .profit_ic {
+    background: url('../images/icon/svg/hasBG_bank.svg') no-repeat center;
+    background-size: contain;
+}
+.profitWrap .mid .reward_ic,
+.profitWrap .bottom .reward_ic {
+    background: url('../images/icon/svg/hasBG_redMoney.svg') no-repeat center;
+    background-size: contain;
+}
+.profitWrap .mid .money_ic,
+.profitWrap .bottom .money_ic {
+    background: url('../images/icon/svg/hasBG_yellowMoney.svg') no-repeat center;
+    background-size: contain;
+}
+.profitWrap .mid .person_ic {
+    background: url('../images/icon/svg/hasBG_person.svg') no-repeat center;
+    background-size: contain;
+}
+.profitWrap .mid .question_ic,
+.profitWrap .bottom .question_ic {
+    background: url('../images/icon/svg/question.svg') no-repeat center;
+    background-size: contain;
+}
+.profitWrap .tableTitle .arrow_db_ic {
+    background: url('../images/icon/arrow_db_3.png') no-repeat center;
+    background-size: contain;
+}
+
+//member
+.memberWrap .qrImg {
+    background: url('../images/qr.png') no-repeat;
+    background-size: contain;
+}
+
+//gameReport
+.gameReportWrap .control_ic {
+    background: url('../images/icon/control.png') no-repeat center;
+    background-size: contain;
+}
+.gameReportWrap .question_ic {
+    background: url('../images/icon/svg/question.svg') no-repeat center;
+    background-size: contain;
+}
+.gameReportWrap .tableBox th .arrow_db_ic {
+    background: url('../images/icon/arrow_db_2.png') no-repeat;
+    background-size: contain;
+}
+
+//agent
+.agentWrap .tableTitle .arrow_ic {
+    background: url('../images/icon/arrow_1.png') no-repeat center;
+    background-size: contain;
+}
+.agent_innerWrap .question_ic {
+    background: url('../images/icon/svg/question_2.svg') no-repeat center;
+    background-size: contain;
+}
+
+//jumpWindow
+.jumpWindow.firstWindow .arrow_db_ic {
+    background: url('../images/icon/arrow_db_2.png') no-repeat;
+    background-size: contain;
+}
+.downList.lang .arrow_ic {
+    background: url('../images/icon/arrow_2.png') no-repeat center;
+    background-size: contain;
+}
+.leftList .topBox .arrow_db_ic {
+    background: url('../images/icon/arrow_db_1.png') no-repeat center;
+    background-size: contain;
+}
+.leftList .nameBox .user_ic {
+    background: url('../images/icon/svg/user.svg') no-repeat center;
+    background-size: contain;
+}
+.leftList .nameBox .re_ic {
+    background: url('../images/icon/svg/reset_green.svg') no-repeat center;
+    background-size: contain;
+}
+.leftList .listBox .arrow_ic {
+    background: url('../images/icon/arrow_1.png') no-repeat center;
+    background-size: contain;
+}
+.leftList .listBox .home_ic {
+    background: url('../images/icon/svg/leftList_home.svg') no-repeat center;
+    background-size: contain;
+}
+.leftList .listBox .member_ic {
+    background: url('../images/icon/svg/leftList_member.svg') no-repeat center;
+    background-size: contain;
+}
+.leftList .listBox .report_ic {
+    background: url('../images/icon/svg/leftList_report.svg') no-repeat center;
+    background-size: contain;
+}
+.leftList .listBox .remind_ic {
+    background: url('../images/icon/svg/leftList_remind.svg') no-repeat center;
+    background-size: contain;
+}
+.leftList .listBox .lang_ic {
+    background: url('../images/icon/svg/leftList_language.svg') no-repeat center;
+    background-size: contain;
+}
+.leftList .listBox .logout_ic {
+    background: url('../images/icon/svg/leftList_logout.svg') no-repeat center;
+    background-size: contain;
+}
+
+//雜
+.selectBox .arrow_ic {
+    background: url('../images/icon/arrow_1.png') no-repeat center;
+    background-size: contain;
+}
+.inputBox .search_ic::before {
+    background: url('../images/icon/svg/search.svg') no-repeat center;
+    background-size: contain;
+}
+.inputBox .clock_ic {
+    background: url('../images/icon/svg/clock.svg') no-repeat center;
+    background-size: contain;
+}
+
+// .changeStyle .left::before {
+//     background: url('../images/icon/changeStyleIcon_1.png') no-repeat center;
+//     background-size: contain;
+// }
+// .changeStyle .right::before {
+//     background: url('../images/icon/changeStyleIcon_2.png') no-repeat center;
+//     background-size: contain;
+// }
+
+.pageBox .arrowBtn i {
+    background: url('../images/icon/arrow_1.png') no-repeat center;
+    background-size: contain;
+}
+
+.checkStyle::before {
+    background: url('../images/icon/arrow_2.png') no-repeat center;
+    background-size: contain;
+}
+
+.jumpWindow .close_ic {
+    background: url('../images/icon/close_1.png') no-repeat center;
+    background-size: contain;
+}
+
+.rowBox .left {
+    background: url('../images/icon/changeStyleIcon_1.png') no-repeat center;
+    background-size: contain;
+}
+.rowBox .right {
+    background: url('../images/icon/changeStyleIcon_2.png') no-repeat center;
+    background-size: contain;
+}

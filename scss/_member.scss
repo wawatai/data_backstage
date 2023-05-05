@@ -1,0 +1,141 @@
+.memberWrap {
+    @include BGStyle_1;
+    padding: 16px 16px 7vw;
+
+    .title {
+        width: 100%;
+        height: 10vw;
+        background: $table_thBG_1;
+        display: flex;
+        align-items: center;
+        padding: 0 16px;
+
+        p {
+            color: $table_TitleColor_1;
+            font-size: 3.7vw;
+            font-weight: bold;
+        }
+    }
+
+    ul {
+        width: 100%;
+        height: auto;
+
+        li {
+            width: 100%;
+            height: 12vw;
+            background: $table_tdBG_1;
+            border: solid 1px $table_Border_2;
+            border-width: 0 1px;
+            display: flex;
+            align-items: center;
+            padding: 0 16px;
+
+            &:last-child {
+                border-width: 0 1px 1px;
+            }
+
+            &:nth-of-type(even) {
+                background: $table_tdBG_2;
+            }
+
+            &.auto {
+                height: auto;
+                padding: 8px 16px;
+            }
+
+            .name {
+                width: 40%;
+                color: $mainColor_1;
+                font-size: 3.7vw;
+                font-weight: bold;
+                line-height: 4.5vw;
+                flex-shrink: 0;
+            }
+
+            .btnBox {
+                width: 100%;
+                height: auto;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                p {
+                    color: $mainColor_2;
+                    font-size: 3.7vw;
+                    font-weight: bold;
+                }
+                
+                button {
+                    width: 22vw;
+                    height: 7.5vw;
+                    
+                    &.changeBtn {
+                        @include secondBtn;
+                    }
+
+                    &.copyBtn {
+                        @include mainBtn;
+                    }
+                }
+            }
+
+            .qrBox {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                
+                .selectBox {
+                    width: 100%;
+                    height: auto;
+                    position: relative;
+                    margin-bottom: 5px;
+
+                    select {
+                        width: 100%;
+                        height: 10vw;
+                        @include selectStyle_1;
+                        padding: 0 28px 0 8px;
+                    }
+
+                    i {
+                        width: 4vw;
+                        height: 4vw;
+                        position: absolute;
+                        right: 8px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        pointer-events: none;
+                    }
+                }
+                
+                button {
+                    width: 22vw;
+                    height: 7.5vw;
+                    @include mainBtn;
+                    margin-bottom: 10px;
+
+                    &:last-child {
+                        margin: 0;
+                    }
+                }
+
+                .qrImg {
+                    width: 42vw;
+                    height: 42vw;
+                    margin-bottom: 5px;
+                }
+            }
+
+            .checkBtn {
+                width: 80%;
+                height: 10vw;
+                @include mainBtn;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+}
