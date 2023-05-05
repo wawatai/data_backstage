@@ -1,0 +1,221 @@
+.bg.style_1 {
+    background: url('../images/bg_01.jpg') no-repeat top center;
+}
+.bg.style_2 {
+    background: url('../images/bg_02.jpg') no-repeat top center;
+}
+.bg.style_3 {
+    background: url('../images/bg_03.jpg') no-repeat top center;
+}
+.bg.style_4 {
+    background: url('../images/bg_04.jpg') no-repeat top center;
+}
+.bg.style_5 {
+    background: url('../images/bg_05.jpg') no-repeat top center;
+}
+
+header .center,
+footer .center {
+    background: url('../images/smallBG_02.png');
+    background-size: contain;
+}
+header .center::before,
+footer .center::before {
+    background: url('../images/smallBG_01.png') no-repeat center;
+    background-size: contain;
+}
+header .center::after,
+footer .center::after {
+    background: url('../images/smallBG_03.png') no-repeat center;
+    background-size: contain;
+}
+header .bgBtn_1 {
+    background: url('../images/bg_01_Btn.png') no-repeat center;
+    background-size: contain;
+}
+header .bgBtn_2 {
+    background: url('../images/bg_02_Btn.png') no-repeat center;
+    background-size: contain;
+}
+header .bgBtn_3 {
+    background: url('../images/bg_03_Btn.png') no-repeat center;
+    background-size: contain;
+}
+header .bgBtn_4 {
+    background: url('../images/bg_04_Btn.png') no-repeat center;
+    background-size: contain;
+}
+header .bgBtn_5 {
+    background: url('../images/bg_05_Btn.png') no-repeat center;
+    background-size: contain;
+}
+footer li i {
+    background: url('../images/footer_typeIC.png') no-repeat;
+    background-size: 300%;
+}
+
+.mainArea .dateBox i {
+    background: url('../images/number.png') no-repeat;
+    background-size: 100%;
+}
+.mainArea .bonusBox .moneyBox {
+    background: url('../images/bonus_BG.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .moneyBox i {
+    background: url('../images/bonus_number.png') no-repeat;
+    background-size: 100%;
+}
+
+.jumpWindow .close::before {
+    background: url('../images/jumpWindow_close.png') no-repeat center;
+    background-size: contain;
+}
+.jumpWindow.rule .imgBox .img {
+    background: url('../images/ruleImg.jpg') no-repeat;
+    background-size: contain;
+}
+
+.pageBox i {
+    background: url('../images/pageBox_arrow.png') no-repeat center;
+    background-size: contain;
+}
+
+//國旗
+.America {
+    background: url('../images/flag/America.png') no-repeat center;
+    background-size: 100%;
+}
+.Arabia {
+    background: url('../images/flag/Arabia.png') no-repeat center;
+    background-size: 100%;
+}
+.Argentina {
+    background: url('../images/flag/Argentina.png') no-repeat center;
+    background-size: 100%;
+}
+.Australia {
+    background: url('../images/flag/Ar.Australia.png') no-repeat center;
+    background-size: 100%;
+}
+.Belgium {
+    background: url('../images/flag/Ar.Belgium.png') no-repeat center;
+    background-size: 100%;
+}
+.Brazil {
+    background: url('../images/flag/Brazil.png') no-repeat center;
+    background-size: 100%;
+}
+.Cameroon {
+    background: url('../images/flag/Cameroon.png') no-repeat center;
+    background-size: 100%;
+}
+.Canada {
+    background: url('../images/flag/Canada.png') no-repeat center;
+    background-size: 100%;
+}
+.CostaRica {
+    background: url('../images/flag/CostaRica.png') no-repeat center;
+    background-size: 100%;
+}
+.Croatia {
+    background: url('../images/flag/Croatia.png') no-repeat center;
+    background-size: 100%;
+}
+.Denmark {
+    background: url('../images/flag/Denmark.png') no-repeat center;
+    background-size: 100%;
+}
+.Ecuador {
+    background: url('../images/flag/Ecuador.png') no-repeat center;
+    background-size: 100%;
+}
+.England {
+    background: url('../images/flag/England.png') no-repeat center;
+    background-size: 100%;
+}
+.Franch {
+    background: url('../images/flag/Franch.png') no-repeat center;
+    background-size: 100%;
+}
+.Germany {
+    background: url('../images/flag/Germany.png') no-repeat center;
+    background-size: 100%;
+}
+.Ghana {
+    background: url('../images/flag/Ghana.png') no-repeat center;
+    background-size: 100%;
+}
+.Iran {
+    background: url('../images/flag/Iran.png') no-repeat center;
+    background-size: 100%;
+}
+.Japan {
+    background: url('../images/flag/Japan.png') no-repeat center;
+    background-size: 100%;
+}
+.Korea {
+    background: url('../images/flag/Korea.png') no-repeat center;
+    background-size: 100%;
+}
+.Mexico {
+    background: url('../images/flag/Mexico.png') no-repeat center;
+    background-size: 100%;
+}
+.Morocco {
+    background: url('../images/flag/Morocco.png') no-repeat center;
+    background-size: 100%;
+}
+.Netherlands {
+    background: url('../images/flag/Netherlands.png') no-repeat center;
+    background-size: 100%;
+}
+.Poland {
+    background: url('../images/flag/Poland.png') no-repeat center;
+    background-size: 100%;
+}
+.Portugal {
+    background: url('../images/flag/Portugal.png') no-repeat center;
+    background-size: 100%;
+}
+.Qatar {
+    background: url('../images/flag/Qatar.png') no-repeat center;
+    background-size: 100%;
+}
+.Senegal {
+    background: url('../images/flag/Senegal.png') no-repeat center;
+    background-size: 100%;
+}
+.Serbian {
+    background: url('../images/flag/Serbian.png') no-repeat center;
+    background-size: 100%;
+}
+.Spain {
+    background: url('../images/flag/Spain.png') no-repeat center;
+    background-size: 100%;
+}
+.Switzerland {
+    background: url('../images/flag/Switzerland.png') no-repeat center;
+    background-size: 100%;
+}
+.Tunisia {
+    background: url('../images/flag/Tunisia.png') no-repeat center;
+    background-size: 100%;
+}
+.Uruguay {
+    background: url('../images/flag/Uruguay.png') no-repeat center;
+    background-size: 100%;
+}
+.Wales {
+    background: url('../images/flag/Wales.png') no-repeat center;
+    background-size: 100%;
+}
+
+.selectBox .arrow_ic {
+    background: url('../images/arrow_1.png') no-repeat center;
+    background-size: contain;
+}
+.inputBox .date_ic {
+    background: url('../images/date.png') no-repeat center;
+    background-size: contain;
+}

@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="./js/javascript.js"></script>
+</head>
+<body>
+    <header>
+        <ul>
+            <li class="bgBtn_1 active"></li>
+            <li class="bgBtn_2"></li>
+            <li class="bgBtn_3"></li>
+            <li class="bgBtn_4"></li>
+            <li class="bgBtn_5"></li>
+        </ul>
+        <section class="center">
+            <p class="account">
+                會員帳號:
+                <span>000000</span>
+            </p>
+            <!-- <p class="point">
+                我的競投積分:
+                <span class="amount">00000000</span>
+            </p> -->
+        </section>
+    </header>
+    <main class="mainArea">
+        <article>
+            <div class="gameBox">
+                <div class="dateBox">
+                    <i class="month_Num_1 one"></i>
+                    <i class="month_Num_2 one"></i>
+                    <i class="month_word"></i>
+                    <i class="day_Num_1 two"></i>
+                    <i class="day_Num_2 three"></i>
+                    <i class="day_word"></i>
+                </div>
+                <div class="bigTitle">當日紅牌+黃牌最多隊伍</div>
+                <div class="bonusBox">
+                    <p class="title">總獎金:</p>
+                    <div class="moneyBox">
+                        <i class="one"></i>
+                        <i class="zero"></i>
+                        <i class="zero"></i>
+                        <i class="zero"></i>
+                        <i class="zero"></i>
+                        <i class="zero"></i>
+                        <i class="zero"></i>
+                    </div>
+                </div>
+                <div class="bettingBox">
+                    <ul class="title">
+                        <li>球隊</li>
+                        <li>目前競投金額</li>
+                        <li>
+                            <div class="rowBox left">
+                                <p>實貨量</p>
+                                <p>總量</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="outerBox">
+                        <div class="tableBox">
+                            <ul>
+                                <li>
+                                    <div>
+                                        <i class="Brazil"></i>
+                                        <p>巴西</p>
+                                    </div>
+                                    <div>
+                                        <p class="money">103000</p>
+                                    </div>
+                                    <div>
+                                        <button>投注</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <i class="Germany"></i>
+                                        <p>德國</p>
+                                    </div>
+                                    <div>
+                                        <p class="money">700000</p>
+                                    </div>
+                                    <div>
+                                        <button>投注</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <i class="Netherlands"></i>
+                                        <p>荷蘭</p>
+                                    </div>
+                                    <div>
+                                        <p class="money">500000</p>
+                                    </div>
+                                    <div>
+                                        <button>投注</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <i class="Arabia"></i>
+                                        <p>沙烏地阿拉伯</p>
+                                    </div>
+                                    <div>
+                                        <p class="money">-</p>
+                                    </div>
+                                    <div>
+                                        <button>投注</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <i class="England"></i>
+                                        <p>英國</p>
+                                    </div>
+                                    <div>
+                                        <p class="money">500000</p>
+                                    </div>
+                                    <div>
+                                        <button>投注</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <i class="Argentina"></i>
+                                        <p>阿根廷</p>
+                                    </div>
+                                    <div>
+                                        <p class="money">-</p>
+                                    </div>
+                                    <div>
+                                        <button>投注</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <i class="CostaRica"></i>
+                                        <p>哥斯達黎加</p>
+                                    </div>
+                                    <div>
+                                        <p class="money">-</p>
+                                    </div>
+                                    <div>
+                                        <button>投注</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <i class="Senegal"></i>
+                                        <p>塞內加爾</p>
+                                    </div>
+                                    <div>
+                                        <p class="money">-</p>
+                                    </div>
+                                    <div>
+                                        <button>投注</button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gameBox">
+                <div class="dateBox">
+                    <i class="month_Num_1 one"></i>
+                    <i class="month_Num_2 one"></i>
+                    <i class="month_word"></i>
+                    <i class="day_Num_1 two"></i>
+                    <i class="day_Num_2 four"></i>
+                    <i class="day_word"></i>
+                </div>
+                <div class="bigTitle">當日角球數最多隊伍</div>
+                <div class="bonusBox">
+                    <p class="title">總獎金:</p>
+                    <div class="moneyBox">
+                        <i class="seven"></i>
+                        <i class="two"></i>
+                        <i class="eight"></i>
+                        <i class="five"></i>
+                        <i class="four"></i>
+                        <i class="zero"></i>
+                    </div>
+                </div>
+                <div class="bettingBox">
+                    <ul class="title">
+                        <li>球隊</li>
+                        <li>目前競投金額</li>
+                        <li>
+                            <div class="rowBox right">
+                                <p>實貨量</p>
+                                <p>總量</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="outerBox">
+                        <div class="tableBox">
+                            <ul>
+                                <li>
+                                    <div>
+                                        <i class="Brazil"></i>
+                                        <p>巴西</p>
+                                    </div>
+                                    <div>
+                                        <p class="money">103000</p>
+                                    </div>
+                                    <div>
+                                        <button>投注</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <i class="Germany"></i>
+                                        <p>德國</p>
+                                    </div>
+                                    <div>
+                                        <p class="money">700000</p>
+                                    </div>
+                                    <div>
+                                        <button>投注</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <i class="Netherlands"></i>
+                                        <p>荷蘭</p>
+                                    </div>
+                                    <div>
+                                        <p class="money">500000</p>
+                                    </div>
+                                    <div>
+                                        <button>投注</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <i class="Franch"></i>
+                                        <p>法國</p>
+                                    </div>
+                                    <div>
+                                        <p class="money">-</p>
+                                    </div>
+                                    <div>
+                                        <button>投注</button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <ul>
+            <li>
+                <i class="rule_ic"></i>
+                <p>競投規則說明</p>
+            </li>
+            <li>
+                <i class="record_ic"></i>
+                <p>競投紀錄</p>
+            </li>
+            <li>
+                <i class="acting_ic"></i>
+                <p>代理報表</p>
+            </li>
+        </ul>
+        <!-- <section class="center">
+            <p>
+                可用競投積分:
+                <span>000000</span>
+            </p>
+        </section> -->
+    </footer>
+    <div class="filter">
+        <div class="jumpWindow record">
+            <div class="title">
+                <p>競投紀錄</p>
+                <i class="close"></i>
+            </div>
+            <div class="content">
+                <ul class="topList">
+                    <li class="active">本週</li>
+                    <li>上週</li>
+                    <li>本月</li>
+                    <li>上月</li>
+                </ul>
+                <div class="recordBox">
+                    <div class="smallTitle">
+                        <ul>
+                            <li>日期</li>
+                            <li>單號</li>
+                            <li>隊伍</li>
+                            <li>點數</li>
+                            <li>得獎</li>
+                        </ul>
+                    </div>
+                    <div class="outerBox">
+                        <div class="tableBox">
+                            <ul>
+                                <li>
+                                    <p>2022-11-05</p>
+                                    <p>125578485140</p>
+                                    <p>法國</p>
+                                    <p>700000</p>
+                                    <p>-</p>
+                                </li>
+                                <li>
+                                    <p>2022-11-05</p>
+                                    <p>125578485140</p>
+                                    <p>義大利</p>
+                                    <p>187500</p>
+                                    <p>-</p>
+                                </li>
+                                <li>
+                                    <p>2022-11-05</p>
+                                    <p>125578485140</p>
+                                    <p>巴西</p>
+                                    <p>2050</p>
+                                    <p>-</p>
+                                </li>
+                                <li>
+                                    <p>2022-11-05</p>
+                                    <p>125578485140</p>
+                                    <p>瑞典</p>
+                                    <p>10060</p>
+                                    <p>-</p>
+                                </li>
+                                <li>
+                                    <p>2022-11-05</p>
+                                    <p>125578485140</p>
+                                    <p>德國</p>
+                                    <p>22879</p>
+                                    <p>-</p>
+                                </li>
+                                <li>
+                                    <p>2022-11-05</p>
+                                    <p>125578485140</p>
+                                    <p>法國</p>
+                                    <p>3355</p>
+                                    <p>-</p>
+                                </li>
+                                <li>
+                                    <p>2022-11-05</p>
+                                    <p>125578485140</p>
+                                    <p>法國</p>
+                                    <p>3355</p>
+                                    <p>-</p>
+                                </li>
+                                <li>
+                                    <p>2022-11-05</p>
+                                    <p>125578485140</p>
+                                    <p>法國</p>
+                                    <p>3355</p>
+                                    <p>-</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="total">
+                        <li>
+                            <p>總額</p>
+                        </li>
+                        <li>
+                            <p>&ensp;</p>
+                        </li>
+                        <li>
+                            <p>&ensp;</p>
+                        </li>
+                        <li>
+                            <p>925844</p>
+                        </li>
+                        <li>
+                            <p>&ensp;</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pageBox">
+                    <i class="arrow_left"></i>
+                    <ul>
+                        <li class="active">1</li>
+                        <li>2</li>
+                    </ul>
+                    <i class="arrow_right"></i>
+                </div>
+            </div>
+        </div>
+        <div class="jumpWindow rule">
+            <div class="title">
+                <p>規則說明</p>
+                <i class="close"></i>
+            </div>
+            <div class="content">
+                <div class="textBox">
+                    <div class="outerBox">
+                        <div class="ruleBox">
+                            <p class="mar">1、	本公司將於世界杯比賽時間內，每日推出競投活動，例如競投當日比賽隊伍的紅牌+黃牌數誰最多、當日角球數最多隊伍等活動。</p>
+                            <p>2、	本活動為當日猜中者依贏的比例圴分其它項競猜未中者70%總獎金，系統及中獎會員所屬代理依規定%數分30%獎金。舉例：</p>
+                            <div class="imgBox">
+                                <div class="img"></div>
+                                <div class="textBox">
+                                    <p class="mainTeam">A.投注巴西10000，最終結果&emsp;巴西勝:</p>
+                                    <p>可贏：</p>
+                                    <p>10000(本金)+(10000000(總獎金)-</p>
+                                    <p>2300000(巴西投注額))*0.7/</p>
+                                    <p class="mar">
+                                        2300000*10000=
+                                        <span class="mainWin">33434</span>
+                                    </p>
+                                    <p class="cusTeam">B.投注比利時10000，最終結果&emsp;比利時勝:</p>
+                                    <p>可贏：</p>
+                                    <p>10000(本金)+(10000000(總獎金)-</p>
+                                    <p>500000(比利時投注額))*0.7/</p>
+                                    <p>
+                                        500000*10000=
+                                        <span class="cusWin">143000</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <p>3、	如當日有相同成績隊伍同時第一，本公司將依據當日競猜活動備註欄所排列第二、第三、第四等比較，選定當日最終贏的球隊。</p>
+                            <p class="mar">例如當日競猜為紅牌+黃牌之隊伍(比賽備註相同成績時，第二角球數、第三越位、第四射正，第五助攻等數據。</p>
+                            <p class="mar">4、	每位會員每場單場競投最高額度為10000，會員競猜時將直接扣除目前之額度累加進彩池獎金。</p>
+                            <p>5、	各項數據之結果判決，以世界杯官網所公佈之數據為主，本公司將於當日所有比賽結束後一小時內，依照官網所公佈之結果判定獲勝隊伍及結算獎金，會員所中之獎金可於競投紀錄查詢。</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="check">確定</button>
+            </div>
+        </div>
+        <div class="jumpWindow betting">
+            <div class="title">
+                <p>投注</p>
+                <i class="close"></i>
+            </div>
+            <div class="content">
+                <div class="bettingBox">
+                    <div class="smallTitle">
+                        <ul>
+                            <li>隊伍</li>
+                        </ul>
+                    </div>
+                    <div class="teamBox">
+                        <i class="Argentina"></i>
+                        <p>阿根廷</p>
+                    </div>
+                    <div class="smallTitle">
+                        <ul>
+                            <li>下注金額</li>
+                        </ul>
+                    </div>
+                    <div class="bettingCnt">
+                        <label class="inputBox">
+                            <input type="text" value="0">
+                        </label>
+                        <div class="btnBox">
+                            <button>100</button>
+                            <button>500</button>
+                            <button>1000</button>
+                            <button>3000</button>
+                            <button>5000</button>
+                            <button>10000</button>
+                            <button>清除</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="lastBox">
+                    <button class="check">確定轉入</button>
+                </div>
+            </div>
+        </div>
+        <div class="jumpWindow acting">
+            <div class="title">
+                <p>代理報表</p>
+                <i class="close"></i>
+            </div>
+            <div class="topBox">
+                <div class="row">
+                    <p class="smallTitle">類型:</p>
+                    <label class="selectBox">
+                        <select>
+                            <option value="">全部</option>
+                        </select>
+                        <i class="arrow_ic"></i>
+                    </label>
+                </div>
+                <div class="row">
+                    <p class="smallTitle">帳務日期:</p>
+                    <label class="inputBox">
+                        <input type="date" value="2022-11-20">
+                        <p>到</p>
+                        <input type="date" value="2022-11-25">
+                        <i class="date_ic"></i>
+                    </label>
+                    <div class="btnBox">
+                        <button>今日</button>
+                        <button>明日</button>
+                        <button>本週</button>
+                        <button>上週</button>
+                        <button>本月</button>
+                        <button>上月</button>
+                    </div>
+                    <button class="check">查找</button>
+                </div>
+            </div>
+            <div class="content">
+                <div class="left">
+                    <table>
+                        <tr>
+                            <td>
+                                <p>大總監</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    GG188
+                                    <span>(text)</span>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    大大大
+                                    <span>(text)</span>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    aabb
+                                    <span>(text)</span>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    測試群
+                                    <span>(text)</span>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    115878
+                                    <span>(text)</span>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    蘋果早知道
+                                    <span>(text)</span>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    1245SA
+                                    <span>(text)</span>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>總計</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="right">
+                    <table>
+                        <tr>
+                            <th>
+                                <p>筆數</p>
+                            </th>
+                            <th>
+                                <p>下注金額</p>
+                            </th>
+                            <th>
+                                <p>會員中獎金額</p>
+                            </th>
+                            <th>
+                                <p>代理</p>
+                            </th>
+                            <th>
+                                <p>總代</p>
+                            </th>
+                            <th>
+                                <p>股東</p>
+                            </th>
+                            <th>
+                                <p>大股東</p>
+                            </th>
+                            <th>
+                                <p>總監</p>
+                            </th>
+                            <th>
+                                <p>大總監</p>
+                            </th>
+                            <th>
+                                <p>備註</p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>14109</p>
+                            </td>
+                            <td>
+                                <p class="clickable">63387729</p>
+                            </td>
+                            <td>
+                                <p>59034048</p>
+                            </td>
+                            <td>
+                                <p class="lose">-1409788</p>
+                            </td>
+                            <td>
+                                <p class="lose">-10404488</p>
+                            </td>
+                            <td>
+                                <p class="win">2288597</p>
+                            </td>
+                            <td>
+                                <p class="lose">-234424</p>
+                            </td>
+                            <td>
+                                <p class="lose">-59232</p>
+                            </td>
+                            <td>
+                                <p class="lose">-52032</p>
+                            </td>
+                            <td>
+                                <p>-</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>1215</p>
+                            </td>
+                            <td>
+                                <p class="clickable">774012</p>
+                            </td>
+                            <td>
+                                <p>2514700</p>
+                            </td>
+                            <td>
+                                <p class="win">2547</p>
+                            </td>
+                            <td>
+                                <p class="win">112240</p>
+                            </td>
+                            <td>
+                                <p class="lose">-2541</p>
+                            </td>
+                            <td>
+                                <p class="lose">-2130</p>
+                            </td>
+                            <td>
+                                <p class="lose">-22050</p>
+                            </td>
+                            <td>
+                                <p class="lose">-122000</p>
+                            </td>
+                            <td>
+                                <p>-</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>988</p>
+                            </td>
+                            <td>
+                                <p class="clickable">8855720</p>
+                            </td>
+                            <td>
+                                <p>78452</p>
+                            </td>
+                            <td>
+                                <p class="lose">-45238</p>
+                            </td>
+                            <td>
+                                <p class="lose">-42550</p>
+                            </td>
+                            <td>
+                                <p class="win">22587</p>
+                            </td>
+                            <td>
+                                <p class="lose">-22510</p>
+                            </td>
+                            <td>
+                                <p class="win">22201</p>
+                            </td>
+                            <td>
+                                <p class="win">22104</p>
+                            </td>
+                            <td>
+                                <p>-</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>10205</p>
+                            </td>
+                            <td>
+                                <p class="clickable">1245789</p>
+                            </td>
+                            <td>
+                                <p>4875203</p>
+                            </td>
+                            <td>
+                                <p class="win">15784</p>
+                            </td>
+                            <td>
+                                <p class="win">14653</p>
+                            </td>
+                            <td>
+                                <p class="win">9630</p>
+                            </td>
+                            <td>
+                                <p class="win">8520</p>
+                            </td>
+                            <td>
+                                <p class="lose">-32587</p>
+                            </td>
+                            <td>
+                                <p class="lose">-31540</p>
+                            </td>
+                            <td>
+                                <p>-</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>111</p>
+                            </td>
+                            <td>
+                                <p class="clickable">23650</p>
+                            </td>
+                            <td>
+                                <p>335502</p>
+                            </td>
+                            <td>
+                                <p class="lose">-252633</p>
+                            </td>
+                            <td>
+                                <p class="lose">-11111</p>
+                            </td>
+                            <td>
+                                <p class="lose">-11223</p>
+                            </td>
+                            <td>
+                                <p class="win">46582</p>
+                            </td>
+                            <td>
+                                <p class="lose">-45120</p>
+                            </td>
+                            <td>
+                                <p class="win">2310</p>
+                            </td>
+                            <td>
+                                <p>-</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>1277</p>
+                            </td>
+                            <td>
+                                <p class="clickable">456120</p>
+                            </td>
+                            <td>
+                                <p>8754230</p>
+                            </td>
+                            <td>
+                                <p class="lose">-165842</p>
+                            </td>
+                            <td>
+                                <p class="win">2500</p>
+                            </td>
+                            <td>
+                                <p class="lose">-4520</p>
+                            </td>
+                            <td>
+                                <p class="lose">-53680</p>
+                            </td>
+                            <td>
+                                <p class="win">33207</p>
+                            </td>
+                            <td>
+                                <p class="lose">-3690</p>
+                            </td>
+                            <td>
+                                <p>-</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>335</p>
+                            </td>
+                            <td>
+                                <p class="clickable">88543</p>
+                            </td>
+                            <td>
+                                <p>88888887</p>
+                            </td>
+                            <td>
+                                <p class="win">457103</p>
+                            </td>
+                            <td>
+                                <p class="lose">-1536</p>
+                            </td>
+                            <td>
+                                <p class="win">536220</p>
+                            </td>
+                            <td>
+                                <p class="win">6660</p>
+                            </td>
+                            <td>
+                                <p class="win">88601</p>
+                            </td>
+                            <td>
+                                <p class="win">88750</p>
+                            </td>
+                            <td>
+                                <p>-</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>2258442</p>
+                            </td>
+                            <td>
+                                <p>78542100</p>
+                            </td>
+                            <td>
+                                <p>1435425870</p>
+                            </td>
+                            <td>
+                                <p class="allLose">-854620</p>
+                            </td>
+                            <td>
+                                <p class="allLose">-456237</p>
+                            </td>
+                            <td>
+                                <p class="allWin">448231</p>
+                            </td>
+                            <td>
+                                <p class="allLose">-12458</p>
+                            </td>
+                            <td>
+                                <p class="allWin">4726 </p>
+                            </td>
+                            <td>
+                                <p class="allLose">-250</p>
+                            </td>
+                            <td>
+                                <p>-</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="pageBox">
+                <i class="arrow_left"></i>
+                <ul>
+                    <li class="active">1</li>
+                    <li>2</li>
+                </ul>
+                <i class="arrow_right"></i>
+            </div>
+        </div>
+        <div class="jumpWindow actingDetail">
+            <div class="title">
+                <p>會員詳細注單-GG188</p>
+                <i class="close"></i>
+            </div>
+            <div class="content">
+                <div class="left">
+                    <table>
+                        <tr>
+                            <td>
+                                <p>時間</p>
+                            </td>
+                            <td>
+                                <p>單號</p>
+                            </td>
+                            <td>
+                                <p>內容</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2022-10-27
+                                    <br>
+                                    10:20:22
+                                </p>
+                            </td>
+                            <td>
+                                <p>QUA12589746</p>
+                            </td>
+                            <td>
+                                <p>
+                                    <span class="code">(QA254789)</span>
+                                    巴西<span class="bet">14</span>
+                                    <span class="vs">VS</span>
+                                    阿根廷<span class="bet">12</span>
+                                    <br>
+                                    (世界杯活動) @
+                                    <span class="mainTeam">巴西</span>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2022-10-27
+                                    <br>
+                                    10:35:05
+                                </p>
+                            </td>
+                            <td>
+                                <p>JJK22879010</p>
+                            </td>
+                            <td>
+                                <p>
+                                    <span class="code">(QA254789)</span>
+                                    巴西<span class="bet">14</span>
+                                    <span class="vs">VS</span>
+                                    阿根廷<span class="bet">12</span>
+                                    <br>
+                                    (世界杯活動) @
+                                    <span class="mainTeam">巴西</span>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2022-10-27
+                                    <br>
+                                    10:35:05
+                                </p>
+                            </td>
+                            <td>
+                                <p>AD12345850</p>
+                            </td>
+                            <td>
+                                <p>
+                                    <span class="code">(QA254789)</span>
+                                    巴西<span class="bet">14</span>
+                                    <span class="vs">VS</span>
+                                    阿根廷<span class="bet">12</span>
+                                    <br>
+                                    (世界杯活動) @
+                                    <span class="mainTeam">巴西</span>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2022-10-27
+                                    <br>
+                                    10:40:28
+                                </p>
+                            </td>
+                            <td>
+                                <p>ADJ45177809</p>
+                            </td>
+                            <td>
+                                <p>
+                                    <span class="code">(QA254789)</span>
+                                    巴西<span class="bet">14</span>
+                                    <span class="vs">VS</span>
+                                    阿根廷<span class="bet">12</span>
+                                    <br>
+                                    (世界杯活動) @
+                                    <span class="mainTeam">巴西</span>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2022-10-27
+                                    <br>
+                                    11:08:19
+                                </p>
+                            </td>
+                            <td>
+                                <p>QQT123460</p>
+                            </td>
+                            <td>
+                                <p>
+                                    <span class="code">(QA254789)</span>
+                                    巴西<span class="bet">14</span>
+                                    <span class="vs">VS</span>
+                                    阿根廷<span class="bet">12</span>
+                                    <br>
+                                    (世界杯活動) @
+                                    <span class="mainTeam">巴西</span>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2022-10-27
+                                    <br>
+                                    11:08:19
+                                </p>
+                            </td>
+                            <td>
+                                <p>QQT123460</p>
+                            </td>
+                            <td>
+                                <p>
+                                    <span class="code">(QA254789)</span>
+                                    巴西<span class="bet">14</span>
+                                    <span class="vs">VS</span>
+                                    阿根廷<span class="bet">12</span>
+                                    <br>
+                                    (世界杯活動) @
+                                    <span class="mainTeam">巴西</span>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2022-10-27
+                                    <br>
+                                    11:08:19
+                                </p>
+                            </td>
+                            <td>
+                                <p>QQT123460</p>
+                            </td>
+                            <td>
+                                <p>
+                                    <span class="code">(QA254789)</span>
+                                    巴西<span class="bet">14</span>
+                                    <span class="vs">VS</span>
+                                    阿根廷<span class="bet">12</span>
+                                    <br>
+                                    (世界杯活動) @
+                                    <span class="mainTeam">巴西</span>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2022-10-27
+                                    <br>
+                                    11:08:19
+                                </p>
+                            </td>
+                            <td>
+                                <p>QQT123460</p>
+                            </td>
+                            <td>
+                                <p>
+                                    <span class="code">(QA254789)</span>
+                                    巴西<span class="bet">14</span>
+                                    <span class="vs">VS</span>
+                                    阿根廷<span class="bet">12</span>
+                                    <br>
+                                    (世界杯活動) @
+                                    <span class="mainTeam">巴西</span>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <p>總計</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="right">
+                    <table>
+                        <tr>
+                            <th>
+                                <p>金額</p>
+                            </th>
+                            <th>
+                                <p>結果</p>
+                            </th>
+                            <th>
+                                <p>代理</p>
+                            </th>
+                            <th>
+                                <p>總代理</p>
+                            </th>
+                            <th>
+                                <p>股東</p>
+                            </th>
+                            <th>
+                                <p>大股東</p>
+                            </th>
+                            <th>
+                                <p>總監</p>
+                            </th>
+                            <th>
+                                <p>大總監</p>
+                            </th>
+                            <th>
+                                <p>備註</p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>10000</p>
+                            </td>
+                            <td>
+                                <p class="lose">-10000</p>
+                            </td>
+                            <td>
+                                <p class="lose">-9850</p>
+                            </td>
+                            <td>
+                                <p class="lose">-9850</p>
+                            </td>
+                            <td>
+                                <p class="lose">-9850</p>
+                            </td>
+                            <td>
+                                <p class="lose">-492</p>
+                            </td>
+                            <td>
+                                <p class="lose">-492</p>
+                            </td>
+                            <td>
+                                <p class="lose">-492</p>
+                            </td>
+                            <td>
+                                <p>-</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>10000</p>
+                            </td>
+                            <td>
+                                <p class="lose">-10000</p>
+                            </td>
+                            <td>
+                                <p class="lose">-9850</p>
+                            </td>
+                            <td>
+                                <p class="lose">-9850</p>
+                            </td>
+                            <td>
+                                <p class="lose">-9850</p>
+                            </td>
+                            <td>
+                                <p class="lose">-492</p>
+                            </td>
+                            <td>
+                                <p class="lose">-492</p>
+                            </td>
+                            <td>
+                                <p class="lose">-492</p>
+                            </td>
+                            <td>
+                                <p>-</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>10000</p>
+                            </td>
+                            <td>
+                                <p class="win">8650</p>
+                            </td>
+                            <td>
+                                <p class="win">8800</p>
+                            </td>
+                            <td>
+                                <p class="win">8800</p>
+                            </td>
+                            <td>
+                                <p class="win">8800</p>
+                            </td>
+                            <td>
+                                <p class="win">440</p>
+                            </td>
+                            <td>
+                                <p class="win">440</p>
+                            </td>
+                            <td>
+                                <p class="win">440</p>
+                            </td>
+                            <td>
+                                <p>-</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>13588</p>
+                            </td>
+                            <td>
+                                <p class="lose">-13588</p>
+                            </td>
+                            <td>
+                                <p class="lose">-13384</p>
+                            </td>
+                            <td>
+                                <p class="lose">-13384</p>
+                            </td>
+                            <td>
+                                <p class="lose">-13384</p>
+                            </td>
+                            <td>
+                                <p class="lose">-669</p>
+                            </td>
+                            <td>
+                                <p class="lose">-669</p>
+                            </td>
+                            <td>
+                                <p class="lose">-669</p>
+                            </td>
+                            <td>
+                                <p>-</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>10000</p>
+                            </td>
+                            <td>
+                                <p class="win">8650</p>
+                            </td>
+                            <td>
+                                <p class="win">8800</p>
+                            </td>
+                            <td>
+                                <p class="win">8800</p>
+                            </td>
+                            <td>
+                                <p class="win">8800</p>
+                            </td>
+                            <td>
+                                <p class="win">440</p>
+                            </td>
+                            <td>
+                                <p class="win">440</p>
+                            </td>
+                            <td>
+                                <p class="win">440</p>
+                            </td>
+                            <td>
+                                <p>-</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>10000</p>
+                            </td>
+                            <td>
+                                <p class="win">8650</p>
+                            </td>
+                            <td>
+                                <p class="win">8800</p>
+                            </td>
+                            <td>
+                                <p class="win">8800</p>
+                            </td>
+                            <td>
+                                <p class="win">8800</p>
+                            </td>
+                            <td>
+                                <p class="win">440</p>
+                            </td>
+                            <td>
+                                <p class="win">440</p>
+                            </td>
+                            <td>
+                                <p class="win">440</p>
+                            </td>
+                            <td>
+                                <p>-</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>10000</p>
+                            </td>
+                            <td>
+                                <p class="win">8650</p>
+                            </td>
+                            <td>
+                                <p class="win">8800</p>
+                            </td>
+                            <td>
+                                <p class="win">8800</p>
+                            </td>
+                            <td>
+                                <p class="win">8800</p>
+                            </td>
+                            <td>
+                                <p class="win">440</p>
+                            </td>
+                            <td>
+                                <p class="win">440</p>
+                            </td>
+                            <td>
+                                <p class="win">440</p>
+                            </td>
+                            <td>
+                                <p>-</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>10000</p>
+                            </td>
+                            <td>
+                                <p class="lose">-10000</p>
+                            </td>
+                            <td>
+                                <p class="lose">-9850</p>
+                            </td>
+                            <td>
+                                <p class="lose">-9850</p>
+                            </td>
+                            <td>
+                                <p class="lose">-9850</p>
+                            </td>
+                            <td>
+                                <p class="lose">-492</p>
+                            </td>
+                            <td>
+                                <p class="lose">-492</p>
+                            </td>
+                            <td>
+                                <p class="lose">-492</p>
+                            </td>
+                            <td>
+                                <p>-</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>83588</p>
+                            </td>
+                            <td>
+                                <p class="allWin">28312</p>
+                            </td>
+                            <td>
+                                <p class="allWin">29566</p>
+                            </td>
+                            <td>
+                                <p class="allLose">-1052</p>
+                            </td>
+                            <td>
+                                <p class="allLose">-1052</p>
+                            </td>
+                            <td>
+                                <p class="allLose">-1052</p>
+                            </td>
+                            <td>
+                                <p class="allLose">-1052</p>
+                            </td>
+                            <td>
+                                <p class="allLose">-1052</p>
+                            </td>
+                            <td>
+                                <p>-</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="pageBox">
+                <i class="arrow_left"></i>
+                <ul>
+                    <li class="active">1</li>
+                    <li>2</li>
+                </ul>
+                <i class="arrow_right"></i>
+            </div>
+        </div>
+    </div>
+    <div class="bg style_1"></div>
+</body>
+</html>
