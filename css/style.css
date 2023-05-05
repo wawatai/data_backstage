@@ -1,0 +1,2030 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: "微軟正黑體";
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-family: "微軟正黑體";
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 0px;
+  font-family: "微軟正黑體";
+}
+
+select, input {
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "微軟正黑體";
+}
+
+i {
+  display: block;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+main {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+          appearance: none;
+}
+
+.bg.style_1 {
+  background: url("../images/bg_01.jpg") no-repeat top center;
+}
+
+.bg.style_2 {
+  background: url("../images/bg_02.jpg") no-repeat top center;
+}
+
+.bg.style_3 {
+  background: url("../images/bg_03.jpg") no-repeat top center;
+}
+
+.bg.style_4 {
+  background: url("../images/bg_04.jpg") no-repeat top center;
+}
+
+.bg.style_5 {
+  background: url("../images/bg_05.jpg") no-repeat top center;
+}
+
+header .center,
+footer .center {
+  background: url("../images/smallBG_02.png");
+  background-size: contain;
+}
+
+header .center::before,
+footer .center::before {
+  background: url("../images/smallBG_01.png") no-repeat center;
+  background-size: contain;
+}
+
+header .center::after,
+footer .center::after {
+  background: url("../images/smallBG_03.png") no-repeat center;
+  background-size: contain;
+}
+
+header .bgBtn_1 {
+  background: url("../images/bg_01_Btn.png") no-repeat center;
+  background-size: contain;
+}
+
+header .bgBtn_2 {
+  background: url("../images/bg_02_Btn.png") no-repeat center;
+  background-size: contain;
+}
+
+header .bgBtn_3 {
+  background: url("../images/bg_03_Btn.png") no-repeat center;
+  background-size: contain;
+}
+
+header .bgBtn_4 {
+  background: url("../images/bg_04_Btn.png") no-repeat center;
+  background-size: contain;
+}
+
+header .bgBtn_5 {
+  background: url("../images/bg_05_Btn.png") no-repeat center;
+  background-size: contain;
+}
+
+footer li i {
+  background: url("../images/footer_typeIC.png") no-repeat;
+  background-size: 300%;
+}
+
+.mainArea .dateBox i {
+  background: url("../images/number.png") no-repeat;
+  background-size: 100%;
+}
+
+.mainArea .bonusBox .moneyBox {
+  background: url("../images/bonus_BG.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .moneyBox i {
+  background: url("../images/bonus_number.png") no-repeat;
+  background-size: 100%;
+}
+
+.jumpWindow .close::before {
+  background: url("../images/jumpWindow_close.png") no-repeat center;
+  background-size: contain;
+}
+
+.jumpWindow.rule .imgBox .img {
+  background: url("../images/ruleImg.jpg") no-repeat;
+  background-size: contain;
+}
+
+.pageBox i {
+  background: url("../images/pageBox_arrow.png") no-repeat center;
+  background-size: contain;
+}
+
+.America {
+  background: url("../images/flag/America.png") no-repeat center;
+  background-size: 100%;
+}
+
+.Arabia {
+  background: url("../images/flag/Arabia.png") no-repeat center;
+  background-size: 100%;
+}
+
+.Argentina {
+  background: url("../images/flag/Argentina.png") no-repeat center;
+  background-size: 100%;
+}
+
+.Australia {
+  background: url("../images/flag/Ar.Australia.png") no-repeat center;
+  background-size: 100%;
+}
+
+.Belgium {
+  background: url("../images/flag/Ar.Belgium.png") no-repeat center;
+  background-size: 100%;
+}
+
+.Brazil {
+  background: url("../images/flag/Brazil.png") no-repeat center;
+  background-size: 100%;
+}
+
+.Cameroon {
+  background: url("../images/flag/Cameroon.png") no-repeat center;
+  background-size: 100%;
+}
+
+.Canada {
+  background: url("../images/flag/Canada.png") no-repeat center;
+  background-size: 100%;
+}
+
+.CostaRica {
+  background: url("../images/flag/CostaRica.png") no-repeat center;
+  background-size: 100%;
+}
+
+.Croatia {
+  background: url("../images/flag/Croatia.png") no-repeat center;
+  background-size: 100%;
+}
+
+.Denmark {
+  background: url("../images/flag/Denmark.png") no-repeat center;
+  background-size: 100%;
+}
+
+.Ecuador {
+  background: url("../images/flag/Ecuador.png") no-repeat center;
+  background-size: 100%;
+}
+
+.England {
+  background: url("../images/flag/England.png") no-repeat center;
+  background-size: 100%;
+}
+
+.Franch {
+  background: url("../images/flag/Franch.png") no-repeat center;
+  background-size: 100%;
+}
+
+.Germany {
+  background: url("../images/flag/Germany.png") no-repeat center;
+  background-size: 100%;
+}
+
+.Ghana {
+  background: url("../images/flag/Ghana.png") no-repeat center;
+  background-size: 100%;
+}
+
+.Iran {
+  background: url("../images/flag/Iran.png") no-repeat center;
+  background-size: 100%;
+}
+
+.Japan {
+  background: url("../images/flag/Japan.png") no-repeat center;
+  background-size: 100%;
+}
+
+.Korea {
+  background: url("../images/flag/Korea.png") no-repeat center;
+  background-size: 100%;
+}
+
+.Mexico {
+  background: url("../images/flag/Mexico.png") no-repeat center;
+  background-size: 100%;
+}
+
+.Morocco {
+  background: url("../images/flag/Morocco.png") no-repeat center;
+  background-size: 100%;
+}
+
+.Netherlands {
+  background: url("../images/flag/Netherlands.png") no-repeat center;
+  background-size: 100%;
+}
+
+.Poland {
+  background: url("../images/flag/Poland.png") no-repeat center;
+  background-size: 100%;
+}
+
+.Portugal {
+  background: url("../images/flag/Portugal.png") no-repeat center;
+  background-size: 100%;
+}
+
+.Qatar {
+  background: url("../images/flag/Qatar.png") no-repeat center;
+  background-size: 100%;
+}
+
+.Senegal {
+  background: url("../images/flag/Senegal.png") no-repeat center;
+  background-size: 100%;
+}
+
+.Serbian {
+  background: url("../images/flag/Serbian.png") no-repeat center;
+  background-size: 100%;
+}
+
+.Spain {
+  background: url("../images/flag/Spain.png") no-repeat center;
+  background-size: 100%;
+}
+
+.Switzerland {
+  background: url("../images/flag/Switzerland.png") no-repeat center;
+  background-size: 100%;
+}
+
+.Tunisia {
+  background: url("../images/flag/Tunisia.png") no-repeat center;
+  background-size: 100%;
+}
+
+.Uruguay {
+  background: url("../images/flag/Uruguay.png") no-repeat center;
+  background-size: 100%;
+}
+
+.Wales {
+  background: url("../images/flag/Wales.png") no-repeat center;
+  background-size: 100%;
+}
+
+.selectBox .arrow_ic {
+  background: url("../images/arrow_1.png") no-repeat center;
+  background-size: contain;
+}
+
+.inputBox .date_ic {
+  background: url("../images/date.png") no-repeat center;
+  background-size: contain;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  min-height: 833px;
+  background: #1C3E97;
+}
+html body {
+  width: 100%;
+  height: 100%;
+}
+html body header {
+  width: 100%;
+  min-width: 1050px;
+  height: 70px;
+  background: -webkit-gradient(linear, left top, right top, from(#d7a950), color-stop(6%, #bf8935), color-stop(49%, #f3e19a), color-stop(93%, #bf8935), to(#d7a950));
+  background: linear-gradient(to right, #d7a950 0%, #bf8935 6%, #f3e19a 49%, #bf8935 93%, #d7a950 100%);
+  border-bottom: solid 1px #f4e1a3;
+  position: relative;
+}
+html body header .center {
+  width: 439px;
+  height: 59px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  margin: 0 auto;
+}
+html body header .center::before, html body header .center::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 18px;
+  height: 100%;
+}
+html body header .center::before {
+  left: -18px;
+}
+html body header .center::after {
+  right: -18px;
+}
+html body header .center p {
+  color: #ffffff;
+  font-size: 23px;
+  font-weight: bold;
+}
+html body header .center p span {
+  letter-spacing: 1px;
+  padding-left: 5px;
+}
+html body header .center p span.amount {
+  color: #32ffe9;
+}
+html body header ul {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 24px;
+}
+html body header ul li {
+  width: 35px;
+  height: 35px;
+  border: solid 1px #734428;
+  border-radius: 50%;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  cursor: pointer;
+  margin: 0 8px;
+}
+html body header ul li:hover, html body header ul li:active, html body header ul li.active {
+  border-color: #ffeba8;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5019607843);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5019607843);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+html body .mainArea {
+  width: 100%;
+  min-width: 1050px;
+  height: auto;
+  padding: 40px 0 130px;
+}
+html body .mainArea article {
+  width: 1000px;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 10px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px 10px;
+  margin: 0 auto;
+}
+html body .mainArea article .gameBox {
+  width: auto;
+  height: 696px;
+  background: rgba(8, 35, 132, 0.7450980392);
+  border: solid 1px #58bff4;
+  position: relative;
+}
+html body .mainArea article .gameBox .dateBox {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: -18px;
+}
+html body .mainArea article .gameBox .dateBox i {
+  width: 48px;
+  height: 51px;
+}
+html body .mainArea article .gameBox .dateBox i.month_word {
+  background-position-y: 0;
+}
+html body .mainArea article .gameBox .dateBox i.day_word {
+  background-position-y: -51px;
+}
+html body .mainArea article .gameBox .dateBox i.zero {
+  background-position-y: -102px;
+}
+html body .mainArea article .gameBox .dateBox i.one {
+  background-position-y: -153px;
+}
+html body .mainArea article .gameBox .dateBox i.two {
+  background-position-y: -204px;
+}
+html body .mainArea article .gameBox .dateBox i.three {
+  background-position-y: -255px;
+}
+html body .mainArea article .gameBox .dateBox i.four {
+  background-position-y: -306px;
+}
+html body .mainArea article .gameBox .dateBox i.five {
+  background-position-y: -357px;
+}
+html body .mainArea article .gameBox .dateBox i.six {
+  background-position-y: -408px;
+}
+html body .mainArea article .gameBox .dateBox i.seven {
+  background-position-y: -459px;
+}
+html body .mainArea article .gameBox .dateBox i.eight {
+  background-position-y: -510px;
+}
+html body .mainArea article .gameBox .dateBox i.nine {
+  background-position-y: -561px;
+}
+html body .mainArea article .gameBox .bigTitle {
+  width: 450px;
+  height: 52px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#e8d793), color-stop(50%, #d2a359), color-stop(93%, #e8d793));
+  background: linear-gradient(to top, #e8d793 0%, #d2a359 50%, #e8d793 93%);
+  border-radius: 10px;
+  border: solid 1px #f9eecb;
+  -webkit-box-shadow: 0 3px 6px -2px rgba(0, 0, 0, 0.5019607843);
+          box-shadow: 0 3px 6px -2px rgba(0, 0, 0, 0.5019607843);
+  color: #241601;
+  font-size: 25px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 45px auto 13px;
+}
+html body .mainArea article .gameBox .bonusBox {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 12px;
+}
+html body .mainArea article .gameBox .bonusBox .title {
+  color: transparent;
+  font-size: 30px;
+  font-weight: bold;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, #f5c83d), color-stop(35%, #e8862e), color-stop(67%, #ffd75f));
+  background: linear-gradient(to top, #f5c83d 10%, #e8862e 35%, #ffd75f 67%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  margin-top: -5px;
+}
+html body .mainArea article .gameBox .bonusBox .moneyBox {
+  width: 269px;
+  height: 63px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 15px;
+}
+html body .mainArea article .gameBox .bonusBox .moneyBox i {
+  width: 25px;
+  height: 33px;
+  margin: -6px 2px 0;
+}
+html body .mainArea article .gameBox .bonusBox .moneyBox i.zero {
+  background-position-y: 0;
+}
+html body .mainArea article .gameBox .bonusBox .moneyBox i.one {
+  background-position-y: -33px;
+}
+html body .mainArea article .gameBox .bonusBox .moneyBox i.two {
+  background-position-y: -66px;
+}
+html body .mainArea article .gameBox .bonusBox .moneyBox i.three {
+  background-position-y: -99px;
+}
+html body .mainArea article .gameBox .bonusBox .moneyBox i.four {
+  background-position-y: -132px;
+}
+html body .mainArea article .gameBox .bonusBox .moneyBox i.five {
+  background-position-y: -165px;
+}
+html body .mainArea article .gameBox .bonusBox .moneyBox i.six {
+  background-position-y: -198px;
+}
+html body .mainArea article .gameBox .bonusBox .moneyBox i.seven {
+  background-position-y: -231px;
+}
+html body .mainArea article .gameBox .bonusBox .moneyBox i.eight {
+  background-position-y: -264px;
+}
+html body .mainArea article .gameBox .bonusBox .moneyBox i.nine {
+  background-position-y: -297px;
+}
+html body .mainArea article .gameBox .bettingBox {
+  width: 480px;
+  height: 500px;
+  background: rgba(0, 0, 0, 0.5019607843);
+  border: solid 1px #6dd1ff;
+  margin: 0 auto;
+}
+html body .mainArea article .gameBox .bettingBox .title {
+  width: 100%;
+  height: 52px;
+  background: #1b327b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .mainArea article .gameBox .bettingBox .title li {
+  color: #e2f4ff;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+html body .mainArea article .gameBox .bettingBox .title li:nth-of-type(1) {
+  width: 40%;
+}
+html body .mainArea article .gameBox .bettingBox .title li:nth-of-type(2) {
+  width: 30%;
+}
+html body .mainArea article .gameBox .bettingBox .title li:nth-of-type(3) {
+  width: 30%;
+}
+html body .mainArea article .gameBox .bettingBox .title li .rowBox {
+  width: 130px;
+  height: 38px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#d4d4d4));
+  background: linear-gradient(to top, #ffffff 0%, #d4d4d4 100%);
+  border-radius: 30px;
+  border: solid 1px #474747;
+  -webkit-box-sizing: 0 2px 5px 0 rgba(0, 0, 0, 0.5019607843);
+          box-sizing: 0 2px 5px 0 rgba(0, 0, 0, 0.5019607843);
+  color: #4c4c4c;
+  font-size: 16px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 3px;
+  cursor: pointer;
+}
+html body .mainArea article .gameBox .bettingBox .title li .rowBox.left p:nth-of-type(1) {
+  background: -webkit-gradient(linear, left bottom, left top, from(#06b6e8), color-stop(17%, #1972e0), to(#06b6e8));
+  background: linear-gradient(to top, #06b6e8 0%, #1972e0 17%, #06b6e8 100%);
+  border-radius: 30px;
+  border: solid 1px #44ccee;
+  color: #ffffff;
+}
+html body .mainArea article .gameBox .bettingBox .title li .rowBox.right p:nth-of-type(2) {
+  background: -webkit-gradient(linear, left bottom, left top, from(#11d416), color-stop(17%, #0c8b1b), to(#11d416));
+  background: linear-gradient(to top, #11d416 0%, #0c8b1b 17%, #11d416 100%);
+  border-radius: 30px;
+  border: solid 1px #1deb27;
+  color: #ffffff;
+}
+html body .mainArea article .gameBox .bettingBox .title li .rowBox p {
+  width: 50%;
+  height: 88%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html body .mainArea article .gameBox .bettingBox .outerBox {
+  width: 100%;
+  height: 440px;
+  padding-right: 5px;
+}
+html body .mainArea article .gameBox .bettingBox .outerBox .tableBox {
+  width: 100%;
+  height: 100%;
+  overflow-y: overlay;
+}
+html body .mainArea article .gameBox .bettingBox .outerBox .tableBox::-webkit-scrollbar {
+  width: 5px;
+}
+html body .mainArea article .gameBox .bettingBox .outerBox .tableBox::-webkit-scrollbar-thumb {
+  width: 5px;
+  background: #e8d793;
+  border-radius: 10px;
+}
+html body .mainArea article .gameBox .bettingBox .outerBox .tableBox::-webkit-scrollbar-track {
+  width: 10px;
+  background: #ffffff;
+  border-radius: 10px;
+}
+html body .mainArea article .gameBox .bettingBox .outerBox .tableBox ul {
+  width: 100%;
+  height: auto;
+}
+html body .mainArea article .gameBox .bettingBox .outerBox .tableBox ul li {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .mainArea article .gameBox .bettingBox .outerBox .tableBox ul li div {
+  height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .mainArea article .gameBox .bettingBox .outerBox .tableBox ul li div:nth-of-type(1) {
+  width: 45%;
+}
+html body .mainArea article .gameBox .bettingBox .outerBox .tableBox ul li div:nth-of-type(2) {
+  width: 30%;
+}
+html body .mainArea article .gameBox .bettingBox .outerBox .tableBox ul li div:nth-of-type(2) p {
+  font-size: 28px;
+}
+html body .mainArea article .gameBox .bettingBox .outerBox .tableBox ul li div:nth-of-type(3) {
+  width: 25%;
+}
+html body .mainArea article .gameBox .bettingBox .outerBox .tableBox ul li div i {
+  width: 58px;
+  height: 48px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin: 0 10px 0 14px;
+}
+html body .mainArea article .gameBox .bettingBox .outerBox .tableBox ul li div p {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+}
+html body .mainArea article .gameBox .bettingBox .outerBox .tableBox ul li div button {
+  width: 83px;
+  height: 40px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ea8b11), to(#ffd644));
+  background: linear-gradient(to top, #ea8b11 0%, #ffd644 100%);
+  border-radius: 5px;
+  border: none;
+  color: #161616;
+  font-size: 20px;
+  font-weight: bold;
+}
+html body .mainArea article .gameBox .bettingBox .outerBox .tableBox ul li div button:hover, html body .mainArea article .gameBox .bettingBox .outerBox .tableBox ul li div button:active, html body .mainArea article .gameBox .bettingBox .outerBox .tableBox ul li div button.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ea8b11), to(#e25406));
+  background: linear-gradient(to top, #ea8b11 0%, #e25406 100%);
+  color: #ffffff;
+}
+html body footer {
+  width: 100%;
+  min-width: 1050px;
+  height: 70px;
+  background: -webkit-gradient(linear, left top, right top, from(#d7a950), color-stop(6%, #bf8935), color-stop(49%, #f3e19a), color-stop(93%, #bf8935), to(#d7a950));
+  background: linear-gradient(to right, #d7a950 0%, #bf8935 6%, #f3e19a 49%, #bf8935 93%, #d7a950 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+html body footer ul {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: absolute;
+  left: 24px;
+  bottom: 0;
+}
+html body footer ul li {
+  width: 152px;
+  height: 105px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#1b3180), to(#1d46a4));
+  background: linear-gradient(to top, #1b3180 0%, #1d46a4 100%);
+  border-radius: 10px 10px 0 0;
+  -webkit-box-shadow: 0 -3px 8px 0 rgba(0, 0, 0, 0.5019607843);
+          box-shadow: 0 -3px 8px 0 rgba(0, 0, 0, 0.5019607843);
+  border: solid 3px #fff1ae;
+  border-bottom: none;
+  color: #fff1ae;
+  font-size: 20px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  cursor: pointer;
+  margin-right: 15px;
+}
+html body footer ul li:hover, html body footer ul li:active, html body footer ul li.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#112a83), to(#0e236d));
+  background: linear-gradient(to top, #112a83 0%, #0e236d 100%);
+}
+html body footer ul li:hover, html body footer ul li:active, html body footer ul li.active {
+  height: 125px;
+}
+html body footer ul li i {
+  width: 50px;
+  height: 45px;
+  margin-bottom: 10px;
+}
+html body footer ul li i.rule_ic {
+  background-position-x: 0;
+}
+html body footer ul li i.record_ic {
+  background-position-x: 50%;
+}
+html body footer ul li i.acting_ic {
+  background-position-x: 100%;
+}
+html body .filter {
+  width: 100%;
+  min-width: 1050px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5019607843);
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+html body .filter.display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .filter .jumpWindow {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(5%, #bf8935), color-stop(49%, #eab95a), color-stop(87%, #eab95a), to(#f9d87f));
+  background: linear-gradient(to top, #bf8935 5%, #eab95a 49%, #eab95a 87%, #f9d87f 100%);
+  border-radius: 12px;
+  border: solid 1px #fff8c1;
+  overflow: hidden;
+  display: none;
+  margin-bottom: 100px;
+}
+html body .filter .jumpWindow.display {
+  display: block;
+}
+html body .filter .jumpWindow .title {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+html body .filter .jumpWindow .title p {
+  color: #161616;
+  font-size: 25px;
+  font-weight: bold;
+}
+html body .filter .jumpWindow .title i {
+  width: 50px;
+  height: 50px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#c31f17), color-stop(47%, #971c1c), to(#c31f17));
+  background: linear-gradient(to top, #c31f17 0%, #971c1c 47%, #c31f17 100%);
+  border: solid 1px #fff8c1;
+  border-width: 0 0 1px 1px;
+  border-radius: 0 12px 0 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+html body .filter .jumpWindow .title i::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 21px;
+  height: 21px;
+}
+html body .filter .jumpWindow.record {
+  width: 800px;
+  height: 530px;
+}
+html body .filter .jumpWindow.record .content {
+  width: 100%;
+  height: auto;
+  padding: 32px 32px 0;
+}
+html body .filter .jumpWindow.record .content .topList {
+  width: 100%;
+  height: auto;
+  border-bottom: solid 3px #112f90;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+html body .filter .jumpWindow.record .content .topList li {
+  width: 80px;
+  height: 37px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#f7e9d6), to(#ffffff));
+  background: linear-gradient(to top, #f7e9d6 0%, #ffffff 100%);
+  border-radius: 5px 5px 0 0;
+  border: solid 1px #ffffff;
+  border-bottom: none;
+  color: #161616;
+  font-size: 20px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  margin-right: 8px;
+}
+html body .filter .jumpWindow.record .content .topList li:hover, html body .filter .jumpWindow.record .content .topList li:active, html body .filter .jumpWindow.record .content .topList li.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#102e90), to(#1d46a4));
+  background: linear-gradient(to top, #102e90 0%, #1d46a4 100%);
+  border-color: #123192;
+  color: #ffffff;
+}
+html body .filter .jumpWindow.record .content .recordBox {
+  width: 100%;
+  height: auto;
+  border: solid 1px #fff8c1;
+}
+html body .filter .jumpWindow.record .content .recordBox .smallTitle {
+  width: 100%;
+  height: 40px;
+}
+html body .filter .jumpWindow.record .content .recordBox .smallTitle ul {
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#9a6221), color-stop(49%, #6e4111), to(#9a6221));
+  background: linear-gradient(to top, #9a6221 0%, #6e4111 49%, #9a6221 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 5px;
+}
+html body .filter .jumpWindow.record .content .recordBox .smallTitle ul li {
+  border-right: solid 1px #fff8c1;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+html body .filter .jumpWindow.record .content .recordBox .smallTitle ul li:nth-of-type(1) {
+  width: 20%;
+}
+html body .filter .jumpWindow.record .content .recordBox .smallTitle ul li:nth-of-type(2) {
+  width: 25%;
+}
+html body .filter .jumpWindow.record .content .recordBox .smallTitle ul li:nth-of-type(3) {
+  width: 15%;
+}
+html body .filter .jumpWindow.record .content .recordBox .smallTitle ul li:nth-of-type(4) {
+  width: 20%;
+}
+html body .filter .jumpWindow.record .content .recordBox .smallTitle ul li:last-child {
+  width: 20%;
+  border: none;
+}
+html body .filter .jumpWindow.record .content .recordBox .outerBox {
+  width: 100%;
+  height: 240px;
+  background: #ffffff;
+  padding-right: 5px;
+}
+html body .filter .jumpWindow.record .content .recordBox .outerBox .tableBox {
+  width: 100%;
+  height: 100%;
+  overflow-y: overlay;
+}
+html body .filter .jumpWindow.record .content .recordBox .outerBox .tableBox::-webkit-scrollbar {
+  width: 5px;
+}
+html body .filter .jumpWindow.record .content .recordBox .outerBox .tableBox::-webkit-scrollbar-thumb {
+  background: #a06d15;
+  border-radius: 10px;
+}
+html body .filter .jumpWindow.record .content .recordBox .outerBox .tableBox ul {
+  width: 100%;
+  height: auto;
+}
+html body .filter .jumpWindow.record .content .recordBox .outerBox .tableBox ul li {
+  width: 100%;
+  height: 40px;
+  border-bottom: solid 1px #b39c77;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .filter .jumpWindow.record .content .recordBox .outerBox .tableBox ul li:last-child {
+  border: none;
+}
+html body .filter .jumpWindow.record .content .recordBox .outerBox .tableBox ul li p {
+  border-right: solid 1px #fff8c1;
+  color: #252525;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+html body .filter .jumpWindow.record .content .recordBox .outerBox .tableBox ul li p:nth-of-type(1) {
+  width: 20%;
+}
+html body .filter .jumpWindow.record .content .recordBox .outerBox .tableBox ul li p:nth-of-type(2) {
+  width: 25%;
+}
+html body .filter .jumpWindow.record .content .recordBox .outerBox .tableBox ul li p:nth-of-type(3) {
+  width: 15%;
+}
+html body .filter .jumpWindow.record .content .recordBox .outerBox .tableBox ul li p:nth-of-type(4) {
+  width: 20%;
+}
+html body .filter .jumpWindow.record .content .recordBox .outerBox .tableBox ul li p:last-child {
+  width: 20%;
+  border: none;
+}
+html body .filter .jumpWindow.record .content .recordBox .total {
+  width: 100%;
+  height: 40px;
+  background: #1d3c83;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 5px;
+}
+html body .filter .jumpWindow.record .content .recordBox .total li {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .filter .jumpWindow.record .content .recordBox .total li:nth-of-type(1) {
+  width: 20%;
+}
+html body .filter .jumpWindow.record .content .recordBox .total li:nth-of-type(1) p {
+  border-right: solid 1px #ffffff;
+}
+html body .filter .jumpWindow.record .content .recordBox .total li:nth-of-type(2) {
+  width: 25%;
+}
+html body .filter .jumpWindow.record .content .recordBox .total li:nth-of-type(3) {
+  width: 15%;
+}
+html body .filter .jumpWindow.record .content .recordBox .total li:nth-of-type(4) {
+  width: 20%;
+}
+html body .filter .jumpWindow.record .content .recordBox .total li:last-child {
+  width: 20%;
+}
+html body .filter .jumpWindow.record .content .recordBox .total li p {
+  width: 100%;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+html body .filter .jumpWindow.record .content .pageBox {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 10px;
+}
+html body .filter .jumpWindow.record .content .pageBox i {
+  width: 7px;
+  height: 9px;
+  cursor: pointer;
+}
+html body .filter .jumpWindow.record .content .pageBox i.arrow_right {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+html body .filter .jumpWindow.record .content .pageBox ul {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 10px;
+}
+html body .filter .jumpWindow.record .content .pageBox ul li {
+  width: 22px;
+  height: 22px;
+  background: transparent;
+  border: solid 1px #ffffff;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  margin-right: 10px;
+}
+html body .filter .jumpWindow.record .content .pageBox ul li:hover, html body .filter .jumpWindow.record .content .pageBox ul li:active, html body .filter .jumpWindow.record .content .pageBox ul li.active {
+  background: #1d46a4;
+  border-color: #1d46a4;
+}
+html body .filter .jumpWindow.record .content .pageBox ul li:last-child {
+  margin: 0;
+}
+html body .filter .jumpWindow.rule {
+  width: 785px;
+  height: 540px;
+}
+html body .filter .jumpWindow.rule .content {
+  width: 100%;
+  height: auto;
+  padding: 32px 32px 0;
+}
+html body .filter .jumpWindow.rule .content .textBox {
+  width: 100%;
+  height: 350px;
+  background: #ffffff;
+}
+html body .filter .jumpWindow.rule .content .textBox .outerBox {
+  width: 100%;
+  height: 100%;
+  padding-right: 5px;
+}
+html body .filter .jumpWindow.rule .content .textBox .outerBox .ruleBox {
+  width: 100%;
+  height: 100%;
+  overflow-y: overlay;
+  padding: 16px;
+}
+html body .filter .jumpWindow.rule .content .textBox .outerBox .ruleBox::-webkit-scrollbar {
+  width: 5px;
+}
+html body .filter .jumpWindow.rule .content .textBox .outerBox .ruleBox::-webkit-scrollbar-thumb {
+  background: #a06d15;
+  border-radius: 10px;
+}
+html body .filter .jumpWindow.rule .content .textBox .outerBox .ruleBox p {
+  color: #252525;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 32px;
+}
+html body .filter .jumpWindow.rule .content .textBox .outerBox .ruleBox p.mar {
+  margin-bottom: 20px;
+}
+html body .filter .jumpWindow.rule .content .textBox .outerBox .ruleBox .imgBox {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 0;
+}
+html body .filter .jumpWindow.rule .content .textBox .outerBox .ruleBox .imgBox .img {
+  width: 254px;
+  height: 358px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 20px;
+}
+html body .filter .jumpWindow.rule .content .textBox .outerBox .ruleBox .imgBox .textBox {
+  height: auto;
+}
+html body .filter .jumpWindow.rule .content .textBox .outerBox .ruleBox .imgBox .textBox p.mainTeam {
+  color: #ec0a10;
+}
+html body .filter .jumpWindow.rule .content .textBox .outerBox .ruleBox .imgBox .textBox p.cusTeam {
+  color: #048e0c;
+}
+html body .filter .jumpWindow.rule .content .textBox .outerBox .ruleBox .imgBox .textBox p span {
+  display: inline-block;
+  color: #ffffff;
+  padding: 3px 10px;
+}
+html body .filter .jumpWindow.rule .content .textBox .outerBox .ruleBox .imgBox .textBox p span.mainWin {
+  background: #d1050a;
+}
+html body .filter .jumpWindow.rule .content .textBox .outerBox .ruleBox .imgBox .textBox p span.cusWin {
+  background: #108308;
+}
+html body .filter .jumpWindow.rule .content .check {
+  width: 242px;
+  height: 47px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#1251df), color-stop(50%, #0826a8), to(#1251df));
+  background: linear-gradient(to top, #1251df 0%, #0826a8 50%, #1251df 100%);
+  border-radius: 5px;
+  border: solid 1px #f4e1a3;
+  -webkit-box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2862745098);
+          box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2862745098);
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  margin: 30px auto 0;
+}
+html body .filter .jumpWindow.rule .content .check:hover, html body .filter .jumpWindow.rule .content .check:active, html body .filter .jumpWindow.rule .content .check.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#1251df), color-stop(75%, #0826a8));
+  background: linear-gradient(to top, #1251df 0%, #0826a8 75%);
+}
+html body .filter .jumpWindow.betting {
+  width: 412px;
+  height: 440px;
+}
+html body .filter .jumpWindow.betting .content {
+  width: 100%;
+  height: auto;
+  padding: 16px 24px 0;
+}
+html body .filter .jumpWindow.betting .content .bettingBox {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  border: solid 1px #917548;
+}
+html body .filter .jumpWindow.betting .content .bettingBox .smallTitle {
+  width: 100%;
+  height: 40px;
+}
+html body .filter .jumpWindow.betting .content .bettingBox .smallTitle ul {
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#9a6221), color-stop(49%, #6e4111), to(#9a6221));
+  background: linear-gradient(to top, #9a6221 0%, #6e4111 49%, #9a6221 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .filter .jumpWindow.betting .content .bettingBox .smallTitle ul li {
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html body .filter .jumpWindow.betting .content .bettingBox .teamBox {
+  width: 100%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html body .filter .jumpWindow.betting .content .bettingBox .teamBox i {
+  width: 41px;
+  height: 26px;
+  -webkit-filter: drop-shadow(0 2px 1px rgba(0, 0, 0, 0.5019607843));
+          filter: drop-shadow(0 2px 1px rgba(0, 0, 0, 0.5019607843));
+  margin-right: 10px;
+}
+html body .filter .jumpWindow.betting .content .bettingBox .teamBox p {
+  color: #252525;
+  font-size: 18px;
+  font-weight: bold;
+}
+html body .filter .jumpWindow.betting .content .bettingBox .bettingCnt {
+  width: 100%;
+  height: auto;
+}
+html body .filter .jumpWindow.betting .content .bettingBox .bettingCnt .inputBox {
+  display: block;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin: 10px 0 15px;
+}
+html body .filter .jumpWindow.betting .content .bettingBox .bettingCnt .inputBox input {
+  width: 210px;
+  height: 35px;
+  background: #ebebeb;
+  border-radius: 5px;
+  border: solid 1px #6b6b6b;
+  color: #eb0d0d;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+html body .filter .jumpWindow.betting .content .bettingBox .bettingCnt .btnBox {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 8px 1fr 8px 1fr 8px 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  padding: 0 10px 10px;
+}
+html body .filter .jumpWindow.betting .content .bettingBox .bettingCnt .btnBox button {
+  width: auto;
+  height: 35px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#dec8a6), color-stop(68%, #fffcf8));
+  background: linear-gradient(to top, #dec8a6 0%, #fffcf8 68%);
+  border-radius: 5px;
+  border: solid 1px #a06d15;
+  color: #252525;
+  font-size: 18px;
+  font-weight: bold;
+}
+html body .filter .jumpWindow.betting .content .bettingBox .bettingCnt .btnBox button:hover, html body .filter .jumpWindow.betting .content .bettingBox .bettingCnt .btnBox button:active, html body .filter .jumpWindow.betting .content .bettingBox .bettingCnt .btnBox button.active {
+  background: #970e08;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+html body .filter .jumpWindow.betting .content .bettingBox .bettingCnt .btnBox button:last-child {
+  -ms-grid-column: -1;
+      grid-column-start: -1;
+  grid-column-end: 3;
+}
+html body .filter .jumpWindow.betting .content .lastBox {
+  width: 100%;
+  height: auto;
+  margin-top: 26px;
+}
+html body .filter .jumpWindow.betting .content .lastBox button {
+  width: 242px;
+  height: 47px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#1251df), color-stop(50%, #0826a8), to(#1251df));
+  background: linear-gradient(to top, #1251df 0%, #0826a8 50%, #1251df 100%);
+  border-radius: 5px;
+  border: solid 1px #f4e1a3;
+  -webkit-box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2862745098);
+          box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2862745098);
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  margin: 0 auto;
+}
+html body .filter .jumpWindow.betting .content .lastBox button:hover, html body .filter .jumpWindow.betting .content .lastBox button:active, html body .filter .jumpWindow.betting .content .lastBox button.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#1251df), color-stop(75%, #0826a8));
+  background: linear-gradient(to top, #1251df 0%, #0826a8 75%);
+}
+html body .filter .jumpWindow.acting {
+  width: 1000px;
+  height: auto;
+}
+html body .filter .jumpWindow.acting .topBox {
+  width: 92%;
+  height: auto;
+  border-bottom: solid 3px #112f90;
+  padding: 10px 5px;
+  margin: 0 auto 20px;
+}
+html body .filter .jumpWindow.acting .topBox .row {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-bottom: 8px;
+}
+html body .filter .jumpWindow.acting .topBox .row:last-child {
+  margin: 0;
+}
+html body .filter .jumpWindow.acting .topBox .row .smallTitle {
+  width: 85px;
+  color: #161616;
+  font-size: 17px;
+  font-weight: bold;
+}
+html body .filter .jumpWindow.acting .topBox .row .selectBox {
+  display: block;
+  width: 284px;
+  height: 45px;
+  position: relative;
+}
+html body .filter .jumpWindow.acting .topBox .row .selectBox select {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 5px;
+  border: solid 1px #9b6d22;
+  color: #161616;
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 10px;
+  cursor: pointer;
+}
+html body .filter .jumpWindow.acting .topBox .row .selectBox i {
+  width: 18px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 10px;
+  pointer-events: none;
+}
+html body .filter .jumpWindow.acting .topBox .row .inputBox {
+  width: 284px;
+  height: 45px;
+  background: #ffffff;
+  border-radius: 5px;
+  border: solid 1px #9b6d22;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding-left: 10px;
+  cursor: pointer;
+}
+html body .filter .jumpWindow.acting .topBox .row .inputBox input {
+  background: none;
+  border: none;
+  color: #161616;
+  font-size: 15px;
+  font-weight: bold;
+}
+html body .filter .jumpWindow.acting .topBox .row .inputBox p {
+  color: #878787;
+  font-size: 17px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+html body .filter .jumpWindow.acting .topBox .row .inputBox i {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 10px;
+  pointer-events: none;
+}
+html body .filter .jumpWindow.acting .topBox .row .btnBox {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .filter .jumpWindow.acting .topBox .row .btnBox button {
+  width: 60px;
+  height: 42px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#dec8a6), color-stop(68%, #fffcf8));
+  background: linear-gradient(to top, #dec8a6 0%, #fffcf8 68%);
+  border-radius: 5px;
+  border: solid 1px #a06d15;
+  color: #252525;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+html body .filter .jumpWindow.acting .topBox .row .btnBox button:hover, html body .filter .jumpWindow.acting .topBox .row .btnBox button:active, html body .filter .jumpWindow.acting .topBox .row .btnBox button.active {
+  background: #970e08;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+html body .filter .jumpWindow.acting .topBox .row .btnBox button:first-child {
+  margin-left: 8px;
+}
+html body .filter .jumpWindow.acting .topBox .row .check {
+  width: 130px;
+  height: 42px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#1251df), color-stop(50%, #0826a8), to(#1251df));
+  background: linear-gradient(to top, #1251df 0%, #0826a8 50%, #1251df 100%);
+  border-radius: 5px;
+  border: solid 1px #f4e1a3;
+  -webkit-box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2862745098);
+          box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2862745098);
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  right: -5px;
+}
+html body .filter .jumpWindow.acting .topBox .row .check:hover, html body .filter .jumpWindow.acting .topBox .row .check:active, html body .filter .jumpWindow.acting .topBox .row .check.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#1251df), color-stop(75%, #0826a8));
+  background: linear-gradient(to top, #1251df 0%, #0826a8 75%);
+}
+html body .filter .jumpWindow.acting .content {
+  width: 92%;
+  height: auto;
+  background: #ffffff;
+  border: solid 1px #fff8c1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+html body .filter .jumpWindow.acting .content .left {
+  width: auto;
+  height: auto;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html body .filter .jumpWindow.acting .content .left table {
+  width: auto;
+  height: auto;
+}
+html body .filter .jumpWindow.acting .content .left table tr:first-child td {
+  background: -webkit-gradient(linear, left bottom, left top, from(#9a6221), color-stop(49%, #6e4111), to(#9a6221));
+  background: linear-gradient(to top, #9a6221 0%, #6e4111 49%, #9a6221 100%);
+  border: none;
+}
+html body .filter .jumpWindow.acting .content .left table tr:first-child td p {
+  border-color: #fff8c1;
+  color: #ffffff;
+}
+html body .filter .jumpWindow.acting .content .left table tr:last-child td {
+  height: 60px;
+  background: #1d3c83;
+  border: none;
+}
+html body .filter .jumpWindow.acting .content .left table tr:last-child td p {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+html body .filter .jumpWindow.acting .content .left table tr td {
+  width: auto;
+  min-width: 120px;
+  height: 40px;
+  border-bottom: solid 1px #b39c77;
+  vertical-align: middle;
+}
+html body .filter .jumpWindow.acting .content .left table tr td p {
+  width: 100%;
+  border-right: solid 1px #b39c77;
+  color: #252525;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+  padding: 0 20px;
+}
+html body .filter .jumpWindow.acting .content .left table tr td p span {
+  color: #c68b18;
+}
+html body .filter .jumpWindow.acting .content .right {
+  width: 100%;
+  height: auto;
+  overflow-x: overlay;
+}
+html body .filter .jumpWindow.acting .content .right::-webkit-scrollbar {
+  height: 10px;
+}
+html body .filter .jumpWindow.acting .content .right::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border-radius: 10px;
+}
+html body .filter .jumpWindow.acting .content .right::-webkit-scrollbar-track {
+  background: #6e4111;
+  border-radius: 10px;
+}
+html body .filter .jumpWindow.acting .content .right table {
+  width: auto;
+  height: auto;
+}
+html body .filter .jumpWindow.acting .content .right table tr:last-child td {
+  height: 60px;
+  background: #1d3c83;
+  border: none;
+}
+html body .filter .jumpWindow.acting .content .right table tr:last-child td p {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+html body .filter .jumpWindow.acting .content .right table tr:last-child td p.allWin {
+  color: #20ff34;
+}
+html body .filter .jumpWindow.acting .content .right table tr:last-child td p.allLose {
+  color: #ff5842;
+}
+html body .filter .jumpWindow.acting .content .right table tr th {
+  height: 40px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#9a6221), color-stop(49%, #6e4111), to(#9a6221));
+  background: linear-gradient(to top, #9a6221 0%, #6e4111 49%, #9a6221 100%);
+  vertical-align: middle;
+}
+html body .filter .jumpWindow.acting .content .right table tr th:last-child p {
+  border: none;
+}
+html body .filter .jumpWindow.acting .content .right table tr th p {
+  width: 100%;
+  border-right: solid 1px #fff8c1;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+}
+html body .filter .jumpWindow.acting .content .right table tr td {
+  width: auto;
+  min-width: 120px;
+  height: 40px;
+  border-bottom: solid 1px #b39c77;
+  vertical-align: middle;
+}
+html body .filter .jumpWindow.acting .content .right table tr td:last-child p {
+  border: none;
+}
+html body .filter .jumpWindow.acting .content .right table tr td p {
+  width: 100%;
+  border-right: solid 1px #b39c77;
+  color: #252525;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+  padding: 0 30px;
+}
+html body .filter .jumpWindow.acting .content .right table tr td p.win {
+  color: #019e0f;
+}
+html body .filter .jumpWindow.acting .content .right table tr td p.lose {
+  color: #ff5842;
+}
+html body .filter .jumpWindow.acting .content .right table tr td p.clickable {
+  color: #c68b18;
+  text-decoration: underline;
+  cursor: pointer;
+}
+html body .filter .jumpWindow.acting .pageBox {
+  width: 92%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+html body .filter .jumpWindow.acting .pageBox i {
+  width: 7px;
+  height: 9px;
+  cursor: pointer;
+}
+html body .filter .jumpWindow.acting .pageBox i.arrow_right {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+html body .filter .jumpWindow.acting .pageBox ul {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 10px;
+}
+html body .filter .jumpWindow.acting .pageBox ul li {
+  width: 22px;
+  height: 22px;
+  background: transparent;
+  border: solid 1px #ffffff;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  margin-right: 10px;
+}
+html body .filter .jumpWindow.acting .pageBox ul li:hover, html body .filter .jumpWindow.acting .pageBox ul li:active, html body .filter .jumpWindow.acting .pageBox ul li.active {
+  background: #1d46a4;
+  border-color: #1d46a4;
+}
+html body .filter .jumpWindow.acting .pageBox ul li:last-child {
+  margin: 0;
+}
+html body .filter .jumpWindow.actingDetail {
+  width: 1000px;
+  height: auto;
+}
+html body .filter .jumpWindow.actingDetail .content {
+  width: 92%;
+  height: auto;
+  background: #ffffff;
+  border: solid 1px #fff8c1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px auto 0;
+}
+html body .filter .jumpWindow.actingDetail .content .left {
+  width: auto;
+  height: auto;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html body .filter .jumpWindow.actingDetail .content .left table {
+  width: auto;
+  height: auto;
+}
+html body .filter .jumpWindow.actingDetail .content .left table tr:first-child td {
+  background: -webkit-gradient(linear, left bottom, left top, from(#9a6221), color-stop(49%, #6e4111), to(#9a6221));
+  background: linear-gradient(to top, #9a6221 0%, #6e4111 49%, #9a6221 100%);
+  border: none;
+}
+html body .filter .jumpWindow.actingDetail .content .left table tr:first-child td p {
+  color: #ffffff;
+  font-size: 18px;
+}
+html body .filter .jumpWindow.actingDetail .content .left table tr:first-child td p::before {
+  background: #fff8c1;
+}
+html body .filter .jumpWindow.actingDetail .content .left table tr:last-child td {
+  height: 60px;
+  background: #1d3c83;
+  border: none;
+}
+html body .filter .jumpWindow.actingDetail .content .left table tr:last-child td p {
+  color: #ffffff;
+  font-size: 18px;
+}
+html body .filter .jumpWindow.actingDetail .content .left table tr:last-child td p::before {
+  background: #ffffff;
+}
+html body .filter .jumpWindow.actingDetail .content .left table tr td {
+  width: auto;
+  min-width: 120px;
+  height: 45px;
+  border-bottom: solid 1px #b39c77;
+  vertical-align: middle;
+}
+html body .filter .jumpWindow.actingDetail .content .left table tr td p {
+  width: 100%;
+  color: #252525;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 18px;
+  position: relative;
+  padding: 0 20px;
+}
+html body .filter .jumpWindow.actingDetail .content .left table tr td p::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 1px;
+  height: 18px;
+  background: #b39c77;
+}
+html body .filter .jumpWindow.actingDetail .content .left table tr td p .code {
+  color: #888888;
+}
+html body .filter .jumpWindow.actingDetail .content .left table tr td p .bet {
+  color: #ff5b0b;
+}
+html body .filter .jumpWindow.actingDetail .content .left table tr td p .vs {
+  color: #b0852c;
+}
+html body .filter .jumpWindow.actingDetail .content .left table tr td p .mainTeam {
+  color: #0926ff;
+}
+html body .filter .jumpWindow.actingDetail .content .right {
+  width: 100%;
+  height: auto;
+  overflow-x: overlay;
+}
+html body .filter .jumpWindow.actingDetail .content .right::-webkit-scrollbar {
+  height: 10px;
+}
+html body .filter .jumpWindow.actingDetail .content .right::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border-radius: 10px;
+}
+html body .filter .jumpWindow.actingDetail .content .right::-webkit-scrollbar-track {
+  background: #6e4111;
+  border-radius: 10px;
+}
+html body .filter .jumpWindow.actingDetail .content .right table {
+  width: auto;
+  height: auto;
+}
+html body .filter .jumpWindow.actingDetail .content .right table tr:last-child td {
+  height: 60px;
+  background: #1d3c83;
+  border: none;
+}
+html body .filter .jumpWindow.actingDetail .content .right table tr:last-child td p {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+html body .filter .jumpWindow.actingDetail .content .right table tr:last-child td p.allWin {
+  color: #20ff34;
+}
+html body .filter .jumpWindow.actingDetail .content .right table tr:last-child td p.allLose {
+  color: #ff5842;
+}
+html body .filter .jumpWindow.actingDetail .content .right table tr th {
+  height: 45px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#9a6221), color-stop(49%, #6e4111), to(#9a6221));
+  background: linear-gradient(to top, #9a6221 0%, #6e4111 49%, #9a6221 100%);
+  vertical-align: middle;
+}
+html body .filter .jumpWindow.actingDetail .content .right table tr th:last-child p {
+  font-size: 14px;
+  border: none;
+}
+html body .filter .jumpWindow.actingDetail .content .right table tr th p {
+  width: 100%;
+  border-right: solid 1px #fff8c1;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+}
+html body .filter .jumpWindow.actingDetail .content .right table tr td {
+  width: auto;
+  min-width: 120px;
+  height: 45px;
+  border-bottom: solid 1px #b39c77;
+  vertical-align: middle;
+}
+html body .filter .jumpWindow.actingDetail .content .right table tr td:last-child p {
+  border: none;
+}
+html body .filter .jumpWindow.actingDetail .content .right table tr td p {
+  width: 100%;
+  border-right: solid 1px #b39c77;
+  color: #252525;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+  padding: 0 20px;
+}
+html body .filter .jumpWindow.actingDetail .content .right table tr td p.win {
+  color: #019e0f;
+}
+html body .filter .jumpWindow.actingDetail .content .right table tr td p.lose {
+  color: #ff5842;
+}
+html body .filter .jumpWindow.actingDetail .pageBox {
+  width: 92%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+html body .filter .jumpWindow.actingDetail .pageBox i {
+  width: 7px;
+  height: 9px;
+  cursor: pointer;
+}
+html body .filter .jumpWindow.actingDetail .pageBox i.arrow_right {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+html body .filter .jumpWindow.actingDetail .pageBox ul {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 10px;
+}
+html body .filter .jumpWindow.actingDetail .pageBox ul li {
+  width: 22px;
+  height: 22px;
+  background: transparent;
+  border: solid 1px #ffffff;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  margin-right: 10px;
+}
+html body .filter .jumpWindow.actingDetail .pageBox ul li:hover, html body .filter .jumpWindow.actingDetail .pageBox ul li:active, html body .filter .jumpWindow.actingDetail .pageBox ul li.active {
+  background: #1d46a4;
+  border-color: #1d46a4;
+}
+html body .filter .jumpWindow.actingDetail .pageBox ul li:last-child {
+  margin: 0;
+}
+html body .bg {
+  width: 100%;
+  min-width: 1050px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -999;
+}
