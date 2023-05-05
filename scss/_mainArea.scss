@@ -1,0 +1,212 @@
+.mainArea {
+    width: 100%;
+    height: auto;
+    padding-bottom: 90px;
+
+    .gameBox {
+        width: 88vw;
+        height: auto;
+        background: $mainArea_BG;
+        border: solid 1px $mainArea_Border;
+        margin: 10vw auto 0;
+
+        .dateBox {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: -4.5vw 0 4vw;
+
+            i {
+                width: 9vw;
+                height: 10vw;
+            }
+        }
+
+        .bigTitle {
+            width: 80%;
+            height: 10vw;
+            @include mainArea_bigTitle;
+            margin: 0 auto 4vw;
+        }
+
+        .bonusBox {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 4vw;
+
+            p {
+                color: transparent;
+                font-size: 5vw;
+                font-weight: bold;
+                background: $mainArea_BonusColor;
+                background-clip: text;
+                margin-right: 3vw;
+            }
+
+            .moneyBox {
+                width: 45vw;
+                height: 11vw;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                i {
+                    width: 4.5vw;
+                    height: 5vw;
+                    margin-top: -1vw;
+                }
+            }
+        }
+
+        .bettingBox {
+            width: 94%;
+            height: auto;
+            background: $mainArea_innerBG;
+            border: solid 1px $mainArea_innerBorder;
+            margin: 0 auto 3vw;
+
+            .smallTitle {
+                width: 100%;
+                height: 9vw;
+                background: $mainArea_innerTitleBG;
+
+                ul {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+
+                    li {
+                        width: 34%;
+                        height: 100%;
+                        color: $mainArea_innerTitle;
+                        font-size: 4vw;
+                        font-weight: bold;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        .rowBox {
+                            width: 88%;
+                            height: 88%;
+                            @include rowBox;
+
+                            &.left {
+                                
+                                p {
+                                    
+                                    &:nth-of-type(1) {
+                                        width: 60%;
+                                        @include rowBox_linear_1;
+                                    }
+                                    &:nth-of-type(2) {
+                                        width: 40%;
+                                    }
+                                }
+                            }
+                            &.right {
+
+                                p {
+
+                                    &:nth-of-type(1) {
+                                        width: 50%;
+                                    }
+                                    &:nth-of-type(2) {
+                                        width: 50%;
+                                        @include rowBox_linear_2;
+                                    }
+                                }
+                            }
+
+                            p {
+                                height: 86%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                padding-bottom: 2px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .tableBox {
+                width: 100%;
+                height: 72vw;
+                overflow-y: auto;
+
+                ul {
+                    width: 100%;
+                    height: auto;
+
+                    li {
+                        width: 100%;
+                        height: 9vw;
+                        display: flex;
+                     
+                        div {
+                            width: 34%;
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            position: relative;
+
+                            &:nth-of-type(1) {
+                                justify-content: flex-start;
+                                
+                                p {
+                                    width: 16vw;
+                                    position: absolute;
+                                    left: 13vw;
+                                }
+                            }
+                            &:last-child {
+                                justify-content: flex-end;
+                            }
+
+                            i {
+                                width: 9vw;
+                                height: 7vw;
+                                flex-shrink: 0;
+                                margin: 0 2vw;
+                            }
+
+                            p {
+                                color: $mainArea_Color;
+                                font-size: 4vw;
+                                font-weight: bold;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+
+                                &.active {
+                                    width: auto;
+                                    background: $mainArea_overflow_BG;
+                                    border-radius: 3px;
+                                    color: $mainArea_overflow_Color;
+                                    padding: 5px;
+                                }
+
+                                &.money {
+                                    font-size: 5vw;
+                                }
+                            }
+
+                            button {
+                                width: 13vw;
+                                height: 7vw;
+                                @include mainArea_betBtn;
+                                margin-right: 2vw;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
